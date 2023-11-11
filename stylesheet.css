@@ -352,11 +352,11 @@ html, body{
         height:30em;
       }
       .fancyText#s0{
-          font-size:2rem;
+          font-size:1.8rem;
       }
       @keyframes zoomInRefresh{
-          from{font-size:3rem;opacity: 0%;}
-          to{font-size:2rem;opacity:100%}
+          from{font-size:2.5rem;opacity: 0%;}
+          to{font-size:1.8rem;opacity:100%}
       }
       .descriptionText#s2{
           width:100%;
@@ -406,13 +406,6 @@ html, body{
       }
       .webDescription{
         font-size:1.1rem;
-      }
-      .fancyText#s0{
-          font-size:2rem;
-      }
-      @keyframes zoomInRefresh{
-          from{font-size:3rem;opacity: 0%;}
-          to{font-size:2rem;opacity:100%}
       }
       .descriptionText#s2{
           width:100%;
@@ -471,13 +464,6 @@ html, body{
       }
       .webDescription{
         font-size:1.1rem;
-      }
-      .fancyText#s0{
-          font-size:2rem;
-      }
-      @keyframes zoomInRefresh{
-          from{font-size:3rem;opacity: 0%;}
-          to{font-size:2rem;opacity:100%}
       }
       .normalText#s5-0{
         font-size:1.2rem;
