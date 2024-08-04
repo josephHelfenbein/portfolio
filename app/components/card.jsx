@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import picture from '../public/1708555168208.jpg';
+import picture from '/public/1708555168208.jpg';
 export default function Card( ){
     return (
 <article className="rounded-xl border border-gray-600 bg-black p-6">
@@ -20,7 +20,7 @@ export default function Card( ){
       <div className="block h-full rounded-lg border border-gray-800 p-4 m-3">
 
         <p className="mt-1 text-s font-medium text-gray-300">
-        I'm a student at The City College of New York studying Computer Science and Physics. I have experience in JavaScript, C++, C#, and Python from my personal projects, and additionally have developed a game on Steam. I'm constantly trying to learn new things and broaden my experience.
+        I'm a student at The City College of New York studying Computer Science and Physics, expecting to graduate May 2027. I have experience in JavaScript, C++, C#, and Python from my personal projects, and additionally have developed a game on Steam. I'm constantly trying to learn new things and broaden my experience.
         </p>
       </div>
 

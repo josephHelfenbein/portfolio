@@ -37,10 +37,22 @@ function FileIcon(){
     </svg>
   )
 }
-
+function EmailIcon(){
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 -960 960 960"
+      fill="#aaffaa"
+      xmlns="https://www.w3.org/2000/svg"
+    >
+      <path d="m720-160-56-56 63-64H560v-80h167l-63-64 56-56 160 160-160 160ZM160-280q-33 0-56.5-23.5T80-360v-400q0-33 23.5-56.5T160-840h520q33 0 56.5 23.5T760-760v204q-10-2-20-3t-20-1q-10 0-20 .5t-20 2.5v-147L416-520 160-703v343h323q-2 10-2.5 20t-.5 20q0 10 1 20t3 20H160Zm58-480 198 142 204-142H218Zm-58 400v-400 400Z"></path>
+    </svg>
+  )
+}
 export default function Footer() {
   return (
-    <footer className="mb-16">
+    <footer className="mb-16 selectionsFooter">
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
         <li>
           <a
@@ -75,10 +87,18 @@ export default function Footer() {
             <p className="ml-2 h-7">Resume</p>
           </a>
         </li>
+        <li>
+          <a
+            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="mailto:jhelfen000@citymail.cuny.edu"
+          >
+            <EmailIcon />
+            <p className="ml-2 h-7">Contact</p>
+          </a>
+        </li>
       </ul>
-      <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MIT Licensed
-      </p>
     </footer>
   )
 }

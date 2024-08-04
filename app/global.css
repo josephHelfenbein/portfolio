@@ -4,7 +4,38 @@
   background-color: #2a2c8a;
   color: #fefefe;
 }
-
+.threecontainer{
+  width: 100vw;
+  height: 100vh; 
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+.projectCard{
+  margin-top: 400px;
+  margin-bottom:200px
+}
+.gradientPage{
+  background-image: linear-gradient(to top, #000000, #00000000, #00000000, #00000000);
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:50;
+  width:100vw;
+  height:100vh;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+.selectionsFooter{
+  z-index: 60;
+}
 :root {
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
