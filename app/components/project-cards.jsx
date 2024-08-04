@@ -5,7 +5,7 @@ export function PhysicsProjectCard( ){
 
     <div>
       <h3 className="text-2xl font-semibold tracking-tighter">Physics Engine</h3>
-      <h5 className="text-s tracking-tighter">JavaScript, WebGL, GLSL, Bootstrap, Git</h5>
+      <h5 className="text-s tracking-tighter">JavaScript, WebGL, GLSL, Bootstrap, Git | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/physics-sandbox">Link</a></h5>
     </div>
   </div>
 
@@ -53,7 +53,7 @@ export function HorrorGameProjectCard( ){
 
     <div>
       <h3 className="text-2xl font-semibold tracking-tighter">SCP: Hours To Go</h3>
-      <h5 className="text-s tracking-tighter">C++, Unreal Engine 5, Steamworks API</h5>
+      <h5 className="text-s tracking-tighter">C++, Unreal Engine 5, Steamworks API | <a target="_blank" className="cardLink" href="https://store.steampowered.com/app/2795370/SCP_Hours_to_Go/">Link</a></h5>
     </div>
   </div>
 
@@ -78,7 +78,7 @@ export function FightingGameProjectCard( ){
 
     <div>
       <h3 className="text-2xl font-semibold tracking-tighter">Rhythm of the Knight</h3>
-      <h5 className="text-s tracking-tighter">C#, Unity Engine, Photon Engine</h5>
+      <h5 className="text-s tracking-tighter">C#, Unity Engine, Photon Engine | <a target="_blank" className="cardLink" href="https://themangoeffect.itch.io/rhythm-of-the-knight">Link</a></h5>
     </div>
   </div>
 

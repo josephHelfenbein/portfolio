@@ -12,6 +12,10 @@
   left:0;
   z-index: -1;
 }
+.cardLink{
+  font-style: italic;
+  color: #aaaaff;
+}
 .projectCard{
   margin-top: 400px;
   margin-bottom:200px
