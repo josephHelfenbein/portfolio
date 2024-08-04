@@ -16,14 +16,17 @@
   margin-top: 400px;
   margin-bottom:200px
 }
+.bottom-text{
+  margin-bottom:300px;
+}
 .gradientPage{
-  background-image: linear-gradient(to top, #000000, #00000000, #00000000, #00000000);
+  background-image: linear-gradient(to top, #000000,  #00000000, #00000000);
   position: fixed;
   top:0;
   left:0;
   z-index:50;
   width:100vw;
-  height:100vh;
+  height:200%;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -32,6 +35,9 @@
   -o-user-select: none;
   user-select: none;
   pointer-events: none;
+  margin: 0;
+  background-repeat: round;
+  background-attachment: fixed;
 }
 .selectionsFooter{
   z-index: 60;
