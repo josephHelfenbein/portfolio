@@ -7,7 +7,7 @@ import { Suspense } from 'react';
 export default function Page() {
   return (
     <main>
-      <div className='gradientPage'></div>
+
       <Suspense fallback={'Loading...'}>
       <div className='threecontainer'>
         <ThreeScene />
