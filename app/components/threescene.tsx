@@ -52,7 +52,7 @@ const CubeModel = () => {
             ref.current.rotation.z = 75 * Math.PI / 180;
             ref.current.position.x = 0;
             ref.current.position.y = -5;
-            ref.current.position.z = -4;
+            ref.current.position.z = -2;
         }
       }, []);
     return <primitive object={cube} ref={ref} />
@@ -88,9 +88,14 @@ const Knight = () => {
             ref.current.rotation.y = 190 * Math.PI / 180;
             ref.current.rotation.z = 30 * Math.PI / 180;
             ref.current.position.x = 0;
-            ref.current.position.y = -13;
-            ref.current.position.z = -4;
-            const size = 4;
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+                ref.current.position.y = -19.5;
+            }
+            else {
+                ref.current.position.y = -18;
+                ref.current.position.z = 0;
+            }
+            const size = 2;
             ref.current.scale.x = size;
             ref.current.scale.y = size;
             ref.current.scale.z = size;
@@ -111,7 +116,10 @@ const CameraController = () => {
         return ()=>{window.removeEventListener('scroll', handleScroll);};
     }, []);
     useFrame(()=>{
-        camera.position.y = -scrollY / 200;
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+            camera.position.y = -scrollY / 250;
+        }
+        else camera.position.y = -scrollY / 200;
         camera.updateProjectionMatrix();
     });
     return null;
@@ -129,7 +137,7 @@ const Scene = () => {
         <SCPModel />
         <Knight />
         <pointLight position={[2, -7, -5]} intensity={80} color={'#aaaaff'} />
-        <pointLight position={[2, -12, -5]} intensity={80} color={'#aaaaff'} />
+        <pointLight position={[2, -16, 3]} intensity={80} color={'#aaaaff'} />
         <CameraController />
         </Canvas>
     );
