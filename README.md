@@ -74,7 +74,7 @@ A simple portfolio with my resume information on a website.
 * [![TypeScript][TypeScript]][TypeScript-url]
 * [![NextJS][NextJS]][NextJS-url]
 * [![ThreeJS][ThreeJS]][ThreeJS-url]
-* [![React][React]][React-url]
+* [![React.js][React.js]][React-url]
 * [![Tailwind][Tailwind]][Tailwind-url]
 
 
@@ -137,6 +137,5 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [NextJS]: https://img.shields.io/badge/next.js-black?logo=next.js&style=for-the-badge&logoColor=white
 [NextJS-url]: https://nextjs.org/
 [React]: https://img.shields.io/badge/react-61DAFB?logo=react&style=for-the-badge&logoColor=black
-[React-url]: https://react.dev/
 [Tailwind]: https://img.shields.io/badge/tailwind%20css-06B6D4?logo=tailwindcss&style=for-the-badge&logoColor=white
 [Tailwind-url]: https://tailwindcss.com/
