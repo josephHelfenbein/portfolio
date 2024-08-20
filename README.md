@@ -40,7 +40,7 @@
     Computer Science & Physics student at CCNY
     <br />
     <br />
-    <a href="https://github.com/josephHelfenbein/portfolio">Visit</a>
+    <a href="https://www.josephhelfenbein.com">Visit</a>
     ·
     <a href="https://github.com/josephHelfenbein/portfolio/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
