@@ -20,7 +20,7 @@ export default function Card( ){
       <div className="block h-full rounded-lg border border-gray-800 p-4 m-3">
 
         <p className="mt-1 text-s font-medium text-gray-300">
-        I'm a student at The City College of New York studying Computer Science and Physics, expecting to graduate May 2027. I have experience in JavaScript, C++, C#, and Python from my personal projects, and additionally have developed a game on Steam. I'm constantly trying to learn new things and broaden my experience.
+        I'm a student at The City College of New York studying Computer Science and Physics. I have experience in full-stack web application development, JavaScript, TypeScript, React, Next.js, Three.js, C++, C#, and Python from my projects, and additionally have developed a game on Steam using Unreal Engine and C++. I'm constantly trying to learn new things and broaden my experience.
         </p>
       </div>
 

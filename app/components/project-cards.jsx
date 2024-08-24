@@ -22,6 +22,32 @@ export function PhysicsProjectCard( ){
 
     )
 }
+export function TravelAmuletProjectCard(){
+  return (
+    <article className="projectCard rounded-xl border border-gray-600 bg-black p-6">
+      <div className="flex items-center gap-5">
+    
+        <div>
+          <h3 className="text-2xl font-semibold tracking-tighter">TravelAmulet</h3>
+          <h5 className="text-s tracking-tighter">Next.js, React, TypeScript, MySQL, Bootstrap, Git | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/travel-amulet">Link</a></h5>
+        </div>
+      </div>
+    
+          <div className="block h-full rounded-lg border border-gray-800 p-4 m-3">
+    
+            <div className="p-3 text-s font-medium text-gray-300">
+                    <li className="p-2">Worked with a teammate to develop a web application that lets users take a quiz for travel preferences, and then uses TiDB Vector Search to return a list of matching countries, each with an overview and a list of top cities</li>
+                    <li className="p-2">Stored country information from CountryWise API to the MySQL database to shorten loading times by 300%</li>
+                    <li className="p-2">Used the GPT-4o mini LLM model from OpenAI API to display an explanation of how the returned country fits</li>
+                    <li className="p-2">Implemented Google Maps API to find the top cities, and upon selecting one, find nearby hotels and display a map of the city. Nearby airports and flight prices are also displayed using Amadeus API</li>
+                    <li className="p-2">Built an account and user management system using NextAuth, Prisma, and MySQL, and a visually appealing UI/UX using Bootstrap, React, and Three.js that communicates efficiently with the server</li>
+            </div>
+          </div>
+    
+    </article>
+    
+        )
+}
 export function ScienceProjectCard( ){
     return (
 <article className="projectCard rounded-xl border border-gray-600 bg-black p-6">
@@ -60,8 +86,8 @@ export function HorrorGameProjectCard( ){
       <div className="block h-full rounded-lg border border-gray-800 p-4 m-3">
 
         <div className="p-3 text-s font-medium text-gray-300">
-                <li className="p-2">Developed a 3D horror game using Unreal Engine 5 with C++ and blueprints, connecting with Steamworks API and releasing on Steam, garnering 200 paid downloads</li>
-                <li className="p-2">Created intricate puzzles, engaging environments, and enemies with complicated functionalities</li>
+                <li className="p-2">Developed a 3D horror game using Unreal Engine 5 with C++ and blueprints, connecting with Steamworks API, and releasing on Steam, garnering 200 paid downloads</li>
+                <li className="p-2">Created intricate puzzles, engaging environments, and enemy logic with complicated functionalities</li>
                 <li className="p-2">Implemented features such as controller support, localization for multiple languages, Steam achievement support, accessibility for different screen sizes, and subtitles</li>
                 <li className="p-2">Optimized performance 200% by ensuring efficient programming, reducing polygon count, and baking lighting</li>
         </div>

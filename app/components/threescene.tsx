@@ -51,7 +51,9 @@ const CubeModel = () => {
             ref.current.rotation.y = 5 * Math.PI / 180;
             ref.current.rotation.z = 75 * Math.PI / 180;
             ref.current.position.x = 0;
-            ref.current.position.y = -5;
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) 
+                ref.current.position.y = -13;
+            else ref.current.position.y = -10;
             ref.current.position.z = -2;
         }
       }, []);
@@ -67,7 +69,9 @@ const SCPModel = () => {
             ref.current.rotation.y = 180 * Math.PI / 180;
             ref.current.rotation.z = 180 * Math.PI / 180;
             ref.current.position.x = 0;
-            ref.current.position.y = -10;
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) 
+                ref.current.position.y = -18;
+            else ref.current.position.y = -15;
             ref.current.position.z = -5;
             const size = .3;
             ref.current.scale.x = size;
@@ -89,10 +93,10 @@ const Knight = () => {
             ref.current.rotation.z = 30 * Math.PI / 180;
             ref.current.position.x = 0;
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-                ref.current.position.y = -19.5;
+                ref.current.position.y = -26.5;
             }
             else {
-                ref.current.position.y = -18;
+                ref.current.position.y = -24;
                 ref.current.position.z = 0;
             }
             const size = 2;
@@ -136,8 +140,8 @@ const Scene = () => {
         <CubeModel />
         <SCPModel />
         <Knight />
-        <pointLight position={[2, -7, -5]} intensity={80} color={'#aaaaff'} />
-        <pointLight position={[2, -16, 3]} intensity={80} color={'#aaaaff'} />
+        <pointLight position={[2, -14, -5]} intensity={80} color={'#aaaaff'} />
+        <pointLight position={[2, -24, 3]} intensity={80} color={'#aaaaff'} />
         <CameraController />
         </Canvas>
     );

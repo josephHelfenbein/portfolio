@@ -1,7 +1,7 @@
 "use client"
 import Card from './components/card';
 import Footer from './components/footer';
-import {PhysicsProjectCard, HorrorGameProjectCard, ScienceProjectCard, FightingGameProjectCard, E3ProjectCard} from './components/project-cards';
+import {PhysicsProjectCard, HorrorGameProjectCard, ScienceProjectCard, FightingGameProjectCard, E3ProjectCard, TravelAmuletProjectCard} from './components/project-cards';
 import ThreeScene from './components/threescene';
 import Links from './components/bottom-text';
 import { Suspense } from 'react';
@@ -34,6 +34,7 @@ export default function Page() {
       <Card />
       <Footer />
       <E3ProjectCard />
+      <TravelAmuletProjectCard />
       <PhysicsProjectCard />
       <HorrorGameProjectCard />
       <ScienceProjectCard />
