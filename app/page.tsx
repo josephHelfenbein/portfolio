@@ -30,7 +30,7 @@ export default function Page() {
       <div className='threecontainer'>
         <ThreeScene />
       </div>
-      
+      <h1 style={{display:'none'}}>My Portfolio</h1>
       <Card />
       <Footer />
       <E3ProjectCard />
