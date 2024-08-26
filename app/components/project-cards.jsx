@@ -1,147 +1,136 @@
+import { useState, useEffect } from "react";
 export function PhysicsProjectCard( ){
     return (
-<article className="projectCard rounded-xl border border-gray-600 bg-black p-6">
-  <div className="flex items-center gap-5">
-
-    <div>
-      <h3 className="text-2xl font-semibold tracking-tighter">Physics Engine</h3>
-      <h5 className="text-s tracking-tighter">JavaScript, WebGL, GLSL, Bootstrap, Git | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/physics-sandbox">Link</a></h5>
-    </div>
-  </div>
-
-      <div className="block h-full rounded-lg border border-gray-800 p-4 m-3">
-
-        <div className="p-3 text-s font-medium text-gray-300">
-                <li className="p-2">Developed a physics engine web application using WebGL and JavaScript</li>
-                <li className="p-2">Implemented advanced algorithms for real-time ray-traced shadows, specular highlights, and rigidbody dynamics</li>
-                <li className="p-2">Utilized glMatrix for updating the vectors of the objects and camera to the model and view matrices for WebGL</li>
+  <div className="flex justify-center m-3">
+    <article className="w-4xl">
+      <div className="flex items-center justify-between gap-5">
+        <div>
+          <h3 className="text-2xl font-semibold tracking-tighter">Physics Engine</h3>
+          <h5 className="text-s tracking-tighter">JavaScript, WebGL, GLSL, Bootstrap, Git | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/physics-sandbox">Link</a></h5>
         </div>
+        <h5 className="text-s tracking-tighter ">June 2024 - July 2024</h5>
       </div>
-
-</article>
-
+      <div className="block h-full rounded-lg p-2">
+          <div className="p-3 text-s font-medium text-gray-900">
+            <li className="p-2">Developed a physics engine web application using WebGL and JavaScript</li>
+            <li className="p-2">Implemented advanced algorithms for real-time ray-traced shadows, specular highlights, and rigidbody dynamics</li>
+            <li className="p-2">Utilized glMatrix for updating the vectors of the objects and camera to the model and view matrices for WebGL</li>
+          </div>
+      </div>
+    </article>
+  </div>
     )
 }
 export function TravelAmuletProjectCard(){
   return (
-    <article className="projectCard rounded-xl border border-gray-600 bg-black p-6">
-      <div className="flex items-center gap-5">
-    
+    <div className="flex justify-center m-3">
+    <article className="w-4xl">
+      <div className="flex items-center justify-between gap-5">
         <div>
           <h3 className="text-2xl font-semibold tracking-tighter">TravelAmulet</h3>
           <h5 className="text-s tracking-tighter">Next.js, React, TypeScript, MySQL, Bootstrap, Git | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/travel-amulet">Link</a></h5>
         </div>
+        <h5 className="text-s tracking-tighter">July 2024 - August 2024</h5>
       </div>
-    
-          <div className="block h-full rounded-lg border border-gray-800 p-4 m-3">
-    
-            <div className="p-3 text-s font-medium text-gray-300">
-                    <li className="p-2">Worked with a teammate to develop a web application that lets users take a quiz for travel preferences, and then uses TiDB Vector Search to return a list of matching countries, each with an overview and a list of top cities</li>
-                    <li className="p-2">Stored country information from CountryWise API to the MySQL database to shorten loading times by 300%</li>
-                    <li className="p-2">Used the GPT-4o mini LLM model from OpenAI API to display an explanation of how the returned country fits</li>
-                    <li className="p-2">Implemented Google Maps API to find the top cities, and upon selecting one, find nearby hotels and display a map of the city. Nearby airports and flight prices are also displayed using Amadeus API</li>
-                    <li className="p-2">Built an account and user management system using NextAuth, Prisma, and MySQL, and a visually appealing UI/UX using Bootstrap, React, and Three.js that communicates efficiently with the server</li>
-            </div>
+      <div className="block h-full rounded-lg p-2">
+          <div className="p-3 text-s font-medium text-gray-900">
+            <li className="p-2">Worked with a teammate to develop a web application that lets users take a quiz for travel preferences, and then uses TiDB Vector Search to return a list of matching countries, each with an overview and a list of top cities</li>
+            <li className="p-2">Stored country information from CountryWise API to the MySQL database to shorten loading times by 300%</li>
+            <li className="p-2">Used the GPT-4o mini LLM model from OpenAI API to display an explanation of how the returned country fits</li>
+            <li className="p-2">Implemented Google Maps API to find the top cities, and upon selecting one, find nearby hotels and display a map of the city. Nearby airports and flight prices are also displayed using Amadeus API</li>
+            <li className="p-2">Built an account and user management system using NextAuth, Prisma, and MySQL, and a visually appealing UI/UX using Bootstrap, React, and Three.js that communicates efficiently with the server</li>
           </div>
-    
+      </div>
     </article>
-    
-        )
+  </div>
+  )
 }
 export function ScienceProjectCard( ){
     return (
-<article className="projectCard rounded-xl border border-gray-600 bg-black p-6">
-  <div className="flex items-center gap-5">
-
-    <div>
-      <h3 className="text-2xl font-semibold tracking-tighter">Machine Learning Research Project</h3>
-      <h5 className="text-s tracking-tighter">Python, TensorFlow, Matplotlib</h5>
-    </div>
-  </div>
-
-      <div className="block h-full rounded-lg border border-gray-800 p-4 m-3">
-
-        <div className="p-3 text-s font-medium text-gray-300">
-                <li className="p-2">Conducted a research project utilizing Python and TensorFlow to test the accuracy of a convolutional neural network versus a recurrent neural network, specifically an LSTM, on categorizing RNA genomes of coronaviruses</li>
-                <li className="p-2">Implemented data preprocessing techniques that reduced model training time using tokenization</li>
-                <li className="p-2">Submitted the research project to the Long Island Science Congress competition, receiving a Meritorious Award</li>
+  <div className="flex justify-center m-3">
+    <article className="w-4xl">
+      <div className="flex items-center justify-between gap-5">
+        <div>
+          <h3 className="text-2xl font-semibold tracking-tighter">Machine Learning Research Project</h3>
+          <h5 className="text-s tracking-tighter">Python, TensorFlow, Matplotlib  | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/tf-coronaviruses">Link</a></h5>
         </div>
+        <h5 className="text-s tracking-tighter ">September 2022 - April 2023</h5>
       </div>
-
-</article>
-
+      <div className="block h-full rounded-lg p-2">
+          <div className="p-3 text-s font-medium text-gray-900">
+            <li className="p-2">Conducted a research project utilizing Python and TensorFlow to test the accuracy of a convolutional neural network versus a recurrent neural network, specifically an LSTM, on categorizing RNA genomes of coronaviruses</li>
+            <li className="p-2">Implemented data preprocessing techniques that reduced model training time using tokenization</li>
+            <li className="p-2">Submitted the research project to the Long Island Science Congress competition, receiving a Meritorious Award</li>
+          </div>
+      </div>
+    </article>
+  </div>
     )
 }
 export function HorrorGameProjectCard( ){
     return (
-<article className="projectCard rounded-xl border border-gray-600 bg-black p-6">
-  <div className="flex items-center gap-5">
-
-    <div>
-      <h3 className="text-2xl font-semibold tracking-tighter">SCP: Hours To Go</h3>
-      <h5 className="text-s tracking-tighter">C++, Unreal Engine 5, Steamworks API | <a target="_blank" className="cardLink" href="https://store.steampowered.com/app/2795370/SCP_Hours_to_Go/">Link</a></h5>
-    </div>
-  </div>
-
-      <div className="block h-full rounded-lg border border-gray-800 p-4 m-3">
-
-        <div className="p-3 text-s font-medium text-gray-300">
-                <li className="p-2">Developed a 3D horror game using Unreal Engine 5 with C++ and blueprints, connecting with Steamworks API, and releasing on Steam, garnering 200 paid downloads</li>
-                <li className="p-2">Created intricate puzzles, engaging environments, and enemy logic with complicated functionalities</li>
-                <li className="p-2">Implemented features such as controller support, localization for multiple languages, Steam achievement support, accessibility for different screen sizes, and subtitles</li>
-                <li className="p-2">Optimized performance 200% by ensuring efficient programming, reducing polygon count, and baking lighting</li>
+    <div className="flex justify-center m-3">
+      <article className="w-4xl">
+        <div className="flex items-center justify-between gap-5">
+          <div>
+            <h3 className="text-2xl font-semibold tracking-tighter">SCP: Hours To Go</h3>
+            <h5 className="text-s tracking-tighter">C++, Unreal Engine 5, Steamworks API | <a target="_blank" className="cardLink" href="https://store.steampowered.com/app/2795370/SCP_Hours_to_Go/">Link</a></h5>
+          </div>
+          <h5 className="text-s tracking-tighter ">March 2023 - June 2024</h5>
         </div>
-      </div>
-
-</article>
-
+        <div className="block h-full rounded-lg p-2">
+            <div className="p-3 text-s font-medium text-gray-900">
+              <li className="p-2">Developed a 3D horror game using Unreal Engine 5 with C++ and blueprints, connecting with Steamworks API, and releasing on Steam, garnering 200 paid downloads</li>
+              <li className="p-2">Created intricate puzzles, engaging environments, and enemy logic with complicated functionalities</li>
+              <li className="p-2">Implemented features such as controller support, localization for multiple languages, Steam achievement support, accessibility for different screen sizes, and subtitles</li>
+              <li className="p-2">Optimized performance 200% by ensuring efficient programming, reducing polygon count, and baking lighting</li>
+            </div>
+        </div>
+      </article>
+    </div>
     )
 }
 export function FightingGameProjectCard( ){
     return (
-<article className="projectCard rounded-xl border border-gray-600 bg-black p-6">
-  <div className="flex items-center gap-5">
-
-    <div>
-      <h3 className="text-2xl font-semibold tracking-tighter">Rhythm of the Knight</h3>
-      <h5 className="text-s tracking-tighter">C#, Unity Engine, Photon Engine | <a target="_blank" className="cardLink" href="https://themangoeffect.itch.io/rhythm-of-the-knight">Link</a></h5>
-    </div>
-  </div>
-
-      <div className="block h-full rounded-lg border border-gray-800 p-4 m-3">
-
-        <div className="p-3 text-s font-medium text-gray-300">
-                <li className="p-2">Developed a 2D rhythm-based fighting game using Unity with C#</li>
-                <li className="p-2">Integrated online capabilities with Photon Engine, allowing for multiplayer player versus player gameplay</li>
-                <li className="p-2">Created custom enemy logic for the offline mode using algorithms and a finite-state machine</li>
+    <div className="flex justify-center m-3">
+      <article className="w-4xl">
+        <div className="flex items-center justify-between gap-5">
+          <div>
+            <h3 className="text-2xl font-semibold tracking-tighter">Rhythm of the Knight</h3>
+            <h5 className="text-s tracking-tighter">C#, Unity Engine, Photon Engine | <a target="_blank" className="cardLink" href="https://themangoeffect.itch.io/rhythm-of-the-knight">Link</a></h5>
+          </div>
+          <h5 className="text-s tracking-tighter ">March 2021 - May 2021</h5>
         </div>
-      </div>
-
-</article>
-
+        <div className="block h-full rounded-lg p-2">
+            <div className="p-3 text-s font-medium text-gray-900">
+              <li className="p-2">Developed a 2D rhythm-based fighting game using Unity with C#</li>
+              <li className="p-2">Integrated online capabilities with Photon Engine, allowing for multiplayer player versus player gameplay</li>
+              <li className="p-2">Created custom enemy logic for the offline mode using algorithms and a finite-state machine</li>
+            </div>
+        </div>
+      </article>
+    </div>
     )
 }
 export function E3ProjectCard( ){
   return (
-<article className="projectCard rounded-xl border border-gray-600 bg-black p-6">
-<div className="flex items-center gap-5">
-
-  <div>
-    <h3 className="text-2xl font-semibold tracking-tighter">Software Engineer, Intern</h3>
-    <h5 className="text-s tracking-tighter">E3 Biogenetics (pre-seed startup)</h5>
-  </div>
-</div>
-
-    <div className="block h-full rounded-lg border border-gray-800 p-4 m-3">
-
-      <div className="p-3 text-s font-medium text-gray-300">
+    <div className="flex justify-center m-3">
+      <article className="w-4xl">
+        <div className="flex items-center justify-between gap-5">
+          <div>
+            <h3 className="text-2xl font-semibold tracking-tighter">Software Engineer, Intern</h3>
+            <h5 className="text-s tracking-tighter">E3 Biogenetics (pre-seed startup)</h5>
+          </div>
+          <h5 className="text-s tracking-tighter ">July 2022 - September 2022</h5>
+        </div>
+        <div className="block h-full rounded-lg p-2">
+            <div className="p-3 text-s font-medium text-gray-900">
               <li className="p-2">Created a daily survey web application using JavaScript and PHP, garnering 50 daily users</li>
               <li className="p-2">Implemented an innovative account system using PHP and SQL with a MySQL database, integrating with the survey application with graphing of the user’s previous answers using phpChart</li>
               <li className="p-2">Executed the integration of a language toggle feature using JSON and JavaScript, increasing accessibility</li>
-      </div>
+            </div>
+        </div>
+      </article>
     </div>
-
-</article>
-
   )
 }
