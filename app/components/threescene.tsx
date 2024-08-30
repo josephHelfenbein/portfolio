@@ -2,7 +2,7 @@
 import { useRef, useEffect, useState, use } from 'react';
 import * as THREE from 'three';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { useGLTF } from '@react-three/drei';
+import { isWebGL2Available, useGLTF } from '@react-three/drei';
 
 const PlaneModel = () =>{
     const gltf = useGLTF('/plane.glb');
@@ -271,7 +271,14 @@ const Scene = () => {
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
             setOnMobile(true);
     })
+    const canUseWebgl = isWebGL2Available();
+    const [webglEnabled, setWebglEnabled] = useState(false);
+    useEffect(()=>{
+        setWebglEnabled(canUseWebgl);
+    },[canUseWebgl]);
     return (
+    <div className='threecontainer'>
+        { webglEnabled ?
         <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
         <ambientLight intensity={0.1} />
         {!onMobile&&
@@ -303,6 +310,10 @@ const Scene = () => {
         <pointLight position={[1.5, -12, 4]} intensity={80} color={'#aaaaff'} />
         <CameraController />
         </Canvas>
+        : 
+                <p className='webglErrorText' style={{textAlign:'center', padding:'5px', fontSize:'12px', marginLeft:'50px', marginRight:'50px'}}>WebGL2 is not available on this device. Please try opening this website with another browser.</p>
+        }
+        </div> 
     );
-};
+}
 export default Scene;

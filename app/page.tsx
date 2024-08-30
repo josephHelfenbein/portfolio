@@ -4,7 +4,7 @@ import Footer from './components/footer';
 import {PhysicsProjectCard, HorrorGameProjectCard, ScienceProjectCard, FightingGameProjectCard, E3ProjectCard, TravelAmuletProjectCard} from './components/project-cards';
 import ThreeScene from './components/threescene';
 import Links from './components/bottom-text';
-import { Suspense } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { ScaleLoader } from 'react-spinners';
 import { AnimatedBackground } from 'animated-backgrounds';
 import IntroCard from './components/intro-card';
@@ -26,9 +26,7 @@ export default function Page() {
         </div>
       }>
       <AnimatedBackground animationName="auroraBorealis" style={{ opacity: 0.07 }} />
-      <div className='threecontainer'>
-        <ThreeScene />
-      </div>
+      <ThreeScene />
       <h1 style={{display:'none'}}>My Portfolio</h1>
       <IntroCard />
       <div className='projectCard'>

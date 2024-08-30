@@ -26,6 +26,15 @@
 .selectionsFooter{
   z-index: 60;
 }
+.webglErrorText{
+  opacity: 0;
+  animation-name: textFadeWebGLError;
+  animation-duration: 15s;
+}
+@keyframes textFadeWebGLError {
+  from{opacity: 1;}
+  to{opacity: 0;}
+}
 :root {
   --sh-class: #4c97f8;
   --sh-identifier: white;
