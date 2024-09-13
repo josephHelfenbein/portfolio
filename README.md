@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/josephHelfenbein/portfolio">
-    <img src="public/1708555168208.jpg" alt="Logo" width="80" height="80">
+    <img src="public/1708555168208.jpg" alt="Logo" width="80">
   </a>
 
 <h3 align="center">Portfolio</h3>
