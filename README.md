@@ -77,6 +77,9 @@ A simple portfolio with my resume information on a website.
 * [![React.js][React.js]][React-url]
 * [![Tailwind][Tailwind]][Tailwind-url]
 
+### Powered By
+
+* [![Vercel][Vercel]][Vercel-url]
 
 
 <!-- LICENSE -->
@@ -139,3 +142,5 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [React]: https://img.shields.io/badge/react-61DAFB?logo=react&style=for-the-badge&logoColor=black
 [Tailwind]: https://img.shields.io/badge/tailwind%20css-06B6D4?logo=tailwindcss&style=for-the-badge&logoColor=white
 [Tailwind-url]: https://tailwindcss.com/
+[Vercel]: https://img.shields.io/badge/vercel-000000?logo=vercel&style=for-the-badge&logoColor=white
+[Vercel-url]: https://www.vercel.com/
