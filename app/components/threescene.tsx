@@ -1,5 +1,5 @@
 'use client';
-import { useRef, useEffect, useState, use } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { isWebGL2Available, useGLTF } from '@react-three/drei';
@@ -55,7 +55,7 @@ const KeyboardModel = () => {
             if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
                 {
                     ref.current.position.x = 0.6;
-                    ref.current.position.y = -1.0;
+                    ref.current.position.y = -0.8;
                     ref.current.position.z = 2;
                     let size = 0.4;
                     ref.current.scale.x = size;
@@ -64,7 +64,7 @@ const KeyboardModel = () => {
                 }
             else{
                 ref.current.position.x = 2.6;
-                ref.current.position.y = -0.5;
+                ref.current.position.y = 0;
                 ref.current.position.z = 0;
             }
         }
@@ -95,13 +95,13 @@ const MonitorModel = () => {
             if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
                 {
                     ref.current.position.x = -0.40;
-                    ref.current.position.y = -2;
+                    ref.current.position.y = -1.8;
                     ref.current.position.z = 2;
                     size = .2;
                 }
             else{
                 ref.current.position.x = -3.40;
-                ref.current.position.y = -0.8;
+                ref.current.position.y = -0.3;
                 ref.current.position.z = -1;
                 size = .6;
             }
@@ -249,8 +249,9 @@ const CameraController = () => {
     const {camera} = useThree();
     const [scrollY, setScrollY] = useState(0);
     useEffect(()=>{
+        const height = window.innerHeight;
         const handleScroll = () => {
-            setScrollY(window.scrollY * window.innerHeight / 900);
+            setScrollY(window.scrollY * height / 1000);
         };
         window.addEventListener('scroll', handleScroll);
         return ()=>{window.removeEventListener('scroll', handleScroll);};
@@ -295,11 +296,6 @@ const Scene = () => {
         }
         <KeyboardModel />
         <MonitorModel />
-        <PlaneModel />
-        <TravelAmulet />
-        <SphereModel />
-        <SCPModel />
-        <Knight />
         <pointLight position={[2, -5, 2]} intensity={60} color={'#ffffff'} />
         {!onMobile &&
             <pointLight position={[-2, -8, 0]} intensity={80} color={'#aaaaff'} />

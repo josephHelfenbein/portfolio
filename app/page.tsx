@@ -9,6 +9,7 @@ import { ScaleLoader } from 'react-spinners';
 import { AnimatedBackground } from 'animated-backgrounds';
 import IntroCard from './components/intro-card';
 import LabelItem from './components/label-item';
+import GridComponent from './components/grid';
 export default function Page() {
   return (
     <main>
@@ -25,14 +26,18 @@ export default function Page() {
           </div>
         </div>
       }>
-      <AnimatedBackground animationName="auroraBorealis" style={{ opacity: 0.07 }} />
       <ThreeScene />
+      <AnimatedBackground animationName="auroraBorealis" style={{ opacity: 0.07 }} />
       <h1 style={{display:'none'}}>My Portfolio</h1>
+      
       <IntroCard />
+      
       <div className='projectCard'>
         <LabelItem label={"Work Experience"} />
         <E3ProjectCard />
       </div>
+      {/*
+      
       <div className='projectCard'>
         <LabelItem label={"Project Experience"} />
         <TravelAmuletProjectCard />
@@ -41,6 +46,9 @@ export default function Page() {
         <ScienceProjectCard />
         <FightingGameProjectCard />
       </div>
+      */}
+      <LabelItem label={"Project Experience"} />
+      <GridComponent />
 
       <Links />
 

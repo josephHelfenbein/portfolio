@@ -1,116 +1,149 @@
 import { useState, useEffect } from "react";
-export function PhysicsProjectCard( ){
-    return (
-  <div className="flex justify-center m-3">
-    <article className="w-4xl">
-      <div className="flex items-center justify-between gap-5">
-        <div>
-          <h3 className="text-2xl font-semibold tracking-tighter">Physics Engine</h3>
-          <h5 className="text-s tracking-tighter">JavaScript, WebGL, GLSL, Bootstrap, Git | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/physics-sandbox">Link</a></h5>
-        </div>
-        <h5 className="text-s tracking-tighter ">June 2024 - July 2024</h5>
-      </div>
-      <div className="block h-full rounded-lg p-2">
-          <div className="p-3 text-s font-medium text-gray-900">
-            <li className="p-2">Developed a physics engine web application using WebGL and JavaScript</li>
-            <li className="p-2">Implemented advanced algorithms for real-time ray-traced shadows, specular highlights, and rigidbody dynamics</li>
-            <li className="p-2">Utilized glMatrix for updating the vectors of the objects and camera to the model and view matrices for WebGL</li>
-          </div>
-      </div>
-    </article>
-  </div>
-    )
-}
-export function TravelAmuletProjectCard(){
+export function PhysicsProjectCard(){
   return (
-    <div className="flex justify-center m-3">
+    <div className="flex justify-center m-8">
     <article className="w-4xl">
-      <div className="flex items-center justify-between gap-5">
+    <img src="./physicssandbox.png" width={32} />
+    <h3 className="text-xl font-semibold tracking-tighter">Physics Sandbox</h3>
+      <div className="flex items-start justify-between gap-5">
         <div>
-          <h3 className="text-2xl font-semibold tracking-tighter">TravelAmulet</h3>
-          <h5 className="text-s tracking-tighter">Next.js, React, TypeScript, MySQL, Bootstrap, Git | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/travel-amulet">Link</a></h5>
+          
+          <h5 className="text-sm tracking-tighter">JavaScript, WebGL, GLSL, Bootstrap, Git<br/> | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/physics-sandbox">GitHub</a> | <a target="_blank" className="cardLink" href="https://josephhelfenbein.github.io/physics-sandbox/">Link</a></h5>
         </div>
-        <h5 className="text-s tracking-tighter">July 2024 - August 2024</h5>
+        <h5 className="text-sm tracking-tighter">June 2024 - July 2024</h5>
       </div>
       <div className="block h-full rounded-lg p-2">
-          <div className="p-3 text-s font-medium text-gray-900">
-            <li className="p-2">Worked with a teammate to develop a web application that lets users take a quiz for travel preferences, and then uses TiDB Vector Search to return a list of matching countries, each with an overview and a list of top cities</li>
-            <li className="p-2">Stored country information from CountryWise API to the MySQL database to shorten loading times by 300%</li>
-            <li className="p-2">Used the GPT-4o mini LLM model from OpenAI API to display an explanation of how the returned country fits</li>
-            <li className="p-2">Implemented Google Maps API to find the top cities, and upon selecting one, find nearby hotels and display a map of the city. Nearby airports and flight prices are also displayed using Amadeus API</li>
-            <li className="p-2">Built an account and user management system using NextAuth, Prisma, and MySQL, and a visually appealing UI/UX using Bootstrap, React, and Three.js that communicates efficiently with the server</li>
+          <div className="p-3 text-sm font-medium text-gray-900">
+            <p className="p-2">A rigid body physics engine with simulated cubes and spheres. It has real-time raytraced shadows and a Blinn-Phong shader using WebGL.</p>
           </div>
       </div>
     </article>
   </div>
   )
 }
-export function ScienceProjectCard( ){
-    return (
-  <div className="flex justify-center m-3">
+export function MaterialProjectCard(){
+  return (
+    <div className="flex justify-center m-8">
     <article className="w-4xl">
-      <div className="flex items-center justify-between gap-5">
+    <h3 className="text-xl font-semibold tracking-tighter">Material Viewer</h3>
+      <div className="flex items-start justify-between gap-5">
         <div>
-          <h3 className="text-2xl font-semibold tracking-tighter">Machine Learning Research Project</h3>
-          <h5 className="text-s tracking-tighter">Python, TensorFlow, Matplotlib  | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/tf-coronaviruses">Link</a></h5>
+          <h5 className="text-sm tracking-tighter">C++, OpenGL, GLSL, Git<br/> | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/material-viewer">GitHub</a></h5>
         </div>
-        <h5 className="text-s tracking-tighter ">September 2022 - April 2023</h5>
+        <h5 className="text-sm tracking-tighter">September 2024 - Current</h5>
       </div>
       <div className="block h-full rounded-lg p-2">
-          <div className="p-3 text-s font-medium text-gray-900">
-            <li className="p-2">Conducted a research project utilizing Python and TensorFlow to test the accuracy of a convolutional neural network versus a recurrent neural network, specifically an LSTM, on categorizing RNA genomes of coronaviruses</li>
-            <li className="p-2">Implemented data preprocessing techniques that reduced model training time using tokenization</li>
-            <li className="p-2">Submitted the research project to the Long Island Science Congress competition, receiving a Meritorious Award</li>
+          <div className="p-3 text-sm font-medium text-gray-900">
+            <p className="p-2">Currently developing a PBR material viewer desktop and web application for easy previewing of PBR materials.</p>
           </div>
       </div>
     </article>
   </div>
-    )
+  )
 }
-export function HorrorGameProjectCard( ){
-    return (
-    <div className="flex justify-center m-3">
-      <article className="w-4xl">
-        <div className="flex items-center justify-between gap-5">
-          <div>
-            <h3 className="text-2xl font-semibold tracking-tighter">SCP: Hours To Go</h3>
-            <h5 className="text-s tracking-tighter">C++, Unreal Engine 5, Steamworks API | <a target="_blank" className="cardLink" href="https://store.steampowered.com/app/2795370/SCP_Hours_to_Go/">Link</a></h5>
+export function GameRecommendCard(){
+  return (
+    <div className="flex justify-center m-8">
+    <article className="w-4xl">
+    <img src="./gamerecommend.svg" width={32} />
+    <h3 className="text-xl font-semibold tracking-tighter">GameRecommend AI</h3>
+      <div className="flex items-start justify-between gap-5">
+        <div>
+          <h5 className="text-sm tracking-tighter">Next.js, React, TypeScript, Tailwind CSS <br /> | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/gamerecommend-ai">GitHub</a> | <a target="_blank" className="cardLink" href="https://gamerecommend.vercel.app/">Link</a></h5>
+        </div>
+        <h5 className="text-sm tracking-tighter">United Hacks V3 submission (weekend)</h5>
+      </div>
+      <div className="block h-full rounded-lg p-2">
+          <div className="p-3 text-sm font-medium text-gray-900">
+            <p className="p-2">Utilizes AI to find similar games to any game you like. All you need to do is enter in a game you like, press the button, and the AI will return 5 games it thinks you will like, along with reasons why.</p>
           </div>
-          <h5 className="text-s tracking-tighter ">March 2023 - June 2024</h5>
-        </div>
-        <div className="block h-full rounded-lg p-2">
-            <div className="p-3 text-s font-medium text-gray-900">
-              <li className="p-2">Developed a 3D horror game using Unreal Engine 5 with C++ and blueprints, connecting with Steamworks API, and releasing on Steam, garnering 200 paid downloads</li>
-              <li className="p-2">Created intricate puzzles, engaging environments, and enemy logic with complicated functionalities</li>
-              <li className="p-2">Implemented features such as controller support, localization for multiple languages, Steam achievement support, accessibility for different screen sizes, and subtitles</li>
-              <li className="p-2">Optimized performance 200% by ensuring efficient programming, reducing polygon count, and baking lighting</li>
-            </div>
-        </div>
-      </article>
-    </div>
-    )
+      </div>
+    </article>
+  </div>
+  )
 }
-export function FightingGameProjectCard( ){
-    return (
-    <div className="flex justify-center m-3">
-      <article className="w-4xl">
-        <div className="flex items-center justify-between gap-5">
-          <div>
-            <h3 className="text-2xl font-semibold tracking-tighter">Rhythm of the Knight</h3>
-            <h5 className="text-s tracking-tighter">C#, Unity Engine, Photon Engine | <a target="_blank" className="cardLink" href="https://themangoeffect.itch.io/rhythm-of-the-knight">Link</a></h5>
+export function TravelAmuletProjectCard(){
+  return (
+    <div className="flex justify-center m-8">
+    <article className="w-4xl">
+    <img src="./travelamulet-icon.png" width={32} />
+    <h3 className="text-xl font-semibold tracking-tighter">TravelAmulet</h3>
+      <div className="flex items-start justify-between gap-5">
+        <div>
+          <h5 className="text-sm tracking-tighter">Next.js, React, TypeScript, MySQL, Bootstrap<br/> | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/travel-amulet">GitHub</a> | <a target="_blank" className="cardLink" href="https://travelamulet.vercel.app/">Link</a></h5>
+        </div>
+        <h5 className="text-sm tracking-tighter">TiDB Hackathon 2024 submission <br />(1 month)</h5>
+      </div>
+      <div className="block h-full rounded-lg p-2">
+          <div className="p-3 text-sm font-medium text-gray-900">
+            <p className="p-2">Lets users take a quiz for travel preferences, and then uses TiDB Vector Search to return a list of matching countries, each with an overview and a list of top cities, which have nearby hotels and flight prices.</p>
           </div>
-          <h5 className="text-s tracking-tighter ">March 2021 - May 2021</h5>
+      </div>
+    </article>
+  </div>
+  )
+}
+export function ScienceProjectCard(){
+  return (
+    <div className="flex justify-center m-8">
+    <article className="w-4xl">
+    <h3 className="text-xl font-semibold tracking-tighter">TensorFlow Coronaviruses</h3>
+      <div className="flex items-start justify-between gap-5">
+        <div>
+          <h5 className="text-sm tracking-tighter">Python, TensorFlow, Matplotlib<br/> | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/tf-coronaviruses">GitHub</a></h5>
         </div>
-        <div className="block h-full rounded-lg p-2">
-            <div className="p-3 text-s font-medium text-gray-900">
-              <li className="p-2">Developed a 2D rhythm-based fighting game using Unity with C#</li>
-              <li className="p-2">Integrated online capabilities with Photon Engine, allowing for multiplayer player versus player gameplay</li>
-              <li className="p-2">Created custom enemy logic for the offline mode using algorithms and a finite-state machine</li>
-            </div>
+        <h5 className="text-sm tracking-tighter">September 2022 - April 2023</h5>
+      </div>
+      <div className="block h-full rounded-lg p-2">
+          <div className="p-3 text-sm font-medium text-gray-900">
+            <p className="p-2">A very simple project I did for the Long Island Science Congress competition that tests whether a convolutional neural network or recurrent neural network is better for classification of coronavirus RNA, winning a Meritorious Award.  </p>
+          </div>
+      </div>
+    </article>
+  </div>
+  )
+}
+export function HorrorGameProjectCard(){
+  return (
+    <div className="flex justify-center m-8">
+    <article className="w-4xl">
+    <img src="./scpicon.jpg" width={32} />
+    <h3 className="text-xl font-semibold tracking-tighter">SCP: Hours To Go</h3>
+      <div className="flex items-start justify-between gap-5">
+        <div>
+          <h5 className="text-sm tracking-tighter">C++, Unreal Engine 5, Steamworks API<br/> | <a target="_blank" className="cardLink" href="https://store.steampowered.com/app/2795370/SCP_Hours_to_Go/">Link</a></h5>
         </div>
-      </article>
-    </div>
-    )
+        <h5 className="text-sm tracking-tighter">March 2023 - June 2024</h5>
+      </div>
+      <div className="block h-full rounded-lg p-2">
+          <div className="p-3 text-sm font-medium text-gray-900">
+            <p className="p-2">A survival horror escape room game based on the SCP Foundation Wiki. A catastrophic event shuts down the facility, leaving you alone in the security room. Solve puzzles and contain loose SCPs to escape, or survive for as long as possible for a high score. </p>
+          </div>
+      </div>
+    </article>
+  </div>
+  )
+}
+export function FightingGameProjectCard(){
+  return (
+    <div className="flex justify-center m-8">
+    <article className="w-4xl">
+    <img src="./rhythmofknighticon.png" width={32} />
+    <h3 className="text-xl font-semibold tracking-tighter">Rhythm of the Knight</h3>
+      <div className="flex items-start justify-between gap-5">
+        <div>
+          <h5 className="text-sm tracking-tighter">C#, Unity Engine, Photon Engine<br/> | <a target="_blank" className="cardLink" href="https://themangoeffect.itch.io/rhythm-of-the-knight">Link</a></h5>
+        </div>
+        <h5 className="text-sm tracking-tighter">March 2021 - May 2021</h5>
+      </div>
+      <div className="block h-full rounded-lg p-2">
+          <div className="p-3 text-sm font-medium text-gray-900">
+            <p className="p-2">A rhythm-based retro-style fighting game. Use a sword and shield and fly around the map, fighting your nemesis on the rhythm. When the rhythm bar hits green, attack! Online 1v1 is also available, just write a code in the room ID for the game room. </p>
+          </div>
+      </div>
+    </article>
+  </div>
+  )
 }
 export function E3ProjectCard( ){
   return (
@@ -119,7 +152,7 @@ export function E3ProjectCard( ){
         <div className="flex items-center justify-between gap-5">
           <div>
             <h3 className="text-2xl font-semibold tracking-tighter">Software Engineer, Intern</h3>
-            <h5 className="text-s tracking-tighter">E3 Biogenetics (pre-seed startup)</h5>
+            <h5 className="text-s tracking-tighter">E3 Biogenetics</h5>
           </div>
           <h5 className="text-s tracking-tighter ">July 2022 - September 2022</h5>
         </div>
