@@ -147,17 +147,17 @@ export function FightingGameProjectCard(){
 }
 export function E3ProjectCard( ){
   return (
-    <div className="flex justify-center m-3">
-      <article className="w-4xl">
+    <div className="flex justify-center p-5 ">
+      <article className="max-w-4xl">
         <div className="flex items-center justify-between gap-5">
           <div>
-            <h3 className="text-2xl font-semibold tracking-tighter">Software Engineer, Intern</h3>
-            <h5 className="text-s tracking-tighter">E3 Biogenetics</h5>
+            <h3 className="text-xl md:text-2xl font-semibold tracking-tighter">Software Engineer, Intern</h3>
+            <h5 className="text-sm md:text-base tracking-tighter">E3 Biogenetics</h5>
           </div>
-          <h5 className="text-s tracking-tighter ">July 2022 - September 2022</h5>
+          <h5 className="text-base tracking-tighter ">July 2022 - September 2022</h5>
         </div>
         <div className="block h-full rounded-lg p-2">
-            <div className="p-3 text-s font-medium text-gray-900">
+            <div className="p-3 text-sm md:text-base font-medium text-gray-900">
               <li className="p-2">Created a daily survey web application using JavaScript and PHP, garnering 50 daily users</li>
               <li className="p-2">Implemented an innovative account system using PHP and SQL with a MySQL database, integrating with the survey application with graphing of the user’s previous answers using phpChart</li>
               <li className="p-2">Executed the integration of a language toggle feature using JSON and JavaScript, increasing accessibility</li>

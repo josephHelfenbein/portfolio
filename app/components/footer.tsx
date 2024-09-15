@@ -53,7 +53,7 @@ function EmailIcon(){
 export default function Footer() {
   return (
     <footer className="mb-16 selectionsFooter">
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-gray-700 md:flex-row md:space-x-4 md:space-y-0 ">
+      <ul className="text-sm md:text-base mt-6 md:mt-8 flex flex-col space-x-0 space-y-2 text-gray-700 md:flex-row md:space-x-4 md:space-y-0 ">
         <li>
           <a
             className="flex items-center transition-all hover:text-blue-800 "

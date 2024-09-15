@@ -32,23 +32,19 @@ export default function Page() {
       
       <IntroCard />
       
-      <div className='projectCard'>
+      <div className='flex justify-center mr-5 ml-5'>
+      <div className='projectCard bg-slate-50 p-2 rounded-xl shadow-lg max-w-5xl'>
         <LabelItem label={"Work Experience"} />
         <E3ProjectCard />
       </div>
-      {/*
-      
-      <div className='projectCard'>
-        <LabelItem label={"Project Experience"} />
-        <TravelAmuletProjectCard />
-        <PhysicsProjectCard />
-       <HorrorGameProjectCard />
-        <ScienceProjectCard />
-        <FightingGameProjectCard />
       </div>
-      */}
+      
+      <div className='flex justify-center'>
+      <div className='max-w-5xl bg-slate-50 p-2 rounded-xl shadow-lg mb-52'>
       <LabelItem label={"Project Experience"} />
       <GridComponent />
+      </div>
+      </div>
 
       <Links />
 
