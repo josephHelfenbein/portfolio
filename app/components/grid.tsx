@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Dialog, DialogPanel } from '@headlessui/react';
 import LabelItem from "./label-item";
-import { TravelAmuletProjectCard, GameRecommendCard, PhysicsProjectCard, HorrorGameProjectCard, FightingGameProjectCard, ScienceProjectCard, MaterialProjectCard } from "./project-cards";
+import { TravelAmuletProjectCard, GameRecommendCard, PhysicsProjectCard, HorrorGameProjectCard, FightingGameProjectCard, ScienceProjectCard, MaterialProjectCard, MendPathProjectCard } from "./project-cards";
 
 export default function GridComponent(){
     const [open, setOpen] = useState(false);
@@ -14,6 +14,7 @@ export default function GridComponent(){
         </div>),
         (<div>
             <TravelAmuletProjectCard />
+            <MendPathProjectCard />
             <GameRecommendCard />
         </div>),
         (<div>
