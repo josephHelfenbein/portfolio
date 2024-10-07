@@ -3,15 +3,33 @@ export function PhysicsProjectCard(){
   return (
     <div className="flex justify-center m-8">
     <article className="w-4xl">
-    <img src="./physicssandbox.png" width={32} />
-    <h3 className="text-xl font-semibold tracking-tighter">Physics Sandbox</h3>
-      <div className="flex items-start justify-between gap-5">
-        <div>
-          
-          <h5 className="text-sm tracking-tighter">JavaScript, WebGL, GLSL, Bootstrap, Git<br/> | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/physics-sandbox">GitHub</a> | <a target="_blank" className="cardLink" href="https://josephhelfenbein.github.io/physics-sandbox/">Link</a></h5>
+    <div className="flex items-start justify-start gap-2">
+      <img src="./physicssandbox.png" width={32} />
+      <h3 className="text-xl font-semibold tracking-tighter">Physics Sandbox</h3>
+    </div>
+    <div>
+      <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
+          <img src="https://img.shields.io/badge/javascript-yellow?logo=javascript&style=for-the-badge&logoColor=white" />
+          <img src="https://img.shields.io/badge/webgl-red?logo=webgl&style=for-the-badge&logoColor=white" />
+          <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
+          </div>
+          <h5 className="text-sm tracking-tighter">June 2024 - July 2024</h5>
+          <div className="flex gap-0.5">
+          <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/physics-sandbox">
+          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+          </svg>
+          <h5 className="text-sm tracking-tighter">
+          GitHub</h5>
+          </a> |
+          <a target="_blank" className="cardLink flex gap-0.5" href="https://josephhelfenbein.github.io/physics-sandbox/">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
+          </svg>
+          <h5 className="text-sm tracking-tighter">Link</h5>
+          </a> 
+          </div>
         </div>
-        <h5 className="text-sm tracking-tighter">June 2024 - July 2024</h5>
-      </div>
       <div className="block h-full rounded-lg p-2">
           <div className="p-3 text-sm font-medium text-gray-900">
             <p className="p-2">A rigid body physics engine with simulated cubes and spheres. It has real-time raytraced shadows and a Blinn-Phong shader using WebGL.</p>
@@ -26,12 +44,22 @@ export function MaterialProjectCard(){
     <div className="flex justify-center m-8">
     <article className="w-4xl">
     <h3 className="text-xl font-semibold tracking-tighter">Material Viewer</h3>
-      <div className="flex items-start justify-between gap-5">
-        <div>
-          <h5 className="text-sm tracking-tighter">C++, OpenGL, GLSL, Git<br/> | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/material-viewer">GitHub</a></h5>
+    <div>
+      <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
+          <img src="https://img.shields.io/badge/c++-00599C?logo=cplusplus&style=for-the-badge&logoColor=white" />
+          <img src="https://img.shields.io/badge/opengl-5586A4?logo=opengl&style=for-the-badge&logoColor=white" />
+          </div>
+          <h5 className="text-sm tracking-tighter">September 2024 - Current</h5>
+          <div className="flex gap-0.5">
+          <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/material-viewer">
+          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+          </svg>
+          <h5 className="text-sm tracking-tighter">
+          GitHub</h5>
+          </a> 
+          </div>
         </div>
-        <h5 className="text-sm tracking-tighter">September 2024 - Current</h5>
-      </div>
       <div className="block h-full rounded-lg p-2">
           <div className="p-3 text-sm font-medium text-gray-900">
             <p className="p-2">Currently developing a PBR material viewer desktop and web application for easy previewing of PBR materials.</p>
@@ -211,13 +239,27 @@ export function ScienceProjectCard(){
   return (
     <div className="flex justify-center m-8">
     <article className="w-4xl">
-    <h3 className="text-xl font-semibold tracking-tighter">TensorFlow Coronaviruses</h3>
-      <div className="flex items-start justify-between gap-5">
-        <div>
-          <h5 className="text-sm tracking-tighter">Python, TensorFlow, Matplotlib<br/> | <a target="_blank" className="cardLink" href="https://github.com/josephHelfenbein/tf-coronaviruses">GitHub</a></h5>
+    <div className="flex items-start justify-start gap-2">
+      <h3 className="text-xl font-semibold tracking-tighter">TensorFlow Coronaviruses</h3>
+    </div>
+    <div>
+      <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
+          <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+          <img src="https://img.shields.io/badge/tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+          <img src="https://img.shields.io/badge/matplotlib-212529.svg?logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODAiIGhlaWdodD0iMTgwIiBzdHJva2U9ImdyYXkiPgo8ZyBzdHJva2Utd2lkdGg9IjIiIGZpbGw9IiNGRkYiPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSI4OCIvPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSI2NiIvPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSI0NCIvPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSIyMiIvPgo8cGF0aCBkPSJtOTAsMnYxNzZtNjItMjYtMTI0LTEyNG0xMjQsMC0xMjQsMTI0bTE1MC02MkgyIi8+CjwvZz48ZyBvcGFjaXR5PSIuOCI+CjxwYXRoIGZpbGw9IiM0NEMiIGQ9Im05MCw5MGgxOGExOCwxOCAwIDAsMCAwLTV6Ii8+CjxwYXRoIGZpbGw9IiNCQzMiIGQ9Im05MCw5MCAzNC00M2E1NSw1NSAwIDAsMC0xNS04eiIvPgo8cGF0aCBmaWxsPSIjRDkzIiBkPSJtOTAsOTAtMTYtNzJhNzQsNzQgMCAwLDAtMzEsMTV6Ii8+CjxwYXRoIGZpbGw9IiNEQjMiIGQ9Im05MCw5MC01OC0yOGE2NSw2NSAwIDAsMC01LDM5eiIvPgo8cGF0aCBmaWxsPSIjM0JCIiBkPSJtOTAsOTAtMzMsMTZhMzcsMzcgMCAwLDAgMiw1eiIvPgo8cGF0aCBmaWxsPSIjM0M5IiBkPSJtOTAsOTAtMTAsNDVhNDYsNDYgMCAwLDAgMTgsMHoiLz4KPHBhdGggZmlsbD0iI0Q3MyIgZD0ibTkwLDkwIDQ2LDU4YTc0LDc0IDAgMCwwIDEyLTEyeiIvPgo8L2c+PC9zdmc+&style=for-the-badge&logoColor=white" />
+          <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+          </div>
+          <h5 className="text-sm tracking-tighter">September 2022 - April 2023</h5>
+          <div className="flex gap-0.5">
+          <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/tf-coronaviruses">
+          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+          </svg>
+          <h5 className="text-sm tracking-tighter">
+          GitHub</h5>
+          </a>
+          </div>
         </div>
-        <h5 className="text-sm tracking-tighter">September 2022 - April 2023</h5>
-      </div>
       <div className="block h-full rounded-lg p-2">
           <div className="p-3 text-sm font-medium text-gray-900">
             <p className="p-2">A very simple project I did for the Long Island Science Congress competition that tests whether a convolutional neural network or recurrent neural network is better for classification of coronavirus RNA, winning a Meritorious Award.  </p>
@@ -231,14 +273,26 @@ export function HorrorGameProjectCard(){
   return (
     <div className="flex justify-center m-8">
     <article className="w-4xl">
-    <img src="./scpicon.jpg" width={32} />
-    <h3 className="text-xl font-semibold tracking-tighter">SCP: Hours To Go</h3>
-      <div className="flex items-start justify-between gap-5">
-        <div>
-          <h5 className="text-sm tracking-tighter">C++, Unreal Engine 5, Steamworks API<br/> | <a target="_blank" className="cardLink" href="https://store.steampowered.com/app/2795370/SCP_Hours_to_Go/">Link</a></h5>
+    <div className="flex items-start justify-start gap-2">
+      <img src="./scpicon.jpg" width={32} />
+      <h3 className="text-xl font-semibold tracking-tighter">SCP: Hours To Go</h3>
+    </div>
+    <div>
+      <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
+      <img src="https://img.shields.io/badge/c++-00599C?logo=cplusplus&style=for-the-badge&logoColor=white" />
+          <img src="https://img.shields.io/badge/unreal%20engine-black?logo=unreal%20engine&style=for-the-badge&logoColor=white" />
+          <img src="https://img.shields.io/badge/steamworks%20api-1b2838?style=for-the-badge&logo=steam&logoColor=white" />
+          </div>
+          <h5 className="text-sm tracking-tighter">March 2023 - June 2024</h5>
+          <div className="flex gap-0.5">
+          <a target="_blank" className="cardLink flex gap-0.5" href="https://store.steampowered.com/app/2795370/SCP_Hours_to_Go/">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
+          </svg>
+          <h5 className="text-sm tracking-tighter">Link</h5>
+          </a> 
+          </div>
         </div>
-        <h5 className="text-sm tracking-tighter">March 2023 - June 2024</h5>
-      </div>
       <div className="block h-full rounded-lg p-2">
           <div className="p-3 text-sm font-medium text-gray-900">
             <p className="p-2">A survival horror escape room game based on the SCP Foundation Wiki. A catastrophic event shuts down the facility, leaving you alone in the security room. Solve puzzles and contain loose SCPs to escape, or survive for as long as possible for a high score. </p>
@@ -252,14 +306,26 @@ export function FightingGameProjectCard(){
   return (
     <div className="flex justify-center m-8">
     <article className="w-4xl">
-    <img src="./rhythmofknighticon.png" width={32} />
-    <h3 className="text-xl font-semibold tracking-tighter">Rhythm of the Knight</h3>
-      <div className="flex items-start justify-between gap-5">
-        <div>
-          <h5 className="text-sm tracking-tighter">C#, Unity Engine, Photon Engine<br/> | <a target="_blank" className="cardLink" href="https://themangoeffect.itch.io/rhythm-of-the-knight">Link</a></h5>
+    <div className="flex items-start justify-start gap-2">
+      <img src="./rhythmofknighticon.png" width={32} />
+      <h3 className="text-xl font-semibold tracking-tighter">Rhythm of the Knight</h3>
+    </div>
+    <div>
+      <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
+          <img src="https://img.shields.io/badge/c%23-68217A.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyOCAxMjgiPgo8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTE3LjUgMzMuNWwuMy0uMmMtLjYtMS4xLTEuNS0yLjEtMi40LTIuNmwtNDguMy0yNy44Yy0uOC0uNS0xLjktLjctMy4xLS43LTEuMiAwLTIuMy4zLTMuMS43bC00OCAyNy45Yy0xLjcgMS0yLjkgMy41LTIuOSA1LjR2NTUuN2MwIDEuMS4yIDIuMy45IDMuNGwtLjIuMWMuNS44IDEuMiAxLjUgMS45IDEuOWw0OC4yIDI3LjljLjguNSAxLjkuNyAzLjEuNyAxLjIgMCAyLjMtLjMgMy4xLS43bDQ4LTI3LjljMS43LTEgMi45LTMuNSAyLjktNS40di01NS44Yy4xLS44IDAtMS43LS40LTIuNnptLTUzLjUgNzBjLTIxLjggMC0zOS41LTE3LjctMzkuNS0zOS41czE3LjctMzkuNSAzOS41LTM5LjVjMTQuNyAwIDI3LjUgOC4xIDM0LjMgMjBsLTEzIDcuNWMtNC4yLTcuNS0xMi4yLTEyLjUtMjEuMy0xMi41LTEzLjUgMC0yNC41IDExLTI0LjUgMjQuNXMxMSAyNC41IDI0LjUgMjQuNWM5LjEgMCAxNy4xLTUgMjEuMy0xMi40bDEyLjkgNy42Yy02LjggMTEuOC0xOS42IDE5LjgtMzQuMiAxOS44em01MS00MS41aC0zLjJsLS45IDRoNC4xdjVoLTVsLTEuMiA2aC00LjlsMS4yLTZoLTMuOGwtMS4yIDZoLTQuOGwxLjItNmgtMi41di01aDMuNWwuOS00aC00LjR2LTVoNS4zbDEuMi02aDQuOWwtMS4yIDZoMy44bDEuMi02aDQuOGwtMS4yIDZoMi4ydjV6TTEwMi4zIDY2aDMuOGwuOS00aC0zLjh6Ii8+Cjwvc3ZnPg==&style=for-the-badge" />
+          <img src="https://img.shields.io/badge/unity%20engine-black?logo=unity&style=for-the-badge&logoColor=white" />
+          <img src="https://img.shields.io/badge/photon%20engine-004480.svg?logo=data:image/svg%2bxml;base64,PHN2ZyBoZWlnaHQ9IjgwIiB3aWR0aD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjE0LjQyIDYuNjggNzYuMjcgNzYuMjciPgogIDxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Ik0zNi45NCw1OS4yNmMuMTguMi4zOC40LjU3LjU5bC42LjU4LTEwLjc0LDEzYy0uNjEtLjU0LTEuMjEtMS4xLTEuNzktMS42OFMyNC40NCw3MC42MSwyMy45MSw3MGwxMy0xMC43NFpNNDEuNDMsNjNsLTgsMTQuODdhMzcsMzcsMCwwLDEtNC4wNy0yLjcyTDQwLjA1LDYyYy40NS4zMy45MS42MywxLjM4LjkyWm0tNy03Yy4yOC40Ni41OS45Mi45MiwxLjM3TDIyLjI2LDY4YTM3LjMyLDM3LjMyLDAsMCwxLTIuNzItNC4wNmwxNC44OC04Wm0xMC43Niw4LjgzTDQwLjI0LDgwLjkyYTM4LjI5LDM4LjI5LDAsMCwxLTQuNTEtMS44N2w3LjkyLTE0LjkxcS43Ni4zNSwxLjUzLjYzWk0zMi42LDUyLjE4cS4yOC43OC42MywxLjUzTDE4LjMyLDYxLjY0YTM2LjE2LDM2LjE2LDAsMCwxLTEuODctNC41MkwzMi42LDUyLjE4Wk00OS4yMiw2NS44MmwtMS42OSwxNi44YTM5LjE3LDM5LjE3LDAsMCwxLTQuOC0xTDQ3LjYsNjUuNWMuNTMuMTMsMS4wNy4yMywxLjYyLjMyWk0zMS41NSw0OC4xNWMuMDguNTQuMTksMS4wOC4zMiwxLjYyTDE1LjcsNTQuNjNhMzcuNTcsMzcuNTcsMCwwLDEtLjk1LTQuNzlsMTYuOC0xLjY5Wk0zMS4zLDQ0YzAsLjU1LDAsMS4xMSwwLDEuNjZMMTQuNSw0Ny4yOWEzOCwzOCwwLDAsMSwwLTQuODlMMzEuMyw0NFpNNTMuMzgsNjYuMDYsNTUsODIuODdhMzkuODksMzkuODksMCwwLDEtNC44OSwwbDEuNjItMTYuODFhMTUuMTQsMTUuMTQsMCwwLDAsMS42NSwwWm00LjEzLS41Niw0Ljg3LDE2LjE3YTM5LjE3LDM5LjE3LDAsMCwxLTQuOCwxbC0xLjY5LTE2LjhjLjU0LS4wOSwxLjA5LS4xOSwxLjYyLS4zMlpNMzEuODcsMzkuODVjLS4xMy41NC0uMjQsMS4wOC0uMzIsMS42M2wtMTYuOC0xLjdBMzcuNTcsMzcuNTcsMCwwLDEsMTUuNywzNWwxNi4xNyw0Ljg2Wk02MS40Niw2NC4xNGw3LjkyLDE0LjkxYTM5LjQ2LDM5LjQ2LDAsMCwxLTQuNTIsMS44N0w1OS45Myw2NC43N3EuNzYtLjI4LDEuNTMtLjYzWm0tMjguMi0yOC4zYy0uMjMuNS0uNDUsMS0uNjQsMS41M2wtMTYuMTMtNWEzNy44NiwzNy44NiwwLDAsMSwxLjg5LTQuNTJsMTQuODgsOFpNNjUuMDUsNjIsNzUuNzQsNzUuMTFhNDAsNDAsMCwwLDEtNC4wNywyLjcyTDYzLjY4LDYzYy40Ny0uMjkuOTItLjU5LDEuMzctLjkyWk0zNS4zNSwzMi4zYy0uMzMuNDUtLjY0LjktLjkyLDEuMzdsLTE0Ljg3LThhMzkuMzcsMzkuMzcsMCwwLDEsMi43Mi00LjA2TDM1LjM1LDMyLjNaTTgxLjIsNzBjLS41NC42MS0xLjA5LDEuMi0xLjY3LDEuNzhzLTEuMTgsMS4xNC0xLjc5LDEuNjhMNjcsNjAuNDNsLjYtLjU4LjU3LS41OUw4MS4yLDcwWk0yNy4zNywxNi4xN2wxMC43NCwxMy0uNi41OGMtLjE5LjE5LS4zOS4zOS0uNTcuNTlsLTEzLTEwLjc0Yy41My0uNiwxLjA5LTEuMiwxLjY3LTEuNzhzMS4xOC0xLjE0LDEuNzktMS42N1ptNTguMiw0Ny43NkEzNy4zMiwzNy4zMiwwLDAsMSw4Mi44NSw2OEw2OS43Nyw1Ny4zMWMuMzMtLjQ1LjY0LS45MS45Mi0xLjM3bDE0Ljg4LDhaTTMzLjQ0LDExLjhsOCwxNC44N2MtLjQ3LjI5LS45My42LTEuMzguOTJMMjkuMzcsMTQuNTJhMzcsMzcsMCwwLDEsNC4wNy0yLjcyWk04OC42Niw1Ny4xMmEzNi4xNiwzNi4xNiwwLDAsMS0xLjg3LDQuNTJMNzEuODgsNTMuNzFxLjM0LS43NS42My0xLjUzbDE2LjE1LDQuOTRaTTQwLjI4LDguNjksNDUuMiwyNC44NXEtLjc4LjI4LTEuNTMuNjNMMzUuNzYsMTAuNTZhMzkuNDYsMzkuNDYsMCwwLDEsNC41Mi0xLjg3Wk05MC4zNiw0OS44NGEzNy41NywzNy41NywwLDAsMS0xLDQuNzlMNzMuMjQsNDkuNzdjLjEzLS41NC4yNC0xLjA4LjMyLTEuNjJsMTYuOCwxLjY5Wk00Ny41Myw3LDQ5LjIyLDIzLjhjLS41NS4wOS0xLjA5LjItMS42Mi4zMkw0Mi43Myw4QTM5LjE0LDM5LjE0LDAsMCwxLDQ3LjUzLDdaTTkwLjYxLDQyLjM3YTM2LjEyLDM2LjEyLDAsMCwxLDAsNC44OGwtMTYuOC0xLjYxYzAtLjU1LDAtMS4xLDAtMS42NmwxNi44LTEuNjFaTTU1LDYuNzUsNTMuMzgsMjMuNTZxLS44MywwLTEuNjUsMEw1MC4xMSw2Ljc1YTM5Ljg5LDM5Ljg5LDAsMCwxLDQuODksMFpNODkuNDEsMzVhMzcuNTcsMzcuNTcsMCwwLDEsMSw0Ljc5bC0xNi44LDEuN2MtLjA4LS41NS0uMTktMS4wOS0uMzItMS42M0w4OS40MSwzNVptLTI3LTI3TDU3LjUxLDI0LjEyYy0uNTMtLjEyLTEuMDgtLjIzLTEuNjItLjMyTDU3LjU4LDdhMzkuMTQsMzkuMTQsMCwwLDEsNC44Ljk0Wm03LDIuNjJMNjEuNDYsMjUuNDljLS41MS0uMjQtMS0uNDUtMS41My0uNjRMNjQuODYsOC43YTM5LjQ2LDM5LjQ2LDAsMCwxLDQuNTIsMS44N1pNODYuNzgsMjhhMzcuNzQsMzcuNzQsMCwwLDEsMS44Nyw0LjUybC0xNi4xNCw1Yy0uMTktLjUxLS40MS0xLS42NC0xLjUzTDg2Ljc4LDI4Wk03NS43MSwxNC41LDY1LDI3LjU4Yy0uNDUtLjMyLS45MS0uNjMtMS4zOC0uOTJsOC0xNC44OGEzNywzNywwLDAsMSw0LjA3LDIuNzJabTcuMSw3LjA4YTM4LjIsMzguMiwwLDAsMSwyLjcyLDQuMDVsLTE0Ljg2LDhjLS4yOS0uNDctLjU5LS45My0uOTItMS4zOGwxMy4wNi0xMC43Wm0tNS4wNy01LjQxYy42MS41MywxLjIsMS4wOSwxLjc5LDEuNjdTODAuNjYsMTksODEuMiwxOS42MmwtMTMsMTAuNzVxLS4yOC0uMzItLjU3LS42bC0uNi0uNTgsMTAuNzQtMTNaIi8+Cjwvc3ZnPg==&style=for-the-badge" />
+          </div>
+          <h5 className="text-sm tracking-tighter">March 2021 - May 2021</h5>
+          <div className="flex gap-0.5">
+          <a target="_blank" className="cardLink flex gap-0.5" href="https://themangoeffect.itch.io/rhythm-of-the-knight">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
+          </svg>
+          <h5 className="text-sm tracking-tighter">Link</h5>
+          </a> 
+          </div>
         </div>
-        <h5 className="text-sm tracking-tighter">March 2021 - May 2021</h5>
-      </div>
       <div className="block h-full rounded-lg p-2">
           <div className="p-3 text-sm font-medium text-gray-900">
             <p className="p-2">A rhythm-based retro-style fighting game. Use a sword and shield and fly around the map, fighting your nemesis on the rhythm. When the rhythm bar hits green, attack! Online 1v1 is also available, just write a code in the room ID for the game room. </p>
@@ -275,7 +341,7 @@ export function E3ProjectCard( ){
       <article className="max-w-4xl">
         <div className="flex items-center justify-between gap-5">
           <div>
-            <h3 className="text-xl md:text-2xl font-semibold tracking-tighter">Software Engineer, Intern</h3>
+            <h3 className="text-xl md:text-2xl font-semibold tracking-tighter">Software Engineer Intern</h3>
             <h5 className="text-sm md:text-base tracking-tighter">E3 Biogenetics</h5>
           </div>
           <h5 className="text-base tracking-tighter ">July 2022 - September 2022</h5>
@@ -283,8 +349,8 @@ export function E3ProjectCard( ){
         <div className="block h-full rounded-lg p-2">
             <div className="p-3 text-sm md:text-base font-medium text-gray-900">
               <li className="p-2">Created a daily survey web application using JavaScript and PHP, garnering 50 daily users</li>
-              <li className="p-2">Implemented an innovative account system using PHP and SQL with a MySQL database, integrating with the survey application with graphing of the user’s previous answers using phpChart</li>
-              <li className="p-2">Executed the integration of a language toggle feature using JSON and JavaScript, increasing accessibility</li>
+              <li className="p-2">Implemented a robust account system using PHP and SQL with a MySQL database, allowing users to track their responses over time with visualized data trends from phpChart, enhancing user engagement</li>
+              <li className="p-2">Increased accessibility by integrating a language toggle feature with JSON and JavaScript, enabling seamless language switching, and storing user language preferences for a personalized experience</li>
             </div>
         </div>
       </article>
