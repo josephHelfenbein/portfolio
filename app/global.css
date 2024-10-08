@@ -16,6 +16,28 @@
   font-style: italic;
   color: #4e4eff;
 }
+@keyframes scaling{
+  0%{
+    transform: scale(1);
+    opacity: .5;
+  }
+  50%{
+    opacity: .3;
+  }
+  100%{
+    transform: scale(1.2);
+    opacity:0;
+  }
+}
+.Pulse{
+  width: 20.5rem;
+  height: 11.2rem;
+  border-radius:5px;
+  animation: scaling 1.5s infinite;
+  z-index: 2;
+  border: thick solid #cfe8ff;
+  position:absolute;
+}
 .projectCard{
   margin-top: 400px;
   margin-bottom:200px

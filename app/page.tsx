@@ -42,6 +42,7 @@ export default function Page() {
       <div className='flex justify-center'>
       <div className='max-w-5xl bg-slate-50 p-2 rounded-xl shadow-lg mb-52'>
       <LabelItem label={"Project Experience"} />
+      <h3 className='text-center pb-5'>Click any to view!</h3>
       <GridComponent />
       </div>
       </div>
