@@ -335,6 +335,71 @@ export function FightingGameProjectCard(){
   </div>
   )
 }
+export function PrototypeGameCard(){
+  return (
+    <div className="flex justify-center m-8">
+    <article className="w-4xl">
+    <div className="flex items-start justify-start gap-2">
+      <img src="./prototypeimg.png" width={32} />
+      <h3 className="text-xl font-semibold tracking-tighter">PR0707YP3</h3>
+    </div>
+    <div>
+      <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
+          <img src="https://img.shields.io/badge/c%23-68217A.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyOCAxMjgiPgo8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTE3LjUgMzMuNWwuMy0uMmMtLjYtMS4xLTEuNS0yLjEtMi40LTIuNmwtNDguMy0yNy44Yy0uOC0uNS0xLjktLjctMy4xLS43LTEuMiAwLTIuMy4zLTMuMS43bC00OCAyNy45Yy0xLjcgMS0yLjkgMy41LTIuOSA1LjR2NTUuN2MwIDEuMS4yIDIuMy45IDMuNGwtLjIuMWMuNS44IDEuMiAxLjUgMS45IDEuOWw0OC4yIDI3LjljLjguNSAxLjkuNyAzLjEuNyAxLjIgMCAyLjMtLjMgMy4xLS43bDQ4LTI3LjljMS43LTEgMi45LTMuNSAyLjktNS40di01NS44Yy4xLS44IDAtMS43LS40LTIuNnptLTUzLjUgNzBjLTIxLjggMC0zOS41LTE3LjctMzkuNS0zOS41czE3LjctMzkuNSAzOS41LTM5LjVjMTQuNyAwIDI3LjUgOC4xIDM0LjMgMjBsLTEzIDcuNWMtNC4yLTcuNS0xMi4yLTEyLjUtMjEuMy0xMi41LTEzLjUgMC0yNC41IDExLTI0LjUgMjQuNXMxMSAyNC41IDI0LjUgMjQuNWM5LjEgMCAxNy4xLTUgMjEuMy0xMi40bDEyLjkgNy42Yy02LjggMTEuOC0xOS42IDE5LjgtMzQuMiAxOS44em01MS00MS41aC0zLjJsLS45IDRoNC4xdjVoLTVsLTEuMiA2aC00LjlsMS4yLTZoLTMuOGwtMS4yIDZoLTQuOGwxLjItNmgtMi41di01aDMuNWwuOS00aC00LjR2LTVoNS4zbDEuMi02aDQuOWwtMS4yIDZoMy44bDEuMi02aDQuOGwtMS4yIDZoMi4ydjV6TTEwMi4zIDY2aDMuOGwuOS00aC0zLjh6Ii8+Cjwvc3ZnPg==&style=for-the-badge" />
+          <img src="https://img.shields.io/badge/unity%20engine-black?logo=unity&style=for-the-badge&logoColor=white" />
+          </div>
+          <h5 className="text-sm tracking-tighter">June 2021 - July 2021</h5>
+          <div className="flex gap-0.5">
+          <a target="_blank" className="cardLink flex gap-0.5" href="https://themangoeffect.itch.io/pr0707yp3">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
+          </svg>
+          <h5 className="text-sm tracking-tighter">Link</h5>
+          </a> 
+          </div>
+        </div>
+      <div className="block h-full rounded-lg p-2">
+          <div className="p-3 text-sm font-medium text-gray-900">
+            <p className="p-2">Play as PR0707YP3, a robot in need of a power source. Collect power along your journey as you shoot aliens and drones. Save your ammo, and don't run out of power.</p>
+          </div>
+      </div>
+    </article>
+  </div>
+  )
+}
+export function SpiritBoxGameCard(){
+  return (
+    <div className="flex justify-center m-8">
+    <article className="w-4xl">
+    <div className="flex items-start justify-start gap-2">
+      <img src="./spiritbox.png" width={32} />
+      <h3 className="text-xl font-semibold tracking-tighter">Protect the Spirit Box</h3>
+    </div>
+    <div>
+      <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
+          <img src="https://img.shields.io/badge/c%23-68217A.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyOCAxMjgiPgo8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTE3LjUgMzMuNWwuMy0uMmMtLjYtMS4xLTEuNS0yLjEtMi40LTIuNmwtNDguMy0yNy44Yy0uOC0uNS0xLjktLjctMy4xLS43LTEuMiAwLTIuMy4zLTMuMS43bC00OCAyNy45Yy0xLjcgMS0yLjkgMy41LTIuOSA1LjR2NTUuN2MwIDEuMS4yIDIuMy45IDMuNGwtLjIuMWMuNS44IDEuMiAxLjUgMS45IDEuOWw0OC4yIDI3LjljLjguNSAxLjkuNyAzLjEuNyAxLjIgMCAyLjMtLjMgMy4xLS43bDQ4LTI3LjljMS43LTEgMi45LTMuNSAyLjktNS40di01NS44Yy4xLS44IDAtMS43LS40LTIuNnptLTUzLjUgNzBjLTIxLjggMC0zOS41LTE3LjctMzkuNS0zOS41czE3LjctMzkuNSAzOS41LTM5LjVjMTQuNyAwIDI3LjUgOC4xIDM0LjMgMjBsLTEzIDcuNWMtNC4yLTcuNS0xMi4yLTEyLjUtMjEuMy0xMi41LTEzLjUgMC0yNC41IDExLTI0LjUgMjQuNXMxMSAyNC41IDI0LjUgMjQuNWM5LjEgMCAxNy4xLTUgMjEuMy0xMi40bDEyLjkgNy42Yy02LjggMTEuOC0xOS42IDE5LjgtMzQuMiAxOS44em01MS00MS41aC0zLjJsLS45IDRoNC4xdjVoLTVsLTEuMiA2aC00LjlsMS4yLTZoLTMuOGwtMS4yIDZoLTQuOGwxLjItNmgtMi41di01aDMuNWwuOS00aC00LjR2LTVoNS4zbDEuMi02aDQuOWwtMS4yIDZoMy44bDEuMi02aDQuOGwtMS4yIDZoMi4ydjV6TTEwMi4zIDY2aDMuOGwuOS00aC0zLjh6Ii8+Cjwvc3ZnPg==&style=for-the-badge" />
+          <img src="https://img.shields.io/badge/unity%20engine-black?logo=unity&style=for-the-badge&logoColor=white" />
+          <img src="https://img.shields.io/badge/steamvr-1b2838?style=for-the-badge&logo=steam&logoColor=white" />
+          </div>
+          <h5 className="text-sm tracking-tighter">April 2021 - August 2021</h5>
+          <div className="flex gap-0.5">
+          <a target="_blank" className="cardLink flex gap-0.5" href="https://themangoeffect.itch.io/protect-the-spirit-box">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
+          </svg>
+          <h5 className="text-sm tracking-tighter">Link</h5>
+          </a> 
+          </div>
+        </div>
+      <div className="block h-full rounded-lg p-2">
+          <div className="p-3 text-sm font-medium text-gray-900">
+            <p className="p-2">Welcome, spirit! You will be shortly teleported to the island. Your mission is to protect the valuable spirit box from waves of monsters. Weapons will be provided. Survive as many waves as you can. A SteamVR build is also available.</p>
+          </div>
+      </div>
+    </article>
+  </div>
+  )
+}
 export function E3ProjectCard( ){
   return (
     <div className="flex justify-center p-5 ">

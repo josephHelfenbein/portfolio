@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Dialog, DialogPanel } from '@headlessui/react';
 import LabelItem from "./label-item";
-import { TravelAmuletProjectCard, GameRecommendCard, PhysicsProjectCard, HorrorGameProjectCard, FightingGameProjectCard, ScienceProjectCard, MaterialProjectCard, MendPathProjectCard } from "./project-cards";
+import { TravelAmuletProjectCard, GameRecommendCard, PhysicsProjectCard, HorrorGameProjectCard, FightingGameProjectCard, ScienceProjectCard, MaterialProjectCard, MendPathProjectCard, PrototypeGameCard, SpiritBoxGameCard } from "./project-cards";
 
 export default function GridComponent(){
     const [open, setOpen] = useState(false);
@@ -19,6 +19,8 @@ export default function GridComponent(){
         </div>),
         (<div>
             <HorrorGameProjectCard />
+            <PrototypeGameCard />
+            <SpiritBoxGameCard />
             <FightingGameProjectCard />
         </div>),
         (<div>
@@ -27,7 +29,7 @@ export default function GridComponent(){
     ];
     return(
         <div>
-            <Dialog open={open} onClose={setOpen} className="relative">
+            <Dialog open={open} onClose={setOpen} className="relative z-50">
                 <div className="fixed inset-0 w-screen overflow-y-auto">
                     <div className="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
                         <DialogPanel 
@@ -53,7 +55,7 @@ export default function GridComponent(){
                 <button onClick={()=>{
                     setArea(0);
                     setOpen(true);
-                }} className="p-4 bg-blue-50 hover:bg-white hover:shadow-lg hover:z-20 transition duration-100 ease-in-out p-8 rounded border border-blue-300">
+                }} className="bg-blue-50 hover:bg-white hover:shadow-lg hover:z-20 transition duration-100 ease-in-out p-8 rounded border border-blue-300">
                     <div className="flex justify-center space-x-5 pb-5 pt-5">
                     <img src="./javascript-color.svg" width={50} /> 
                      <img src="./webgl-color.svg" width={50} /> 
@@ -65,7 +67,7 @@ export default function GridComponent(){
                 <button onClick={()=>{
                     setArea(1);
                     setOpen(true);
-                }} className="p-4 bg-blue-50 hover:bg-white hover:shadow-lg hover:z-20 transition duration-100 ease-in-out p-8 rounded border border-blue-300">
+                }} className="bg-blue-50 hover:bg-white hover:shadow-lg hover:z-20 transition duration-100 ease-in-out p-8 rounded border border-blue-300">
                     <div className="flex justify-center space-x-5 pb-5 pt-5">
                      <img src="./nextdotjs-color.svg" width={50} /> 
                      <img src="./react-color.svg" width={50} /> 
@@ -77,7 +79,7 @@ export default function GridComponent(){
                 <button onClick={()=>{
                     setArea(2);
                     setOpen(true);
-                }} className="p-4 bg-blue-50 hover:bg-white hover:shadow-lg hover:z-20 transition duration-100 ease-in-out p-8 rounded border border-blue-300">
+                }} className="bg-blue-50 hover:bg-white hover:shadow-lg hover:z-20 transition duration-100 ease-in-out p-8 rounded border border-blue-300">
                     <div className="flex justify-center  space-x-5 pb-5 pt-5">
                      <img src="./cplusplus-color.svg" width={50} /> 
                      <img src="./unrealengine-color.svg" width={50} /> 
@@ -89,7 +91,7 @@ export default function GridComponent(){
                 <button onClick={()=>{
                     setArea(3);
                     setOpen(true);
-                }} className="p-4 bg-blue-50 hover:bg-white hover:shadow-lg hover:z-20 transition duration-100 ease-in-out p-8 rounded border border-blue-300">
+                }} className="bg-blue-50 hover:bg-white hover:shadow-lg hover:z-20 transition duration-100 ease-in-out p-8 rounded border border-blue-300">
                     <div className="flex justify-center  space-x-5 pb-5 pt-5">
                     <img src="./python-color.svg" width={50} /> 
                      <img src="./tensorflow-color.svg" width={50} /> 
