@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Dialog, DialogPanel } from '@headlessui/react';
 import LabelItem from "./label-item";
 import { TravelAmuletProjectCard, GameRecommendCard, PhysicsProjectCard, HorrorGameProjectCard, FightingGameProjectCard, ScienceProjectCard, MaterialProjectCard, MendPathProjectCard, PrototypeGameCard, SpiritBoxGameCard } from "./project-cards";
@@ -6,6 +6,11 @@ export default function GridComponent(){
     const [open, setOpen] = useState(false);
     const [area, setArea] = useState(0);
     const areas = ["Graphics Programming", "Full Stack Development", "Game Development", "AI/ML"];
+    const [sizeMedium, setSizeMedium] = useState(true);
+    useEffect(()=>{
+        if(window.innerHeight < 768) setSizeMedium(false);
+    }, [])
+
     const areaProjects = [
         (<div>
             <MaterialProjectCard />
@@ -65,7 +70,7 @@ export default function GridComponent(){
                    
                     Graphics Programming
                 </button>
-                <div className="Pulse" style={{marginLeft:'20.5rem'}}></div>
+                <div className="Pulse mt-46 md:ml-81 md:mt-0"></div>
                 <button onClick={()=>{
                     setArea(1);
                     setOpen(true);
@@ -78,7 +83,7 @@ export default function GridComponent(){
                     </div>
                     Full Stack Development
                 </button>
-                <div className="Pulse" style={{marginTop:'11.55rem'}}></div>
+                <div className="Pulse mt-90 md:mt-46"></div>
                 <button onClick={()=>{
                     setArea(2);
                     setOpen(true);
@@ -91,7 +96,7 @@ export default function GridComponent(){
                     </div>
                     Game Development
                 </button>
-                <div className="Pulse" style={{marginTop:'11.55rem', marginLeft:'20.5rem'}}></div>
+                <div className="Pulse mt-105 md:mt-46 md:ml-81"></div>
                 <button onClick={()=>{
                     setArea(3);
                     setOpen(true);
