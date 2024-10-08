@@ -32,8 +32,8 @@ export default function Page() {
       
       <IntroCard />
       
-      <div className='flex justify-center mr-5 ml-5'>
-      <div className='projectCard bg-slate-50 p-2 rounded-xl shadow-lg max-w-5xl'>
+      <div className='flex justify-center md:mr-5 md:ml-5'>
+      <div className='projectCard bg-slate-50 md:p-2 rounded-xl shadow-lg max-w-5xl'>
         <LabelItem label={"Work Experience"} />
         <E3ProjectCard />
       </div>
