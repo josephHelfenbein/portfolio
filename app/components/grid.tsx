@@ -56,7 +56,6 @@ export default function GridComponent(){
             </Dialog>
             <div className="flex justify-center ml-5 mr-5">
             <div className="grid md:grid-cols-2 max-w-7xl text-base text-center bg-blue-100 shadow-lg font-bold gap-1 mb-16">
-                <div className="Pulse"></div>
                 <button onClick={()=>{
                     setArea(0);
                     setOpen(true);
@@ -70,7 +69,6 @@ export default function GridComponent(){
                    
                     Graphics Programming
                 </button>
-                <div className="Pulse mt-46 md:ml-81 md:mt-0"></div>
                 <button onClick={()=>{
                     setArea(1);
                     setOpen(true);
@@ -83,7 +81,6 @@ export default function GridComponent(){
                     </div>
                     Full Stack Development
                 </button>
-                <div className="Pulse mt-90 md:mt-46"></div>
                 <button onClick={()=>{
                     setArea(2);
                     setOpen(true);
@@ -96,7 +93,6 @@ export default function GridComponent(){
                     </div>
                     Game Development
                 </button>
-                <div className="Pulse mt-105 md:mt-46 md:ml-81"></div>
                 <button onClick={()=>{
                     setArea(3);
                     setOpen(true);
