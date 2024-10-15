@@ -134,6 +134,7 @@ export function MendPathProjectCard(){
           <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
           <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
           <img src="https://img.shields.io/badge/React%20Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+          <img src="https://img.shields.io/badge/expo-000000?style=for-the-badge&logo=expo&logoColor=white" />
           <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
           <img src="https://img.shields.io/badge/Flask-4590A1?logo=flask&style=for-the-badge&logoColor=white" />
           <img src="https://img.shields.io/badge/Cerebras%20AI-000000.svg?logo=data:image/svg%2bxml;base64,PHN2ZyBoZWlnaHQ9IjgwIiB3aWR0aD0iODAiIHZpZXdCb3g9IjAgMCA0OTUuMjUgNDk1LjI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0YxNUEyOSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjMyLjQ1MyIgZD0ibTI0Ny42MyA0NzkuMDNjLTEyNy44IDAtMjMxLjQtMTAzLjYtMjMxLjQtMjMxLjQgMC0xMjcuOCAxMDMuNi0yMzEuNCAyMzEuNC0yMzEuNG0tMTE5LjIxIDM3NC40MWMtNzguODUzLTY2LjE2LTg5LjEzMy0xODMuNzEtMjIuOTczLTI2Mi41NiA2Ni4xNi03OC44NTMgMTgzLjcxLTg5LjEzMyAyNjIuNTYtMjIuOTczbS0xODcgMjY3LjU5Yy02OS4wMjctMzYuNDQtOTUuNDUzLTEyMS45NS01OS4wMTMtMTkwLjk3IDM2LjQ0LTY5LjA0IDEyMS45My05NS40NTMgMTkwLjk3LTU5LjAxM20tNjUuMzMzIDIyMS4yM2MtNTMuMTg3IDAtOTYuMzA3LTQzLjEyLTk2LjMwNy05Ni4zMDdzNDMuMTItOTYuMzA3IDk2LjMwNy05Ni4zMDciIC8+Cjwvc3ZnPg==&style=for-the-badge" />
@@ -179,6 +180,50 @@ export function MendPathProjectCard(){
   </div>
   )
 }
+export function HelpSignalProjectCard(){
+  return (
+    <div className="flex justify-center m-8">
+    <article className="w-4xl">
+    <div className="flex items-start justify-start gap-2">
+      <img src="./helpsignallogo.svg" width={32} />
+      <h3 className="text-xl font-semibold tracking-tighter">HelpSignal</h3>
+    </div>
+      
+      <div>
+      <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
+          <img src="https://img.shields.io/badge/React%20Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+          <img src="https://img.shields.io/badge/expo-000000?style=for-the-badge&logo=expo&logoColor=white" />
+          <img src="https://img.shields.io/badge/flask-4590A1?logo=flask&style=for-the-badge&logoColor=white" />
+          <img src="https://img.shields.io/badge/amazon%20rds-527FFF?style=for-the-badge&logo=amazon%20rds&logoColor=white" />
+          <img src="https://img.shields.io/badge/cloudflare%20workers-F38020?style=for-the-badge&logo=cloudflare%20workers&logoColor=white" />
+          </div>
+          <h5 className="text-sm tracking-tighter">HackHarvard 2024 submission (weekend)</h5>
+          <div className="flex gap-0.5">
+          <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/HelpSignal">
+          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+          </svg>
+          <h5 className="text-sm tracking-tighter">
+          GitHub</h5>
+          </a> |
+          <a target="_blank" className="cardLink flex gap-0.5" href="https://devpost.com/software/helpsignal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z"></path>
+          </svg>
+          <h5 className="text-sm tracking-tighter">Devpost</h5>
+          </a>
+          </div>
+        </div>
+
+      <div className="block h-full rounded-lg p-2">
+          <div className="p-3 text-sm font-medium text-gray-900">
+            <p className="p-2">An emergency app using voice input to assess situations, alert nearby certified helpers (CPR, first aid), and notify first responders—providing immediate assistance before official help arrives. </p>
+          </div>
+      </div>
+    </article>
+  </div>
+  )
+}
 export function TravelAmuletProjectCard(){
   return (
     <div className="flex justify-center m-8">
@@ -194,7 +239,6 @@ export function TravelAmuletProjectCard(){
             <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
             <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" />
             <img src="https://img.shields.io/badge/Three.js-black?logo=three.js&style=for-the-badge&logoColor=white" />
-            <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&style=for-the-badge&logoColor=white" />
             <img src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&style=for-the-badge&logoColor=white" />
             <img src="https://img.shields.io/badge/openai%20api-black?logo=openai&style=for-the-badge&logoColor=white" />
             <img src="https://img.shields.io/badge/Flask-4590A1?logo=flask&style=for-the-badge&logoColor=white" />

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Dialog, DialogPanel } from '@headlessui/react';
 import LabelItem from "./label-item";
-import { TravelAmuletProjectCard, GameRecommendCard, PhysicsProjectCard, HorrorGameProjectCard, FightingGameProjectCard, ScienceProjectCard, MaterialProjectCard, MendPathProjectCard, PrototypeGameCard, SpiritBoxGameCard } from "./project-cards";
+import { TravelAmuletProjectCard, GameRecommendCard, PhysicsProjectCard, HorrorGameProjectCard, FightingGameProjectCard, ScienceProjectCard, MaterialProjectCard, MendPathProjectCard, PrototypeGameCard, SpiritBoxGameCard, HelpSignalProjectCard } from "./project-cards";
 export default function GridComponent(){
     const [open, setOpen] = useState(false);
     const [area, setArea] = useState(0);
@@ -19,6 +19,7 @@ export default function GridComponent(){
         (<div>
             <TravelAmuletProjectCard />
             <MendPathProjectCard />
+            <HelpSignalProjectCard />
             <GameRecommendCard />
         </div>),
         (<div>
