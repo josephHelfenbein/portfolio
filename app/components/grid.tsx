@@ -77,7 +77,7 @@ export default function GridComponent(){
                     <div className="flex justify-center space-x-5 pb-5 pt-5">
                      <img src="./nextdotjs-color.svg" width={50} /> 
                      <img src="./react-color.svg" width={50} /> 
-                     <img src="./mysql-color.svg" width={50} /> 
+                     <img src="./flask.svg" width={50} /> 
                      <img src="./amazonwebservices-color.svg" width={50} /> 
                     </div>
                     Full Stack Development

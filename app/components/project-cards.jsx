@@ -237,7 +237,7 @@ export function TravelAmuletProjectCard(){
           <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
             <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
             <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-            <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" />
+            <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
             <img src="https://img.shields.io/badge/Three.js-black?logo=three.js&style=for-the-badge&logoColor=white" />
             <img src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&style=for-the-badge&logoColor=white" />
             <img src="https://img.shields.io/badge/openai%20api-black?logo=openai&style=for-the-badge&logoColor=white" />
