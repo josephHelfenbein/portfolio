@@ -43,7 +43,10 @@ export function MaterialProjectCard(){
   return (
     <div className="flex justify-center m-8">
     <article className="w-4xl">
+    <div className="flex items-start justify-start gap-2">
+    <img src="./materialviewer-logo.svg" width={32} />
     <h3 className="text-xl font-semibold tracking-tighter">Material Viewer</h3>
+    </div>
     <div>
       <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
           <img src="https://img.shields.io/badge/c++-00599C?logo=cplusplus&style=for-the-badge&logoColor=white" />
@@ -62,7 +65,7 @@ export function MaterialProjectCard(){
         </div>
       <div className="block h-full rounded-lg p-2">
           <div className="p-3 text-sm font-medium text-gray-900">
-            <p className="p-2">Currently developing a PBR material viewer desktop and web application for easy previewing of PBR materials.</p>
+            <p className="p-2">Currently developing a PBR material viewer desktop application for easy previewing of PBR materials.</p>
           </div>
       </div>
     </article>
