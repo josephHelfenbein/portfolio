@@ -21,6 +21,9 @@
     "@vercel/speed-insights": "^1.0.9",
     "animated-backgrounds": "^1.0.8",
     "autoprefixer": "^10.4.20",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.10",
     "geist": "1.2.2",
     "headlessui": "^0.0.0",
     "lightningcss-linux-x64-gnu": "^1.27.0",
@@ -31,6 +34,7 @@
     "react-dom": "18.2.0",
     "react-spinners": "^0.14.1",
     "sugar-high": "^0.6.0",
+    "tailwind-merge": "^2.5.4",
     "three": "^0.167.1",
     "typescript": "5.3.3"
   },
