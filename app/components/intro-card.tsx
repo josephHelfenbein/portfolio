@@ -19,6 +19,7 @@ export default function IntroCard(){
         />
         <div>
           <Card />
+          
           <Footer />
         </div>
       </div>
