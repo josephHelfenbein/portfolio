@@ -31,7 +31,7 @@ export function PhysicsProjectCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
             <p>A rigid body physics engine with simulated cubes and spheres. It has real-time raytraced shadows and a Blinn-Phong shader using WebGL.</p>
           </div>
       </div>
@@ -64,7 +64,7 @@ export function MaterialProjectCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
             <p>A 3D desktop application for previewing PBR materials using OpenGL and C++. It features HDRI environments, image-based lighting, and PBR shading. Users can upload individual image textures, custom .mat files, or .zip files for material previewing, and save viewed materials in a custom .mat format for easy sharing.</p>
           </div>
       </div>
@@ -115,7 +115,7 @@ export function GameRecommendCard(){
         </div>
 
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
             <p>Utilizes AI to find similar games to any game you like. All you need to do is enter in a game you like, press the button, and the AI will return 5 games it thinks you will like, along with reasons why.</p>
           </div>
       </div>
@@ -175,7 +175,7 @@ export function MendPathProjectCard(){
         </div>
 
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
             <p>MendPath combines therapy, technology, and social connection in a way that fosters empathy, accountability, and mental health progress for users, filling a crucial gap in both personal well-being and community support. </p>
           </div>
       </div>
@@ -231,7 +231,7 @@ export function CerebrixProjectCard(){
         </div>
 
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
             <p>Cerebrix is an adaptive app for dementia and Alzheimer's care, offering engaging minigames to boost memory and cognition. It features a voice AI companion for social support, while caretakers can manage accounts and track cognitive progress. </p>
           </div>
       </div>
@@ -275,7 +275,7 @@ export function HelpSignalProjectCard(){
         </div>
 
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
             <p>An emergency app using voice input to assess situations, alert nearby certified helpers (CPR, first aid), and notify first responders—providing immediate assistance before official help arrives. </p>
           </div>
       </div>
@@ -329,7 +329,7 @@ export function TravelAmuletProjectCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
             <p>Lets users take a quiz for travel preferences, and then uses TiDB Vector Search to return a list of matching countries, each with an overview and a list of top cities, which have nearby hotels and flight prices.</p>
           </div>
       </div>
@@ -363,7 +363,7 @@ export function ScienceProjectCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
             <p>A simple project I did for the Long Island Science Congress competition that tests whether a convolutional neural network or recurrent neural network is better for classification of coronavirus RNA, winning a Meritorious Award.</p>
           </div>
       </div>
@@ -396,7 +396,7 @@ export function HorrorGameProjectCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
             <p>A survival horror escape room game based on the SCP Foundation Wiki. A catastrophic event shuts down the facility, leaving you alone in the security room. Solve puzzles and contain loose SCPs to escape, or survive for as long as possible for a high score. </p>
           </div>
       </div>
@@ -429,7 +429,7 @@ export function FightingGameProjectCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
             <p>A rhythm-based retro-style fighting game. Use a sword and shield and fly around the map, fighting your nemesis on the rhythm. When the rhythm bar hits green, attack! Online 1v1 is also available, just write a code in the room ID for the game room. </p>
           </div>
       </div>
@@ -461,7 +461,7 @@ export function PrototypeGameCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
             <p>Play as PR0707YP3, a robot in need of a power source. Collect power along your journey as you shoot aliens and drones. Save your ammo, and don't run out of power.</p>
           </div>
       </div>
@@ -494,7 +494,7 @@ export function SpiritBoxGameCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
             <p>Welcome, spirit! You will be shortly teleported to the island. Your mission is to protect the valuable spirit box from waves of monsters. Weapons will be provided. Survive as many waves as you can. A SteamVR build is also available.</p>
           </div>
       </div>
@@ -504,7 +504,7 @@ export function SpiritBoxGameCard(){
 }
 export function E3ProjectCard( ){
   return (
-    <div className="flex justify-center p-5 h-98 md:h-90">
+    <div className="flex justify-center p-5 h-100 md:h-90">
       <article className="max-w-4xl">
           <div className="md:pl-5 md:pb-2">
             <h3 className="text-xl md:text-2xl font-semibold tracking-tighter">Software Engineer Intern</h3>
@@ -512,7 +512,7 @@ export function E3ProjectCard( ){
             <h5 className="text-sm md:text-base tracking-tighter ">July 2022 - September 2022</h5>
           </div>
         <div className="block h-full rounded-lg md:pl-5">
-            <div className="p-3 text-sm md:text-base font-medium text-gray-900">
+            <div className="p-3 text-xs md:text-base font-medium text-gray-900">
               <li className="p-2">Created a daily survey web application using JavaScript and PHP, garnering 50 daily users</li>
               <li className="p-2">Implemented a robust account system using PHP and SQL with a MySQL database, allowing users to track their responses over time with visualized data trends from phpChart, enhancing user engagement</li>
               <li className="p-2">Increased accessibility by integrating a language toggle feature with JSON and JavaScript, enabling seamless language switching, and storing user language preferences for a personalized experience</li>
