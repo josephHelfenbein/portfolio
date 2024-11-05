@@ -52,7 +52,7 @@ export function MaterialProjectCard(){
           <img className="h-6 md:h-7" src="https://img.shields.io/badge/c++-00599C?logo=cplusplus&style=for-the-badge&logoColor=white" />
           <img className="h-6 md:h-7" src="https://img.shields.io/badge/opengl-5586A4?logo=opengl&style=for-the-badge&logoColor=white" />
           </div>
-          <h5 className="text-sm tracking-tighter text-center font-semibold">September 2024 - October 2024</h5>
+          <h5 className="text-sm tracking-tighter text-center font-semibold">September 2024 - November 2024</h5>
           <div className="flex gap-0.5 justify-center">
           <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/material-viewer">
           <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
