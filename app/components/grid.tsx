@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import LabelItem from "./label-item";
-import { TravelAmuletProjectCard, GameRecommendCard, PhysicsProjectCard, HorrorGameProjectCard, FightingGameProjectCard, ScienceProjectCard, MaterialProjectCard, MendPathProjectCard, PrototypeGameCard, SpiritBoxGameCard, HelpSignalProjectCard, CerebrixProjectCard } from "./project-cards";
+import { TravelAmuletProjectCard, GameRecommendCard, PhysicsProjectCard, HorrorGameProjectCard, FightingGameProjectCard, ScienceProjectCard, MaterialProjectCard, MendPathProjectCard, PrototypeGameCard, SpiritBoxGameCard, HelpSignalProjectCard, CerebrixProjectCard, ChamaProjectCard } from "./project-cards";
 const areaProjects = [
     (<div className="grid md:grid-cols-2 max-w-7xl gap-1 mb-16">
         <MaterialProjectCard />
@@ -10,6 +10,7 @@ const areaProjects = [
         <TravelAmuletProjectCard />
         <MendPathProjectCard />
         <CerebrixProjectCard />
+        <ChamaProjectCard />
         <HelpSignalProjectCard />
         <GameRecommendCard />
     </div>),
