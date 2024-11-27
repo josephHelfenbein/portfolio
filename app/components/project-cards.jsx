@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
+import { motion } from "motion/react";
 export function PhysicsProjectCard(){
   return (
-    <div className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    <motion.div initial={{ y: 10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ default: { type: "spring" },
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./physicssandbox.png" width={32} />
@@ -36,12 +40,15 @@ export function PhysicsProjectCard(){
           </div>
       </div>
     </article>
-  </div>
+  </motion.div>
   )
 }
 export function MaterialProjectCard(){
   return (
-    <div className="flex justify-center p-4 m-4 shadow-lg rounded-xl h-100 md:h-96">
+   <motion.div initial={{ y: 10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ default: { type: "spring" },
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
     <img src="./materialviewer-logo.svg" width={32} />
@@ -69,12 +76,15 @@ export function MaterialProjectCard(){
           </div>
       </div>
     </article>
-  </div>
+    </motion.div>
   )
 }
 export function GameRecommendCard(){
   return (
-    <div className="flex justify-center p-4 m-4 shadow-lg rounded-xl h-100 md:h-96">
+    <motion.div initial={{ y: 10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ default: { type: "spring" },
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./gamerecommend.svg" width={32} />
@@ -120,12 +130,15 @@ export function GameRecommendCard(){
           </div>
       </div>
     </article>
-  </div>
+    </motion.div>
   )
 }
 export function MendPathProjectCard(){
   return (
-    <div className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    <motion.div initial={{ y: 10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ default: { type: "spring" },
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./mendpath.png" width={32} />
@@ -180,12 +193,15 @@ export function MendPathProjectCard(){
           </div>
       </div>
     </article>
-  </div>
+    </motion.div>
   )
 }
 export function CerebrixProjectCard(){
   return (
-    <div className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    <motion.div initial={{ y: 10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ default: { type: "spring" },
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./cerebrix.svg" width={32} />
@@ -236,12 +252,15 @@ export function CerebrixProjectCard(){
           </div>
       </div>
     </article>
-  </div>
+    </motion.div>
   )
 }
 export function HelpSignalProjectCard(){
   return (
-    <div className="flex justify-center m-4 p-4 rounded-xl shadow-lg h-100 md:h-96">
+    <motion.div initial={{ y: 10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ default: { type: "spring" },
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./helpsignallogo.svg" width={32} />
@@ -280,12 +299,15 @@ export function HelpSignalProjectCard(){
           </div>
       </div>
     </article>
-  </div>
+    </motion.div>
   )
 }
 export function TravelAmuletProjectCard(){
   return (
-    <div className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    <motion.div initial={{ y: 10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ default: { type: "spring" },
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
     <img src="./travelamulet-icon.png" width={32} />
@@ -334,12 +356,15 @@ export function TravelAmuletProjectCard(){
           </div>
       </div>
     </article>
-  </div>
+  </motion.div>
   )
 }
 export function ChamaProjectCard(){
   return (
-    <div className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    <motion.div initial={{ y: 10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ default: { type: "spring" },
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
     <img src="./chama.svg" width={32} />
@@ -394,13 +419,16 @@ export function ChamaProjectCard(){
           </div>
       </div>
     </article>
-  </div>
+    </motion.div>
   )
 }
 
 export function ScienceProjectCard(){
   return (
-    <div className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    <motion.div initial={{ y: 10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ default: { type: "spring" },
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <h3 className="text-xl font-semibold tracking-tighter">TensorFlow Coronaviruses</h3>
@@ -429,12 +457,15 @@ export function ScienceProjectCard(){
           </div>
       </div>
     </article>
-  </div>
+    </motion.div>
   )
 }
 export function HorrorGameProjectCard(){
   return (
-    <div className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    <motion.div initial={{ y: 10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ default: { type: "spring" },
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./scpicon.jpg" width={32} />
@@ -462,12 +493,15 @@ export function HorrorGameProjectCard(){
           </div>
       </div>
     </article>
-  </div>
+    </motion.div>
   )
 }
 export function FightingGameProjectCard(){
   return (
-    <div className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    <motion.div initial={{ y: 10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ default: { type: "spring" },
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./rhythmofknighticon.png" width={32} />
@@ -495,12 +529,15 @@ export function FightingGameProjectCard(){
           </div>
       </div>
     </article>
-  </div>
+    </motion.div>
   )
 }
 export function PrototypeGameCard(){
   return (
-    <div className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    <motion.div initial={{ y: 10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ default: { type: "spring" },
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./prototypeimg.png" width={32} />
@@ -527,12 +564,15 @@ export function PrototypeGameCard(){
           </div>
       </div>
     </article>
-  </div>
+    </motion.div>
   )
 }
 export function SpiritBoxGameCard(){
   return (
-    <div className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    <motion.div initial={{ y: 10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ default: { type: "spring" },
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./spiritbox.png" width={32} />
@@ -560,7 +600,7 @@ export function SpiritBoxGameCard(){
           </div>
       </div>
     </article>
-  </div>
+    </motion.div>
   )
 }
 export function E3ProjectCard( ){
