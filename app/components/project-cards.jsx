@@ -5,7 +5,7 @@ export function PhysicsProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./physicssandbox.png" width={32} />
@@ -48,7 +48,7 @@ export function MaterialProjectCard(){
    <motion.div initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
     <img src="./materialviewer-logo.svg" width={32} />
@@ -84,7 +84,7 @@ export function GameRecommendCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./gamerecommend.svg" width={32} />
@@ -138,7 +138,7 @@ export function MendPathProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./mendpath.png" width={32} />
@@ -201,7 +201,7 @@ export function CerebrixProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./cerebrix.svg" width={32} />
@@ -260,7 +260,7 @@ export function HelpSignalProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./helpsignallogo.svg" width={32} />
@@ -307,7 +307,7 @@ export function TravelAmuletProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
     <img src="./travelamulet-icon.png" width={32} />
@@ -364,7 +364,7 @@ export function ChamaProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
     <img src="./chama.svg" width={32} />
@@ -428,7 +428,7 @@ export function ScienceProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <h3 className="text-xl font-semibold tracking-tighter">TensorFlow Coronaviruses</h3>
@@ -465,7 +465,7 @@ export function HorrorGameProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./scpicon.jpg" width={32} />
@@ -501,7 +501,7 @@ export function FightingGameProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./rhythmofknighticon.png" width={32} />
@@ -537,7 +537,7 @@ export function PrototypeGameCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./prototypeimg.png" width={32} />
@@ -572,7 +572,7 @@ export function SpiritBoxGameCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./spiritbox.png" width={32} />

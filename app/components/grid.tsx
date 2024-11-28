@@ -31,7 +31,7 @@ export default function GridComponent(){
     useEffect(()=>{setArea(1)},[]);
     return(
         <div>
-            <LabelItem label={areas[area] + " Experience"} />
+            <LabelItem label={areas[area] + " Projects"} />
             <div className="flex justify-center space-x-2 text-sm md:text-base">
                 <motion.button className={`p-1 pl-2 pr-2 md:pl-4 md:pr-4 rounded-2xl duration-75 hover:bg-slate-400 hover:text-white ${area==1? 'bg-slate-200 text-slate-700 border' : 'bg-slate-500 text-white'}`} 
                 initial={{scale: 1.0}}

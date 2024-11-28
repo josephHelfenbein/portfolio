@@ -40,7 +40,7 @@ export default function Page() {
       </div>
       
       <div className='flex justify-center'>
-      <div className='max-w-5xl bg-slate-50 p-2 rounded-xl shadow-lg mb-52'>
+      <div className='max-w-5xl bg-slate-50 rounded-xl shadow-lg mb-52'>
       <GridComponent />
       </div>
       </div>
