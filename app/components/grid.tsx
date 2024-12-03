@@ -28,7 +28,7 @@ const areaProjects = [
 export default function GridComponent(){
     const [area, setArea] = useState(1);
     const areas = ["Graphics", "Full Stack", "Gamedev", "AI/ML"];
-    useEffect(()=>{setArea(1)},[]);
+    useEffect(()=>{setArea(0); setArea(1);},[]);
     return(
         <div>
             <LabelItem label={areas[area] + " Projects"} />
