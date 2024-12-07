@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 export function PhysicsProjectCard(){
   return (
     <motion.div initial={{ y: 10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
+    whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
     opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
@@ -46,7 +46,7 @@ export function PhysicsProjectCard(){
 export function MaterialProjectCard(){
   return (
    <motion.div initial={{ y: 10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
+    whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
     opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
@@ -82,7 +82,7 @@ export function MaterialProjectCard(){
 export function GameRecommendCard(){
   return (
     <motion.div initial={{ y: 10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
+    whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
     opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
@@ -136,7 +136,7 @@ export function GameRecommendCard(){
 export function MendPathProjectCard(){
   return (
     <motion.div initial={{ y: 10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
+    whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
     opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
@@ -199,7 +199,7 @@ export function MendPathProjectCard(){
 export function CerebrixProjectCard(){
   return (
     <motion.div initial={{ y: 10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
+    whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
     opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
@@ -258,7 +258,7 @@ export function CerebrixProjectCard(){
 export function HelpSignalProjectCard(){
   return (
     <motion.div initial={{ y: 10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
+    whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
     opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
@@ -305,7 +305,7 @@ export function HelpSignalProjectCard(){
 export function TravelAmuletProjectCard(){
   return (
     <motion.div initial={{ y: 10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
+    whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
     opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
@@ -362,7 +362,7 @@ export function TravelAmuletProjectCard(){
 export function ChamaProjectCard(){
   return (
     <motion.div initial={{ y: 10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
+    whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
     opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
@@ -426,7 +426,7 @@ export function ChamaProjectCard(){
 export function ScienceProjectCard(){
   return (
     <motion.div initial={{ y: 10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
+    whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
     opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
@@ -463,7 +463,7 @@ export function ScienceProjectCard(){
 export function HorrorGameProjectCard(){
   return (
     <motion.div initial={{ y: 10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
+    whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
     opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
@@ -499,7 +499,7 @@ export function HorrorGameProjectCard(){
 export function FightingGameProjectCard(){
   return (
     <motion.div initial={{ y: 10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
+    whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
     opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
@@ -535,7 +535,7 @@ export function FightingGameProjectCard(){
 export function PrototypeGameCard(){
   return (
     <motion.div initial={{ y: 10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
+    whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
     opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
@@ -570,7 +570,7 @@ export function PrototypeGameCard(){
 export function SpiritBoxGameCard(){
   return (
     <motion.div initial={{ y: 10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
+    whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
     opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
