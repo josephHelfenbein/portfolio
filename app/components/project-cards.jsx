@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 export function PhysicsProjectCard(){
   return (
     <motion.div initial={{ y: 10, opacity: 0 }}
