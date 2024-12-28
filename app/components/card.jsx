@@ -11,8 +11,8 @@ export default function Card( ){
                     <h2 className="text-2xl md:text-4xl font-semibold tracking-tighter">Hi 👋, I'm Joseph J Helfenbein</h2>
                   </div>
                 </div>
-                <p className="mt-5 text-sm md:text-base font-medium text-gray-900">
-                  I'm a student at The City College of New York studying Computer Science and Physics. I have experience in full-stack web application development, JavaScript, TypeScript, React, Next.js, Three.js, C++, C#, and Python from my projects, and additionally have developed a game on Steam using Unreal Engine and C++. I'm constantly trying to learn new things and broaden my experience.
+                <p className="mt-5 text-sm md:text-base mr-2 font-medium text-gray-900">
+                 I'm a Computer Science and Physics student at The City College of New York, passionate about full-stack development and graphics programming. I specialize in modern web technologies, robust backend systems, and advanced graphics programming techniques to create applications that are both functional and visually compelling. Motivated by curiosity and innovation, I strive to create solutions that make a lasting impact. I'm always eager to learn, grow, and take on new challenges—feel free to reach out!
                 </p>            
               </div>
             </article>
