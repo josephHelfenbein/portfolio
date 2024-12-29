@@ -276,6 +276,7 @@ export function PairGridProjectCard(){
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/clerk-6C47FF?logo=clerk&style=for-the-badge&logoColor=white" />
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/hasura-1EB4D4?logo=hasura&style=for-the-badge&logoColor=white" />
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/graphql-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/pusher-300D4F?style=for-the-badge&logo=pusher&logoColor=white" />
 
           
           </div>
