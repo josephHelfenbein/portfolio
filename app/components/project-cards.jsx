@@ -272,7 +272,7 @@ export function PairGridProjectCard(){
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" />
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=shadcn/ui&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/shadcn%E2%80%93vue-000000?style=for-the-badge&logo=shadcn/ui&logoColor=4FC08D" />
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/clerk-6C47FF?logo=clerk&style=for-the-badge&logoColor=white" />
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/hasura-1EB4D4?logo=hasura&style=for-the-badge&logoColor=white" />
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/graphql-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
