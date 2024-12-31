@@ -268,7 +268,7 @@ export function PairGridProjectCard(){
       
       <div>
       <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxt&logoColor=white" />
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" />
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
