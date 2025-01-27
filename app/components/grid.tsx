@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import LabelItem from "./label-item";
-import { TravelAmuletProjectCard, GameRecommendCard, PhysicsProjectCard, HorrorGameProjectCard, FightingGameProjectCard, ScienceProjectCard, MaterialProjectCard, MendPathProjectCard, PrototypeGameCard, SpiritBoxGameCard, HelpSignalProjectCard, CerebrixProjectCard, ChamaProjectCard, PairGridProjectCard } from "./project-cards";
+import { TravelAmuletProjectCard, GameRecommendCard, PhysicsProjectCard, HorrorGameProjectCard, FightingGameProjectCard, ScienceProjectCard, MaterialProjectCard, MendPathProjectCard, PrototypeGameCard, SpiritBoxGameCard, HelpSignalProjectCard, CerebrixProjectCard, ChamaProjectCard, PairGridProjectCard, PatSafeProjectCard } from "./project-cards";
 import { motion } from "motion/react";
 const areaProjects = [
     (<div className="grid md:grid-cols-2 max-w-7xl gap-1 mb-16">
@@ -13,6 +13,7 @@ const areaProjects = [
         <MendPathProjectCard />
         <CerebrixProjectCard />
         <ChamaProjectCard />
+        <PatSafeProjectCard />
         <HelpSignalProjectCard />
         <GameRecommendCard />
     </div>),

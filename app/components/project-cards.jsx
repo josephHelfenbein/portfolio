@@ -224,7 +224,7 @@ export function CerebrixProjectCard(){
           <h5 className="text-sm tracking-tighter text-center font-semibold">HackRU 2024 submission (weekend)</h5>
           <h5 className="text-sm tracking-lighter text-center font-semibold">Honorable Mention for the Neurotech Track 🎉</h5>
           <div className="flex gap-0.5 justify-center">
-          <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/aw4630/hackru-2024">
+          <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/cerebrix">
           <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
             <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
           </svg>
@@ -249,6 +249,65 @@ export function CerebrixProjectCard(){
       <div className="block h-full rounded-lg">
           <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
             <p>Cerebrix is an adaptive app for dementia and Alzheimer's care, offering engaging minigames to boost memory and cognition. It features a voice AI companion for social support, while caretakers can manage accounts and track cognitive progress. </p>
+          </div>
+      </div>
+    </article>
+    </motion.div>
+  )
+}
+export function PatSafeProjectCard(){
+  return (
+    <motion.div initial={{ y: 10, opacity: 0 }}
+    whileInView={{ y: 0, opacity: 1 }}
+    transition={{ default: { type: "spring" },
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    <article className="w-4xl">
+    <div className="flex items-start justify-center gap-2">
+      <img src="./HoyaHax2025-icon.svg" width={32} />
+      <h3 className="text-xl font-semibold tracking-tighter">PatSafe</h3>
+    </div>
+      
+      <div>
+      <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/clerk-6C47FF?logo=clerk&style=for-the-badge&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/mongodb-47A248?logo=mongodb&style=for-the-badge&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/huggingface-FFD21E?logo=huggingface&style=for-the-badge&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/openai%20api-412991?logo=openai&style=for-the-badge&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/langchain-1C3C3C?logo=langchain&style=for-the-badge&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/FriendliAI-ffffff.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTMuNjgyNSA3LjM4NzVDNS43MTYyOSA3LjM4NzUgNy4zNjUgNS43MzM3NSA3LjM2NSAzLjY5Mzc1QzcuMzY1IDEuNjUzNzUgNS43MTYyOSAwIDMuNjgyNSAwQzEuNjQ4NzEgMCAwIDEuNjUzNzUgMCAzLjY5Mzc1QzAgNS43MzM3NSAxLjY0ODcxIDcuMzg3NSAzLjY4MjUgNy4zODc1WiIgZGF0YS1zZW50cnktZWxlbWVudD0icGF0aCIgZGF0YS1zZW50cnktc291cmNlLWZpbGU9InByb2R1Y3RzLnRzeCI+PC9wYXRoPjxwYXRoIGQ9Ik0zLjY4MjUgMjRDNS43MTYyOSAyNCA3LjM2NSAyMi4zNDYzIDcuMzY1IDIwLjMwNjNDNy4zNjUgMTguMjY2MyA1LjcxNjI5IDE2LjYxMjUgMy42ODI1IDE2LjYxMjVDMS42NDg3MSAxNi42MTI1IDAgMTguMjY2MyAwIDIwLjMwNjNDMCAyMi4zNDYzIDEuNjQ4NzEgMjQgMy42ODI1IDI0WiIgZGF0YS1zZW50cnktZWxlbWVudD0icGF0aCIgZGF0YS1zZW50cnktc291cmNlLWZpbGU9InByb2R1Y3RzLnRzeCI+PC9wYXRoPjxwYXRoIGQ9Ik0xMC4zNTc1IDcuMjAwMDVDMTAuNjQyNSA3LjE0NzU1IDExLjAzNjMgNy4wOTg4IDExLjUwNSA3LjA4NzU1SDEzLjU0NUMxNC43MjYzIDcuMDg3NTUgMTUuNjg2MyA2LjEyNzU1IDE1LjY4NjMgNC45NDYzVjIuNDQxM0MxNS42ODYzIDEuMjYwMDUgMTQuNzI2MyAwLjMwMDA0OSAxMy41NDUgMC4zMDAwNDlIMTEuMDU4OEM5Ljg3NzU1IDAuMzAwMDQ5IDguOTE3NTUgMS4yNjAwNSA4LjkxNzU1IDIuNDQxM0w4LjgzODggMy45MjYzQzguODIwMDUgNC4xODUwNSA4Ljc4NjMgNC40OTI1NSA4LjcxODggNC44MjYzQzguNTgwMDUgNS41MTI1NSA4LjM0MDA1IDYuMDA3NTUgOC4yMzEzIDYuMjA2M0M4LjIzMTMgNi4yMDYzIDcuOTA1MDUgNi44MzI1NSA3LjQ3NzU1IDcuMjcxM0M3LjMyMzggNy40MzI1NSA3LjE1MTMgNy41Nzg4IDcuMTUxMyA3LjU3ODhDNy4wODM4IDcuNjMxMyA3LjAxMjU1IDcuNjkxMyA2LjkzMDA1IDcuNzU4OEM2LjE4MzggOC4zMTc1NSA1LjM5NjMgOC40OTc1NSA1LjE0ODggOC41NDYzQzQuODYzOCA4LjYwNjMgNC4yMDc1NSA4LjYxMzggMy45NDEzIDguNjIxM0gyLjQ0MTNDMS4yNjAwNSA4LjYyMTMgMC4zMDAwNDkgOS41ODEzIDAuMzAwMDQ5IDEwLjc2NjNWMTMuMjY3NUMwLjMwMDA0OSAxNC40NTI1IDEuMjYwMDUgMTUuNDEyNSAyLjQ0MTMgMTUuNDEyNUg0Ljk4NzU1QzYuMTYxMyAxNS40MTI1IDcuMTI4OCAxNC40NDUgNy4xMjg4IDEzLjI2NzVWMTEuNDc1QzcuMTEwMDUgMTAuODU2MyA3LjE0NzU1IDkuNzAxMyA3LjY5NTA1IDguOTI4OEM4LjAzNjMgOC40NDg4IDguNTc2MyA4LjAyMTMgOC42NzAwNSA3Ljk1MDA1QzguODE2MyA3LjgzNzU1IDkuMDgyNTUgNy42MzEzIDkuNDY4OCA3LjQ2MjU1QzkuNTU1MDUgNy40MjEzIDkuODI4OCA3LjMxNjMgMTAuMzU3NSA3LjIxNTA1VjcuMjAwMDVaIiBkYXRhLXNlbnRyeS1lbGVtZW50PSJwYXRoIiBkYXRhLXNlbnRyeS1zb3VyY2UtZmlsZT0icHJvZHVjdHMudHN4Ij48L3BhdGg+PHBhdGggZD0iTTIxLjkzMzcgMC4zMDAwNDlIMTkuMzEyNUMxOC4xNjUgMC4zMDAwNDkgMTcuMjM4NyAxLjIyNjMgMTcuMjM4NyAyLjM3MzhWNC4xNDAwNUMxNy4yMzg3IDQuMTQwMDUgMTcuMjM4NyA1LjM2NjMgMTYuOTM4NyA2LjI4MTNDMTYuNjIgNy4xODg4IDE1LjgwNjIgOC4wMDYzIDE0Ljk5MjUgOC4zMDYzQzE0LjA0IDguNjUxMyAxMi45MjYyIDguNjA2MyAxMi4zNiA4LjYwNjNIMTAuNzY2MkM5LjYyNjIgOC42MDYzIDguNjk5OTUgOS41MzI1NSA4LjY5OTk1IDEwLjY4VjEzLjMxMjVDOC42OTk5NSAxNC40NiA5LjYyNjIgMTUuMzg2MyAxMC43NjYyIDE1LjM4NjNIMTMuMzk1QzE0LjUzNSAxNS4zODYzIDE1LjQ2MTIgMTQuNDYgMTUuNDYxMiAxMy4zMTI1TDE1LjQ4IDEyLjIxMzhDMTUuNDY1IDExLjgwODggMTUuNTA2MiAxMC45Njg4IDE1LjcwNSAxMC4zNTM4QzE1Ljc4IDEwLjEyODggMTUuOTI2MiA5LjcwODggMTYuMjYgOS4yNDc1NUMxNi41IDguOTIxMyAxNi43MzI1IDguNzE1MDUgMTYuOTcyNSA4LjQ5MzhDMTcuNDA3NSA4LjEwNzU1IDE3Ljc3MTIgNy44Nzg4IDE3Ljg3MjUgNy44MjYzQzE4LjA5MzcgNy42OTEzIDE4LjQ3MjUgNy40NjYzIDE5LjAxMjUgNy4zMDEzQzE5LjQ5MjUgNy4xNTUwNSAxOS44NTI1IDcuMTI4OCAyMC40Njc1IDcuMDg3NTVDMjAuODI3NSA3LjA2MTMgMjEuMzI2MiA3LjA0NjMgMjEuOTI2MiA3LjA4MDA1QzIzLjA3MzcgNy4wODAwNSAyNCA2LjE1MzggMjQgNS4wMDYzVjIuMzczOEMyNCAxLjIyNjMgMjMuMDczNyAwLjMwMDA0OSAyMS45MjYyIDAuMzAwMDQ5SDIxLjkzMzdaIiBkYXRhLXNlbnRyeS1lbGVtZW50PSJwYXRoIiBkYXRhLXNlbnRyeS1zb3VyY2UtZmlsZT0icHJvZHVjdHMudHN4Ij48L3BhdGg+PC9zdmc+&style=for-the-badge" />
+          
+
+          </div>
+          <h5 className="text-sm tracking-tighter text-center font-semibold">Hoya Hacks 2025 submission (weekend)</h5>
+          <div className="flex gap-0.5 justify-center">
+          <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/patsafe">
+          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+          </svg>
+          <h5 className="text-sm tracking-tighter">
+          GitHub</h5>
+          </a> |
+          <a target="_blank" className="cardLink flex gap-0.5" href="https://www.patsafe.co/">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
+          </svg>
+          <h5 className="text-sm tracking-tighter">Demo</h5>
+          </a> |
+          <a target="_blank" className="cardLink flex gap-0.5" href="https://devpost.com/software/patsafe">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z"></path>
+          </svg>
+          <h5 className="text-sm tracking-tighter">Devpost</h5>
+          </a>
+          </div>
+        </div>
+
+      <div className="block h-full rounded-lg">
+          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+            <p>PatSafe is a platform that connects discharged patients with doctors for better post-care monitoring. It enables real-time recovery tracking, symptom reporting, and medication adherence updates via a seamless doctor dashboard and an AI-powered chatbot for patient support. </p>
           </div>
       </div>
     </article>
