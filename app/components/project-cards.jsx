@@ -322,6 +322,7 @@ export function PairGridProjectCard(){
     opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
+      <img src="./pairgrid-icon.svg" width={32} />
       <h3 className="text-xl font-semibold tracking-tighter">PairGrid</h3>
     </div>
       
