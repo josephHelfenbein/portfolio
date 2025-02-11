@@ -2,7 +2,6 @@
 import Card from './components/card';
 import Footer from './components/footer';
 import {PhysicsProjectCard, HorrorGameProjectCard, ScienceProjectCard, FightingGameProjectCard, E3ProjectCard, TravelAmuletProjectCard} from './components/project-cards';
-import ThreeScene from './components/threescene';
 import Links from './components/bottom-text';
 import { Suspense, useEffect, useState } from 'react';
 import { ScaleLoader } from 'react-spinners';
@@ -26,23 +25,22 @@ export default function Page() {
           </div>
         </div>
       }>
-      <ThreeScene />
       <AnimatedBackground animationName="auroraBorealis" style={{ opacity: 0.07 }} />
       <h1 style={{display:'none'}}>My Portfolio</h1>
       
       <IntroCard />
       
-      <div className='flex justify-center md:mr-5 md:ml-5'>
-      <div className='projectCard bg-slate-50 md:p-2 rounded-xl shadow-lg max-w-5xl'>
+      <div className='flex flex-col justify-center items-center p-5 mb-52 mt-20'>
         <LabelItem label={"Work Experience"} />
-        <E3ProjectCard />
-      </div>
+        <div className='max-w-3xl'>
+          <E3ProjectCard />
+        </div>
       </div>
       
       <div className='flex justify-center'>
-      <div className='max-w-5xl bg-slate-50 rounded-xl shadow-lg mb-52'>
-      <GridComponent />
-      </div>
+        <div className='max-w-5xl mb-52'>
+          <GridComponent />
+        </div>
       </div>
 
       <Links />

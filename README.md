@@ -73,7 +73,6 @@ A simple portfolio with my resume information on a website.
 * [![JavaScript][JavaScript]][JavaScript-url]
 * [![TypeScript][TypeScript]][TypeScript-url]
 * [![NextJS][NextJS]][NextJS-url]
-* [![ThreeJS][ThreeJS]][ThreeJS-url]
 * [![React.js][React.js]][React-url]
 * [![Tailwind][Tailwind]][Tailwind-url]
 

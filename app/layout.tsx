@@ -5,6 +5,7 @@ import { GeistMono } from 'geist/font/mono'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
+import ThemeToggle from './components/theme-toggle'
 const baseUrl = 'https://www.josephhelfenbein.com'
 
 export const metadata: Metadata = {
@@ -46,7 +47,6 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black bg-white',
         GeistSans.variable,
         GeistMono.variable
       )}
@@ -57,8 +57,11 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className="antialiased max-w-full mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+      <body className="antialiased max-w-full text-black bg-white dark:text-white dark:bg-slate-900">
+        <main className="flex-auto min-w-0 flex flex-col">
+          <header className="flex justify-end items-center p-2 mb-8">
+            <ThemeToggle />
+          </header>
           {children}
           <Analytics />
           <SpeedInsights />

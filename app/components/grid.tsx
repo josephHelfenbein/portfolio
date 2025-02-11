@@ -3,11 +3,11 @@ import LabelItem from "./label-item";
 import { TravelAmuletProjectCard, GameRecommendCard, PhysicsProjectCard, HorrorGameProjectCard, FightingGameProjectCard, ScienceProjectCard, MaterialProjectCard, MendPathProjectCard, PrototypeGameCard, SpiritBoxGameCard, HelpSignalProjectCard, CerebrixProjectCard, ChamaProjectCard, PairGridProjectCard, PatSafeProjectCard, GuardianAngelProjectCard } from "./project-cards";
 import { motion } from "motion/react";
 const areaProjects = [
-    (<div className="grid md:grid-cols-2 max-w-7xl gap-1 mb-16">
+    (<div className="grid sm:grid-cols-2 max-w-7xl gap-1 mb-16">
         <MaterialProjectCard />
         <PhysicsProjectCard />
     </div>),
-    (<div className="grid md:grid-cols-2 max-w-7xl gap-1 mb-16">
+    (<div className="grid sm:grid-cols-2 max-w-7xl gap-1 mb-16">
         <PairGridProjectCard />
         <GuardianAngelProjectCard />
         <TravelAmuletProjectCard />
@@ -18,13 +18,13 @@ const areaProjects = [
         <HelpSignalProjectCard />
         <GameRecommendCard />
     </div>),
-    (<div className="grid md:grid-cols-2 max-w-7xl gap-1 mb-16">
+    (<div className="grid sm:grid-cols-2 max-w-7xl gap-1 mb-16">
         <HorrorGameProjectCard />
         <PrototypeGameCard />
         <SpiritBoxGameCard />
         <FightingGameProjectCard />
     </div>),
-    (<div className="grid md:grid-cols-2 max-w-7xl gap-1 mb-16">
+    (<div className="grid sm:grid-cols-2 max-w-7xl gap-1 mb-16">
         <ScienceProjectCard />
     </div>)
 ];

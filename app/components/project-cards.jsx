@@ -5,7 +5,7 @@ export function PhysicsProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./physicssandbox.png" width={32} />
@@ -20,14 +20,14 @@ export function PhysicsProjectCard(){
           <h5 className="text-sm tracking-tighter text-center font-semibold">June 2024 - July 2024</h5>
           <div className="flex gap-0.5 justify-center">
           <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/physics-sandbox">
-          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">
           GitHub</h5>
           </a> |
           <a target="_blank" className="cardLink flex gap-0.5" href="https://josephhelfenbein.github.io/physics-sandbox/">
-          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">Link</h5>
@@ -35,7 +35,7 @@ export function PhysicsProjectCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 md:text-sm font-medium text-gray-900 dark:text-gray-100">
             <p>A rigid body physics engine with simulated cubes and spheres. It has real-time raytraced shadows and a Blinn-Phong shader using WebGL.</p>
           </div>
       </div>
@@ -48,7 +48,7 @@ export function MaterialProjectCard(){
    <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
     <img src="./materialviewer-logo.svg" width={32} />
@@ -62,7 +62,7 @@ export function MaterialProjectCard(){
           <h5 className="text-sm tracking-tighter text-center font-semibold">September 2024 - November 2024</h5>
           <div className="flex gap-0.5 justify-center">
           <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/material-viewer">
-          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">
@@ -71,7 +71,7 @@ export function MaterialProjectCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
             <p>A 3D desktop application for previewing PBR materials using OpenGL and C++. It features HDRI environments, image-based lighting, and PBR shading. Users can upload individual image textures, custom .mat files, or .zip files for material previewing, and save viewed materials in a custom .mat format for easy sharing.</p>
           </div>
       </div>
@@ -84,7 +84,7 @@ export function GameRecommendCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./gamerecommend.svg" width={32} />
@@ -99,24 +99,24 @@ export function GameRecommendCard(){
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/openai%20api-black?logo=openai&style=for-the-badge&logoColor=white" />
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/igdb%20api-9147FF?logo=igdb&style=for-the-badge&logoColor=white" />
           </div>
-          <h5 className="text-sm tracking-tighter font-semibold text-center">United Hacks V3 submission (weekend)</h5>
+          <h5 className="text-sm tracking-tighter font-semibold text-center">United Hacks V3 submission</h5>
           <h5 className="text-sm tracking-lighter font-semibold text-center">Winner for Best Solo Hack 🎉</h5>
           <div className="flex gap-0.5 justify-center">
           <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/gamerecommend-ai">
-          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">
           GitHub</h5>
           </a> |
           <a target="_blank" className="cardLink flex gap-0.5" href="https://gamerecommend.vercel.app/">
-          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">Link</h5>
           </a> |
           <a target="_blank" className="cardLink flex gap-0.5" href="https://devpost.com/software/gamerecommend-ai/">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">Devpost</h5>
@@ -125,7 +125,7 @@ export function GameRecommendCard(){
         </div>
 
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
             <p>Utilizes AI to find similar games to any game you like. All you need to do is enter in a game you like, press the button, and the AI will return 5 games it thinks you will like, along with reasons why.</p>
           </div>
       </div>
@@ -138,7 +138,7 @@ export function MendPathProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./mendpath.png" width={32} />
@@ -158,17 +158,17 @@ export function MendPathProjectCard(){
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/A%E2%80%93frame-EF2D5E?logo=a-frame&style=for-the-badge&logoColor=white" />
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/ar.js-5599aa.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJzdmcxIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iNjAgMzUgMTUwIDIzMCI+PGRlZnMgaWQ9ImRlZnMxIi8+PGcgaWQ9ImxheWVyMSI+PHBhdGggZD0ibSAxMjkuNDA3MDksMzkuMjYwMTM2IGMgLTAuMTQzMTcsMC4wNTQ1MSAtMTQuMzI2MTcsMTQuMDI1Mzc3IC0zMS41MTc5NzUsMzEuMDQ2MTY3IGwgLTMxLjI1ODA0LDMwLjk0Njk0NyA1LjE3ZS00LDE5LjE5MTU5IGMgNy42ZS01LDEwLjU1NTM4IDAuMDc5MzIsMzEuODA2NTUgMC4xNzYyMTYsNDcuMjI1MDMgbCAwLjE3NjIxNywyOC4wMzM5NSAxNC40OTczMDYsLTE0LjY3MjQ5IDE0LjQ5NzMwNywtMTQuNjcxOTggMy43MjkwMDYsLTMuNzA5MzMgMTQuOTQ2Mzc2LC0xNC45NDQ4MiAxNC45NDYzOCwtMTQuOTQ0ODMgMS42NzU4NiwxLjcxODI0IGMgMC45MjE2LDAuOTQ0OTcgNC4zOTkzNSw0LjQ5MTI2IDcuNzI4MjIsNy44ODAxNCBsIDYuMDUyMzMsNi4xNjEzOCA0Ni45ODY4MiwtNDYuOTg0NzMgLTMxLjE4NzgyLC0zMS4xODcyMzkgQyAxNDMuNzAyMzgsNTMuMTk1MTk5IDEyOS41NTAyNywzOS4yMDU2MjYgMTI5LjQwNzA5LDM5LjI2MDEzNiBaIG0gMTMuMTY2MTIsMzMuOTY1ODg1IDkuNjA1NjEsOS42NTcyOTIgYyAxMS41OTk3LDExLjY2MTg1IDEzLjY2NTQ3LDE0LjE0NDk1OCAxNy44ODcyOSwyMS41MDE1MjcgNi44NzM4NSwxMS45Nzc3NyA4Ljg2NzMsMjQuNDEwMTcgNC4zNjA5NywyNy4xOTUyNCAtMS41NTUzLDAuOTYxMjMgLTIuOTc2NzYsMC45Mjg0NiAtNi4zNzUzMiwtMC4xNDcyOCAtMC40ODk4NiwtMC4xNTUwNiAwLjQxNjk4LDIuMTkzMDMgNi4wNDUxMSwxNS42NTIyOCAzLjY0MTgsOC43MDkxMSA2LjczNTIsMTYuMTMyMzUgNi44NzQsMTYuNDk2MTUgMC4xNTg1NiwwLjQxNTU4IC0wLjcxNjgzLC0wLjMwMDUyIC0yLjM1NDM4LC0xLjkyNjUgbCAtMi42MDYwNCwtMi41ODc5NSAtMS4wMzE5OCwzLjYwMzkxIC0xLjAzMTk4LDMuNjAzOTIgLTIuMzk0NjksMS4xOTUyNyBjIC0xLjMxNzA5LDAuNjU3MzIgLTMuMzUxNTksMS44Mjc5NyAtNC41MjExNywyLjYwMTM5IC00Mi4yNDA4MSw0MC4yNTY5NyAzMC4zMzc0OSwtMjEuMjM0NDggNi4xNzc5MiwyNC4yMDE2MyAtMzIuOTEwOCwwLjU5OTQ0IC0zMS4wNTYzNCwtMTIuODI1OTUgLTUuODI4NjUsLTMyLjUzNTQ5IDEuNzc4MjIsLTEuMzQ1NDIgNi4xMzQyLC0zLjcxMjQzIDYuODMyMTQsLTMuNzEyNDMgMC42NDMxMywwIDAuNDE5MjcsLTAuMzM1MDcgLTEuNTg2OTgsLTIuMzc1NTcgbCAtMS45NTY0NywtMS45OTAwNiAtMi42OTc1MSwtNi40ODIyOSBjIC0xLjQ4MzU2LC0zLjU2NTI1IC00LjMxMDUsLTEwLjI5MjI5IC02LjI4MjMxLC0xNC45NDg5NiBsIC0zLjU4NTMxLC04LjQ2NjY2IC0zLjQwMjM4LC0zLjQzODU1IC0zLjQwMjM3LC0zLjQzODAzIHYgOC43MjcxMSA4LjcyNjYgbCAtNC4zNjU2MywtNC4zNTk0MiAtNC4zNjU2MiwtNC4zNTk0MyAwLjAwMywtMjYuMTk2ODQ4IHoiIHN0eWxlPSJkaXNwbGF5OmlubGluZTtmaWxsOiM3ZmI4ZTM7ZmlsbC1vcGFjaXR5OjEiIGlkPSJwYXRoMTYiLz48cGF0aCBkPSJtIDE1MS4zMDYwMSw5MC45NTMxMDUgLTAuMDA0LDguNjEzOTQ0IC0wLjAwNCw4LjYxMzQzMSA1LjA5MzIzLDUuMDQxNTUgYyAzLjIxMzA2LDMuMTgwNDQgNS42MzA0Myw1LjM0NzQ1IDYuNTQ4NDQsNS44Njk5MyBoIDUuMmUtNCBjIDEuNjI5NTYsMC45Mjc0NSAzLjIxOTc0LDEuMDg5OTQgNC4xNjcxOCwwLjQyNjMzIDEuODcxNSwtMS4zMTA4NiAxLjIxMTQ1LC02LjMyOTI3IC0xLjU1NjQ5LC0xMS44MzQ0MiAtMS45OTMwMiwtMy45NjM5MSAtMy41NTUxMywtNS45NDk4OSAtOC45OTc5LC0xMS40MzkwOTkgeiIgc3R5bGU9ImZpbGw6IzdmYjhlMztmaWxsLW9wYWNpdHk6MSIgaWQ9InBhdGgxNSIvPjxwYXRoIGQ9Im0gMTkxLjg0MzU5LDEwMS45MzMzMSBjIDAuMTEwMDUsMCAwLjE5OTk5LDIwLjk4NTA5IDAuMTk5OTksNDYuNjMzMzMgdiA0Ni42MzMzMyBsIC0zMS4zMDU1OSwzMS4zMDUwNyAtMzEuMzA2MSwzMS4zMDUwNiAwLjEwOTA0LC00Ni45MTYgMC4xMDkwNCwtNDYuOTE2IDE1LjkxMDE0LC0xNS45MzQ5NCBjIDguNzUwNTQsLTguNzY0MiAxNS45ODUwOCwtMTUuODQ4NDQgMTYuMDc2NTQsLTE1Ljc0MjcxIDAuMDkxNCwwLjEwNTcyIDIuMTU3MjYsNC45NjY1IDQuNTkwOTMsMTAuODAxOTMgbCA0LjQyNTA1LDEwLjYxMDIgMS45NjQyMiwxLjk1MTMgYyAxLjA4MDM4LDEuMDczMTcgMS45NjQyMywyLjAxODUyIDEuOTY0MjMsMi4xMDExNyAwLDAuMDgyNyAtMC42NzA3MSwwLjM3ODIgLTEuNDkwMzUsMC42NTY4IC0xMC45MjMyLDMuNzEyOTEgLTI2Ljc2NzQ2LDI2LjYyNjc5IC0yNC45NjkwMiwzNi4xMDk5NSAwLjM0NjEzLDEuODI1MTEgMC42ODEyMywyLjM2NjM4IDEuNzM4MzksMi44MDgwOSAxLjc0MjEsMC43Mjc5IDQuMjkwOTgsLTAuMjQ2MSA5LjgyMDU5LC0zLjc1MzI2IDYuMzk3OSwtNC4wNTc4NiA3Ljc1MjcyLC00LjY0MDM4IDguNTUyNDUsLTMuNjc2NzcgMC44NDc0NywxLjAyMTEyIC0wLjUxMzEzLDQuNDQ0NTggLTMuMjMxODQsOC4xMzE4IC0zLjIxNTE1LDQuMzYwNTEgLTcuMjA1NzMsNy42NzIyMiAtMTIuOTc2NDcsMTAuNzY4MzMgLTIuOTAzNzksMS41NTc5NSAtMi42ODg5OCwxLjE4MTQ4IC0zLjEwODM0LDUuNDM4OTUgLTAuMTU3NjcsMS42MDA3MyAtMC4zNDY3NywzLjE5Mjc3IC0wLjQyMDY0LDMuNTM3NzcgLTAuMTIyMywwLjU3MTIxIC0wLjA2ODMsMC42MTE1NCAwLjYwNjE2LDAuNDUwMSAxLjQyOCwtMC4zNDE4IDYuMDUwMDUsLTIuNzg1ODUgNy44ODQyNywtNC4xNjg3NCAyLjM2Mjk1LC0xLjc4MTUxIDYuODk2NzksLTYuMzExMjkgOS4yMTk2LC05LjIxMTg0IDcuNTA3OTMsLTkuMzc1MzIgMTIuMTQ3NDksLTIwLjEwNzE4IDExLjAyNjcxLC0yNS41MDU5NCAtMC44MjIwNywtMy45NTk5MSAtMy43NDI0NiwtMy40NzUxNyAtMTIuNzA1NjgsMi4xMDg0IC01LjQ3NzIzLDMuNDEyMDEgLTcuMjE0OTEsNC4wMTk3OSAtNy41NTk3NSwyLjY0NTgzIC0wLjQ3NjE3LC0xLjg5NzIgMi4zNjAzNiwtNi44NjQ2IDYuMDQ2MTUsLTEwLjU4ODUgMi4zMDI1NywtMi4zMjYzOCA1LjI3MzcsLTQuNDA4NDggOC44MzU2MywtNi4xOTE4NyAxLjE5MDg1LC0wLjU5NjIzIDIuMjI0NTcsLTEuMjkzOTggMi4zMDAxMiwtMS41NTI4NyAwLjA3NTUsLTAuMjU4NiAwLjUxMjcsLTEuNzc5OTUgMC45NzE1MiwtMy4zODA2OCAwLjQ1ODgyLC0xLjYwMDcxIDAuODg2MzIsLTIuOTY0IDAuOTQ5ODEsLTMuMDI5MjcgMC4wNjM1LC0wLjA2NTMgMS4yNTg1MSwxLjAwNjI5IDIuNjU2MTcsMi4zODEyNSAxLjM5NzY1LDEuMzc0OTUgMi40Nzc3LDIuMzIxNTEgMi4zOTk4NSwyLjEwMzIzIC0wLjA3NzgsLTAuMjE4MjggLTMuMTMwMjcsLTcuNTU3MjUgLTYuNzgzMDUsLTE2LjMwOTA4IC0zLjY1Mjc3LC04Ljc1MTgzIC02LjY0MTQ1LC0xNS45NzI3NiAtNi42NDE0NSwtMTYuMDQ2MDUgMCwtMC4wNzMzIDAuNzI1MTgsMC4wOTI3IDEuNjExMjcsMC4zNjg0NSAyLjEwOTQ5LDAuNjU2NTUgMy4zMDc4OSwwLjYzMjcxIDQuNzQ5MDYsLTAuMDk0IDAuOTU2NDMsLTAuNDgyMyAxLjMzMDk3LC0wLjg5NjY4IDEuOTc0MDQsLTIuMTgyODEgMC43NDAyNywtMS40ODA1NCAwLjc5MzI4LC0xLjc4MzYgMC43ODQ0NSwtNC40OTc5MiAtMC4wMDYsLTEuNzc4OCAtMC4xOTU2MSwtMy43NzQ1IC0wLjQ4ODM0LC01LjEzMjUgbCAtMC40NzkwNCwtMi4yMjE1NyA3Ljg5NTEyLC03Ljg5ODc0IGMgNC4zNDIzLC00LjM0NDExIDcuOTg1MDcsLTcuODk4MjMgOC4wOTUxMiwtNy44OTgyMyB6IiBzdHlsZT0iZGlzcGxheTppbmxpbmU7ZmlsbDojMDAzOTY0O2ZpbGwtb3BhY2l0eToxIiBpZD0icGF0aDExIi8+PHBhdGggc3R5bGU9ImRpc3BsYXk6aW5saW5lO2ZpbGw6IzAwMDAwMDtmaWxsLW9wYWNpdHk6MSIgZD0ibSAxMjkuNzE1OTgsMjEwLjY3NzA4IDAuMTcwNzksLTQ2LjY5ODk2IDcuNjYyODgsLTcuNjcyMzggNy42NjI4OCwtNy42NzIzOCA4LjYxNDM5LDguNjE0MzkgOC42MTQzOSw4LjYxNDM5IC0xLjc2OTY2LDEuOTY4NDEgYyAtNy42MTU5MSw4LjQ3MTIyIC0xMi44MzA2MSwxOC44Mjg5NSAtMTIuODA3NTMsMjUuNDM5MDIgMC4wMDcsMS45MTE1NSAwLjY4OTIxLDMuNzAwNzEgMS41OTcxNCw0LjE4NjYyIDEuNjU3LDAuODg2OCA1LjAwMDIzLC0wLjMxODA4IDEwLjMzMzE2LC0zLjcyMzk5IDUuODYyNTYsLTMuNzQ0MTYgNy4zOTc1NywtNC40OTAzMSA4LjA3NzI0LC0zLjkyNjIzIDAuNjE5NTcsMC41MTQxOSAwLjQwNjUxLDIuMTM2MTcgLTAuNTM1NjEsNC4wNzc1NCAtMi44Njc5MSw1LjkwOTY5IC04LjU3NDA4LDExLjMzNjY0IC0xNS42Mjg4LDE0Ljg2NDA0IC0xLjMxNjU2LDAuNjU4MjkgLTIuNDExMTksMS4yMTI5IC0yLjQzMjUxLDEuMjMyNDggLTAuMTMxODcsMC4xMjEwNSAtMC45MzQyNCw4LjQxMTE5IC0wLjgyNDcsOC41MjA3NCAwLjIxODY0LDAuMjE4NjMgNC4xNjkwMywtMS40MzgwOSA1Ljg5MDU2LC0yLjQ3MDQgMi41NTQyLC0xLjUzMTYzIDQuNTg0NDksLTMuMTc3MzEgNy40MTIxMywtNi4wMDgwNSA4LjE3NDgxLC04LjE4Mzc2IDE0LjQ4Nzk4LC0xOC45Nzk4IDE1LjU4Mzg2LC0yNi42NDk2OCBsIDAuMjk0NDcsLTIuMDYwOTIgNy4wMDY4OCw3LjAxMDYzIDcuMDA2ODksNy4wMTA2MyAtMzEuMDQ5ODIsMzEuMDIxNTMgLTMxLjA0OTgzLDMxLjAyMTUzIHogbSAtMzIuNjI1ODQ2LDYuNDYyMTMgYyAtMy40OTc5NDUsLTEuNzQ5OTUgLTguMTQ1OTA1LC02Ljc1MTk1IC0xMS41NjY5MTgsLTEyLjQ0Nzk5IGwgLTEuNjQzNTc3LC0yLjczNjU4IDAuNDgzNjY3LC0xLjg4MDM0IGMgMC4yNjYwMTgsLTEuMDM0MTggMC41MzI0OTksLTEuOTI5MTYgMC41OTIxODEsLTEuOTg4ODQgMC4wNTk2OCwtMC4wNTk3IDAuNTc0ODEsMC41NzU0OSAxLjE0NDcyOCwxLjQxMTQ5IDEuNDQ0NTMzLDIuMTE4OTYgNS4wNTc2MjQsNS44MzcwOSA2LjI3NjQxMSw2LjQ1ODg3IDEuMzU4MzM5LDAuNjkyOTcgMi40OTc3NDEsMC41NTM2NyAzLjIwMDMxLC0wLjM5MTI1IDAuNTUyNTQ3LC0wLjc0MzE1IDAuNTU1Njg3LC0wLjg2MDMgMC42MjcyNzksLTIzLjQwNjgyIGwgMC4wNzE5NSwtMjIuNjU5OTMgNC4zNTk4MjUsNC4zNTM4MSA0LjM1OTgxLDQuMzUzODEgLTAuMDA1LDIwLjY0MDUxIGMgLTAuMDAzLDExLjM1MjI4IC0wLjExNDczLDIxLjY4NjI2IC0wLjI0OTIxLDIyLjk2NDQxIC0wLjYxMDM4LDUuODAxMTYgLTMuMTU5MzQsNy41NzYzMiAtNy42NTE3NTksNS4zMjg4NSB6IG0gNjAuMzU5MzE2LC0zMi41NjY1MiBjIC0wLjYwNjcsLTAuMjQ0ODEgLTAuMzUyOTUsLTIuMDQyNCAwLjU1NTI0LC0zLjkzMzI4IDEuNTQwMDYsLTMuMjA2NDUgNS42ODY1MywtOC4xMzE5NCA4LjI3MTgxLC05LjgyNTg4IGwgMC42NzAwMiwtMC40MzkwMSAzLjE2Nzk3LDMuMTUxOCAzLjE2Nzk4LDMuMTUxOCAtMC43Mzk2OSwwLjI1NjQ0IGMgLTEuNDQ5NDUsMC41MDI0OSAtNS4wMjMzLDIuNDQwODUgLTguMjgwMzEsNC40OTEgLTMuMjI4MDYsMi4wMzE5MyAtNS42ODU0MSwzLjMzNTcxIC02LjIxNzcxLDMuMjk4ODggLTAuMTQ1NTIsLTAuMDEwMSAtMC40MTM0MSwtMC4wNzg0IC0wLjU5NTMxLC0wLjE1MTc1IHogTSA4MC4xMjkxNTksMTQ2Ljc3NzIgYyAwLjAwNDQsLTE2Ljk2MDM5IDAuMTY1Njg4LC0yMC43MDUxOSAxLjA3MTkxMiwtMjQuODg3OTIgMS44NzY2ODcsLTguNjYxOTcgNy4xMDM1NjcsLTE4LjcyOTk1IDEzLjY1Njk1OCwtMjYuMzA1OTQ3IDguMTExODgxLC05LjM3NzY3NCAxNS40NTE0MzEsLTEyLjU2NTcwNCAxOC40NDk5MzEsLTguMDEzOTc0IDEuNTYxNjQsMi4zNzA1NjcgMS41NzIyNSwyLjUxMTk3NyAxLjY3MzIyLDIyLjMwMTQ3MSBsIDAuMDkyNSwxOC4xMjM5NiAtNC4zNzc0Niw0LjM2MjYyIC00LjM3NzQ3LDQuMzYyNjIgdiAtOC41OTQ0NSAtOC41OTQ0NSBsIC04LjczMTI0OSw4LjcyODI0IC04LjczMTI1LDguNzI4MjUgdiA4LjYwMzQ3IDguNjAzNDcgbCAtNC4zNjU2MjUsNC4zNTk2MSAtNC4zNjU2MjUsNC4zNTk2MSB6IG0gMjYuMTM2NjMxLC00MS4xMzk3IGMgLTAuMDc0OSwtNC44NzEzMSAtMC4xMTQ0NiwtNS4yMjA2NCAtMC43MDgwOCwtNi4yNTY2MDUgQyAxMDQuOTM1NDIsOTguMjk0ODc0IDEwNC4wOTE2NSw5Ny43IDEwMy4xNzM1Myw5Ny43IGMgLTAuMjYwOTUsMCAtMS4yMDE2MSwwLjM2MzM2MyAtMi4wOTAzNSwwLjgwNzQ3MyAtMS4xODg3NDUsMC41OTQwMjEgLTIuMjY2NTE5LDEuNDkzNzU3IC00LjA3NzE1OCwzLjQwMzY1NyAtMy41NjAzMTgsMy43NTU0OSAtNi4wNDI0MzgsOC4xNjYyNyAtNy4zOTYyNjYsMTMuMTQzMzEgLTAuNDczNDg0LDEuNzQwNjUgLTAuNTg3ODcsMy4wMjY1NiAtMC42ODAzNzgsNy42NDg2OSBsIC0wLjExMTIwNSw1LjU1NjI0IDguNzYzNDg2LC04LjczMTI0IDguNzYzNDgxLC04LjczMTI1IHogbSAtMy4yNTU4Myw0OS4yNDg1OCBjIC0zLjE0NjYzMywtMS40Mjk1IC03LjUxNTA2LC04LjI4MTkgLTcuNTMzNTc1LC0xMS44MTczMSAtMC4wMjE4MiwtNC4xNjcxNSA0LjU3NDU3NSwtMi4wOTY1NyA3Ljk1MDg4NSwzLjU4MTY5IDIuMDM3NTYsMy40MjY3NyAyLjg3NTE5LDcuNTAyNzggMS43MTY0LDguMzUyMjIgLTAuNjUzNzcsMC40NzkyNCAtMC44NDUxNiwwLjQ2ODc4IC0yLjEzMzcxLC0wLjExNjYgeiIgaWQ9InBhdGg5Ii8+PHBhdGggZD0ibSAxNDIuNTczMjEsNzMuMjI2MDIxIC0wLjAwMywyNi4xOTY4NTEgLTAuMDAzLDI2LjE5Njg0OCA0LjM2NTYyLDQuMzU5NDMgNC4zNjU2Myw0LjM1OTQyIHYgLTguNzI2NiAtOC43MjcxMSBsIDMuNDAyMzcsMy40MzgwMyAzLjQwMjM4LDMuNDM4NTUgMy41ODUzMSw4LjQ2NjY2IGMgMS45NzE4MSw0LjY1NjY3IDQuNzk4NzUsMTEuMzgzNzEgNi4yODIzMSwxNC45NDg5NiBsIDIuNjk3NTEsNi40ODIyOSAxLjk1NjQ3LDEuOTkwMDYgYyAyLjAwNjI1LDIuMDQwNSAyLjIzMDExLDIuMzc1NTcgMS41ODY5OCwyLjM3NTU3IC0wLjY5Nzk0LDAgLTUuMDUzOTIsMi4zNjcwMSAtNi44MzIxNCwzLjcxMjQzIC0wLjk3ODE1LDAuNzQwMDcgLTIuODY4NywyLjQzOTk5IC00LjIwMDc4LDMuNzc3NTUgLTguMjQ3ODYsOC4yODE4MiAtMTQuNTYzNDksMTkuNDEyNTggLTE0Ljk4NzIsMjYuNDEzMzggLTAuMTcyNTUsMi44NTEwNyAwLjAyNDIsMy45MzM4MSAwLjg4MzE1LDQuODYwNjggMC42Mjk1NywwLjY3OTMxIDAuNzg1NDUsMC43MTkzNiAyLjMxMTQ5LDAuNTk2ODYgMS45NzI1NywtMC4xNTgzNCA0LjA1MTg2LC0xLjE0ODA1IDkuMDU1MjYsLTQuMzA5MjkgNC4yNzc1OSwtMi43MDI2NiA1Ljk2MjksLTMuNTY2MTkgNi45NTkyNiwtMy41NjYxOSAyLjk0Mzc0LDAgLTAuMjgwOTYsNi45NTMxMyAtNS43NzI3NywxMi40NDczIC0yLjgzMjY3LDIuODMzODkgLTUuMjA1OTUsNC41NDM5OCAtOS4zNTM0Myw2LjczOTEyIC0xLjU1NTQ0LDAuODIzMjUgLTIuODI5MDYsMS41MTYxOSAtMi44MzAzMiwxLjUzOTk2IC0wLjAwMSwwLjAyMzggLTAuMTc5MDYsMS41MzE2OSAtMC4zOTQ4MSwzLjM1MDcgLTAuMjE1NzUsMS44MTkwMSAtMC4zOTM1NCwzLjYzMzkgLTAuMzk0ODEsNC4wMzI4MyBsIC0wLjAwMiwwLjcyNTAyIDEuNzc5MjIsLTAuNjY5NzMgYyAwLjk3ODYsLTAuMzY4MzQgMi41MjQyOSwtMS4wODY3NiAzLjQzNTQ1LC0xLjU5NjI4IDYuMTg4NjEsLTMuNDYwODcgMTQuNjcyMDYsLTEzLjAyNTg0IDE5LjM0MDk0LC0yMS44MDY0MiAyLjcwMDY4LC01LjA3OTA4IDQuMDE0MywtOS40MDU3NyA0LjAxNTc3LC0xMy4yMjkxNyAxMGUtNCwtMi43Nzc1NyAtMC41MDk0MywtMy44NDIzOSAtMS45NzM1MiwtNC4xMTcwNiAtMS45NzY4NCwtMC4zNzA4NiAtNC41MjE2NywwLjcyMjE0IC0xMC44OTIzNiw0LjY3Nzc1IC01LjEwODY0LDMuMTcxOTkgLTYuMzczMDIsMy43MDgwMiAtNy4wNzk2NywzLjAwMTM3IC0xLjkzMzU4LC0xLjkzMzU5IDMuOTQ0MTYsLTEwLjY5Mzk3IDkuNzUxODYsLTE0LjUzNDUyIDEuMTY5NTgsLTAuNzczNDIgMy4yMDQwOCwtMS45NDQwNyA0LjUyMTE3LC0yLjYwMTM5IGwgMi4zOTQ2OSwtMS4xOTUyNyAxLjAzMTk4LC0zLjYwMzkyIDEuMDMxOTgsLTMuNjAzOTEgMi42MDYwNCwyLjU4Nzk1IGMgMS42Mzc1NSwxLjYyNTk4IDIuNTEyOTQsMi4zNDIwOCAyLjM1NDM4LDEuOTI2NSAtMC4xMzg4LC0wLjM2MzggLTMuMjMyMiwtNy43ODcwNCAtNi44NzQsLTE2LjQ5NjE1IC01LjYyODEzLC0xMy40NTkyNSAtNi41MzQ5NywtMTUuODA3MzQgLTYuMDQ1MTEsLTE1LjY1MjI4IDMuMzk4NTYsMS4wNzU3NCA0LjgyMDAyLDEuMTA4NTEgNi4zNzUzMiwwLjE0NzI4IDQuNTA2MzMsLTIuNzg1MDcgMi41MTI4OCwtMTUuMjE3NDcgLTQuMzYwOTcsLTI3LjE5NTI0IC00LjIyMTgyLC03LjM1NjU2OSAtNi4yODc1OSwtOS44Mzk2NzcgLTE3Ljg4NzI5LC0yMS41MDE1MjcgeiBtIDguNzMyOCwxNy43MjcwODQgNS4yNDY3MSw1LjI5MTY2NiBjIDUuNDQyNzcsNS40ODkyMDkgNy4wMDQ4OCw3LjQ3NTE4OSA4Ljk5NzksMTEuNDM5MDk5IDIuNzY3OTQsNS41MDUxNSAzLjQyNzk5LDEwLjUyMzU2IDEuNTU2NDksMTEuODM0NDIgLTAuOTQ3NDQsMC42NjM2MSAtMi41Mzc2MiwwLjUwMTEyIC00LjE2NzE4LC0wLjQyNjMzIGggLTUuMmUtNCBjIC0wLjkxODAxLC0wLjUyMjQ4IC0zLjMzNTM4LC0yLjY4OTQ5IC02LjU0ODQ0LC01Ljg2OTkzIGwgLTUuMDkzMjMsLTUuMDQxNTUgMC4wMDQsLTguNjEzNDMxIHoiIHN0eWxlPSJmaWxsOiNmZmZmZmYiIGlkPSJwYXRoMTMiLz48L2c+PC9zdmc+&style=for-the-badge&logoColor=white" />
           </div>
-          <h5 className="text-sm text-center tracking-tighter font-semibold">DivHacks 2024 submission (weekend)</h5>
+          <h5 className="text-sm text-center tracking-tighter font-semibold">DivHacks 2024 submission</h5>
           <div className="flex gap-0.5 justify-center">
           <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/MendPath/MendPath">
-          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">
           GitHub</h5>
           </a> |
           <a target="_blank" className="cardLink flex gap-0.5" href="https://www.mendpath.us">
-          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">Demo</h5>
@@ -188,7 +188,7 @@ export function MendPathProjectCard(){
         </div>
 
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
             <p>MendPath combines therapy, technology, and social connection in a way that fosters empathy, accountability, and mental health progress for users, filling a crucial gap in both personal well-being and community support. </p>
           </div>
       </div>
@@ -201,7 +201,7 @@ export function CerebrixProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./cerebrix.svg" width={32} />
@@ -221,24 +221,24 @@ export function CerebrixProjectCard(){
 
           
           </div>
-          <h5 className="text-sm tracking-tighter text-center font-semibold">HackRU 2024 submission (weekend)</h5>
-          <h5 className="text-sm tracking-lighter text-center font-semibold">Honorable Mention for the Neurotech Track 🎉</h5>
+          <h5 className="text-sm tracking-tighter text-center font-semibold">HackRU 2024 submission</h5>
+          <h5 className="text-sm tracking-lighter text-center font-semibold">Honorable Mention for the Neurotech Track</h5>
           <div className="flex gap-0.5 justify-center">
           <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/cerebrix">
-          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">
           GitHub</h5>
           </a> |
           <a target="_blank" className="cardLink flex gap-0.5" href="https://hackru-2024-rouge.vercel.app/dashboard">
-          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">Demo</h5>
           </a> |
           <a target="_blank" className="cardLink flex gap-0.5" href="https://devpost.com/software/cerebrix">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">Devpost</h5>
@@ -247,7 +247,7 @@ export function CerebrixProjectCard(){
         </div>
 
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
             <p>Cerebrix is an adaptive app for dementia and Alzheimer's care, offering engaging minigames to boost memory and cognition. It features a voice AI companion for social support, while caretakers can manage accounts and track cognitive progress. </p>
           </div>
       </div>
@@ -260,7 +260,7 @@ export function PatSafeProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./HoyaHax2025-icon.svg" width={32} />
@@ -281,23 +281,23 @@ export function PatSafeProjectCard(){
           
 
           </div>
-          <h5 className="text-sm tracking-tighter text-center font-semibold">Hoya Hacks 2025 submission (weekend)</h5>
+          <h5 className="text-sm tracking-tighter text-center font-semibold">Hoya Hacks 2025 submission</h5>
           <div className="flex gap-0.5 justify-center">
           <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/patsafe">
-          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">
           GitHub</h5>
           </a> |
           <a target="_blank" className="cardLink flex gap-0.5" href="https://www.patsafe.co/">
-          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">Demo</h5>
           </a> |
           <a target="_blank" className="cardLink flex gap-0.5" href="https://devpost.com/software/patsafe">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">Devpost</h5>
@@ -306,7 +306,7 @@ export function PatSafeProjectCard(){
         </div>
 
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
             <p>PatSafe is a platform that connects discharged patients with doctors for better post-care monitoring. It enables real-time recovery tracking, symptom reporting, and medication adherence updates via a seamless doctor dashboard and an AI-powered chatbot for patient support. </p>
           </div>
       </div>
@@ -319,7 +319,7 @@ export function PairGridProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./pairgrid-icon.svg" width={32} />
@@ -340,17 +340,17 @@ export function PairGridProjectCard(){
 
           
           </div>
-          <h5 className="text-sm tracking-tighter text-center font-semibold">December 2024 - Current</h5>
+          <h5 className="text-sm tracking-tighter text-center font-semibold">December 2024 - February 2025</h5>
           <div className="flex gap-0.5 justify-center">
           <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/pairgrid">
-          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">
           GitHub</h5>
           </a> |
           <a target="_blank" className="cardLink flex gap-0.5" href="https://www.pairgrid.com/">
-          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">Link</h5>
@@ -359,8 +359,8 @@ export function PairGridProjectCard(){
         </div>
 
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
-            <p>PairGrid connects developers by similarity to pair program and build together. It matches them using interests, tech stack, and coding goals, and will include real-time chat, video calls, and screen sharing.</p>
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
+            <p>PairGrid connects developers by similarity to pair program and build together. It matches them using interests, tech stack, and coding goals, and includes real-time chat, voice calls, and screen sharing.</p>
           </div>
       </div>
     </article>
@@ -372,7 +372,7 @@ export function HelpSignalProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./helpsignallogo.svg" width={32} />
@@ -387,17 +387,17 @@ export function HelpSignalProjectCard(){
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/amazon%20rds-527FFF?style=for-the-badge&logo=amazon%20rds&logoColor=white" />
           <img className="h-5 sm:h-6" src="https://img.shields.io/badge/cloudflare%20workers-F38020?style=for-the-badge&logo=cloudflare%20workers&logoColor=white" />
           </div>
-          <h5 className="text-sm tracking-tighter font-semibold text-center">HackHarvard 2024 submission (weekend)</h5>
+          <h5 className="text-sm tracking-tighter font-semibold text-center">HackHarvard 2024 submission</h5>
           <div className="flex gap-0.5 justify-center">
           <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/HelpSignal">
-          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">
           GitHub</h5>
           </a> |
           <a target="_blank" className="cardLink flex gap-0.5" href="https://devpost.com/software/helpsignal">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">Devpost</h5>
@@ -406,7 +406,7 @@ export function HelpSignalProjectCard(){
         </div>
 
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
             <p>An emergency app using voice input to assess situations, alert nearby certified helpers (CPR, first aid), and notify first responders—providing immediate assistance before official help arrives. </p>
           </div>
       </div>
@@ -419,7 +419,7 @@ export function TravelAmuletProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
     <img src="./travelamulet-icon.png" width={32} />
@@ -438,23 +438,23 @@ export function TravelAmuletProjectCard(){
             <img className="h-5 sm:h-6" src="https://img.shields.io/badge/amadeus%20api-1b69bc.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iNjkuMjY3NjI0IiBoZWlnaHQ9Ijg0LjgxODM3NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNjkuMjY3NjI0IDg0LjgxODM3NSI+PHBhdGggZD0iTSA1MS4xMjgzNzUsNjUuODUyMTI1IEMgNDcuMjQwNzUsNjcuMzg0MjUgMzcuODE1LDcwLjQ0Njc1IDMwLjg2NjI1LDcwLjQ0Njc1IGMgLTcuNTQwMTI1LDAgLTEzLjE5Mzg3NSwtMi41OTEyNSAtMTMuMTkzODc1LC0xMC44MzgzNzUgMCwtNy4xODUgMy44ODUyNSwtMTEuMzA3NjI1IDE0LjI1NTM3NSwtMTEuNjYxNjI1IGwgMTkuMjAwNjI1LC0wLjcwNjUgeiBNIDQwLjI5LDAgQyAyNC4wMzMyNSwwIDExLjMxMDU1LDQuMDA2Mzc1IDYuMzYyMyw2LjQ4MSBsIDMuODg4MTg4LDEzLjY2NDUgYyAwLDAgMTIuNDg4NzYyLC00LjQ3NiAyNC43Mzc3NjIsLTQuNDc2IDEwLjQ4NDg3NSwwIDE1LjkwMjg3NSwyLjk0Mzc1IDE1LjkwMjg3NSwxMy4zMSB2IDUuODkxNjI1IEggMzQuOTg4MjUgQyA4LjAxMjIxMjUsMzQuODcxMTI1IDAsNDcuMjQwMjUgMCw2MC45MDU3NSBjIDAsMTguMTM5Njc1IDE0LjEzNzc1LDIzLjkxMjYyNSAyNi45NzgsMjMuOTEyNjI1IDE0Ljk2MDUsMCAyMy42NzkyNSwtNi4yNDI2NzUgMjQuNzM4MjUsLTYuMjQyNjc1IDAuODI1NzUsMCAzLjg4ODI1LDMuMjk2ODc1IDE3LjU1MTM3NSwzLjI5Njg3NSB2IC01Ny43MjIyIEMgNjkuMjY3NjI1LDYuODM1IDU4LjU0OTM3NSwwIDQwLjI5LDAgWiIgc3R5bGU9ImZpbGw6I2ZmZmZmZjtzdHJva2Utd2lkdGg6MC4xMjUiIC8+PC9zdmc+Cg==&style=for-the-badge&logoColor=white" />
             <img className="h-5 sm:h-6" src="https://img.shields.io/badge/tidb%20serverless-000000.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDQwIDUwIj4KPHBhdGggZD0iTTIxLjI4NzcgMC4zMDA3ODFMMC4yOTM5NDUgMTIuNjY5NFYzNy40MDI1TDIxLjI4NzcgNDkuNzcxMUw0Mi4yNzczIDM3LjQwMjVWMTIuNjY5NEwyMS4yODc3IDAuMzAwNzgxWiIgZmlsbD0iI0RDMTUwQiIgLz4KPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE0LjI4NzYgMzcuNDAyOFYyMC45MTU1TDcuMjkxMDIgMjUuMDM4NFYxNi43OTI2TDIxLjI4ODIgOC41NDY4OEwyOC4yODQ4IDEyLjY2OThMMjEuMjg4MiAxNi43OTI2VjQxLjUyNTdMMTQuMjg3NiAzNy40MDI4WiIgLz4KPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTI4LjI4NDIgMzcuNDAzMVYyMC45MTU5TDM1LjI4MDcgMTYuNzkzVjMzLjI4MDNMMjguMjg0MiAzNy40MDMxWiIgLz4KPC9zdmc+&style=for-the-badge" />
             </div>
-            <h5 className="text-sm tracking-tighter text-center font-semibold">TiDB Hackathon 2024 submission (1 month)</h5>
+            <h5 className="text-sm tracking-tighter text-center font-semibold">TiDB Hackathon 2024 submission</h5>
             <div className="flex gap-0.5 justify-center">
             <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/travel-amulet">
-            <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="20" viewBox="0 0 30 30" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
               <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
             </svg>
             <h5 className="text-sm tracking-tighter">
             GitHub</h5>
             </a> |
             <a target="_blank" className="cardLink flex gap-0.5" href="https://travelamulet.vercel.app/">
-            <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
               <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
             </svg>
             <h5 className="text-sm tracking-tighter">Link</h5>
             </a> |
             <a target="_blank" className="cardLink flex gap-0.5" href="https://devpost.com/software/travelamulet/">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z"></path>
             </svg>
             <h5 className="text-sm tracking-tighter">Devpost</h5>
@@ -463,7 +463,7 @@ export function TravelAmuletProjectCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
             <p>Lets users take a quiz for travel preferences, and then uses TiDB Vector Search to return a list of matching countries, each with an overview and a list of top cities, which have nearby hotels and flight prices.</p>
           </div>
       </div>
@@ -476,7 +476,7 @@ export function ChamaProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
     <img src="./chama.svg" width={32} />
@@ -495,18 +495,18 @@ export function ChamaProjectCard(){
             <img className="h-5 sm:h-6" src="https://img.shields.io/badge/llamaindex-FF3621?logo=databricks&style=for-the-badge&logoColor=white" />
             <img className="h-5 sm:h-6" src="https://img.shields.io/badge/lancedb-FF3621?logo=databricks&style=for-the-badge&logoColor=white" />
             </div>
-            <h5 className="text-sm tracking-tighter text-center font-semibold">HackPrinceton 2024 submission (weekend)</h5>
+            <h5 className="text-sm tracking-tighter text-center font-semibold">HackPrinceton 2024 submission</h5>
             <h5 className="text-sm tracking-tighter text-center font-semibold">Winner for Best Use of Onchainkit 🎉</h5>
             <div className="flex gap-0.5 justify-center">
             <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/chama">
-            <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="20" viewBox="0 0 30 30" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
               <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
             </svg>
             <h5 className="text-sm tracking-tighter">
             GitHub</h5>
             </a> |
             <a target="_blank" className="cardLink flex gap-0.5" href="https://www.chama.study/">
-            <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
               <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
             </svg>
             <h5 className="text-sm tracking-tighter">Link</h5>
@@ -526,7 +526,7 @@ export function ChamaProjectCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
             <p>Chama empowers everyone to understand crypto by providing real-time insights, sentiment analysis, and personalized explanations. We make complex trends accessible, enabling informed decisions and bridging the crypto literacy gap for all.</p>
           </div>
       </div>
@@ -539,7 +539,7 @@ export function GuardianAngelProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
     <img src="./guardianangel.svg" width={32} />
@@ -556,24 +556,24 @@ export function GuardianAngelProjectCard(){
             <img className="h-5 sm:h-6" src="https://img.shields.io/badge/opencv-5C3EE8?logo=opencv&style=for-the-badge&logoColor=white" />
             <img className="h-5 sm:h-6" src="https://img.shields.io/badge/mediapipe-0097A7?logo=mediapipe&style=for-the-badge&logoColor=white" />
             </div>
-            <h5 className="text-sm tracking-tighter text-center font-semibold">HackNYU 2025 submission (weekend)</h5>
+            <h5 className="text-sm tracking-tighter text-center font-semibold">HackNYU 2025 submission</h5>
             <h5 className="text-sm tracking-tighter text-center font-semibold">2nd Place for Lifestyle & Health 🎉</h5>
             <div className="flex gap-0.5 justify-center">
             <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/guardian-angel">
-            <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="20" viewBox="0 0 30 30" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
               <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
             </svg>
             <h5 className="text-sm tracking-tighter">
             GitHub</h5>
             </a> |
             <a target="_blank" className="cardLink flex gap-0.5" href="https://hacknyu-nine.vercel.app/">
-            <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
               <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
             </svg>
             <h5 className="text-sm tracking-tighter">Link</h5>
             </a> |
             <a target="_blank" className="cardLink flex gap-0.5" href="https://devpost.com/software/guardian-angel-6rlzkt">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z"></path>
             </svg>
           <h5 className="text-sm tracking-tighter">Devpost</h5>
@@ -582,7 +582,7 @@ export function GuardianAngelProjectCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
             <p>Guardian Angel continuously monitors the driver’s face using computer vision to detect signs of distraction or drowsiness. If the driver looks at their phone or closes their eyes for too long, the system sends an alert to help them refocus on the road.</p>
           </div>
       </div>
@@ -596,7 +596,7 @@ export function ScienceProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <h3 className="text-xl font-semibold tracking-tighter">TensorFlow Coronaviruses</h3>
@@ -611,7 +611,7 @@ export function ScienceProjectCard(){
           <h5 className="text-sm tracking-tighter text-center font-semibold">September 2022 - April 2023</h5>
           <div className="flex gap-0.5 justify-center">
           <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/tf-coronaviruses">
-          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 30 30" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">
@@ -620,7 +620,7 @@ export function ScienceProjectCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
             <p>A simple project I did for the Long Island Science Congress competition that tests whether a convolutional neural network or recurrent neural network is better for classification of coronavirus RNA, winning a Meritorious Award.</p>
           </div>
       </div>
@@ -633,7 +633,7 @@ export function HorrorGameProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./scpicon.jpg" width={32} />
@@ -648,7 +648,7 @@ export function HorrorGameProjectCard(){
           <h5 className="text-sm tracking-tighter font-semibold text-center">March 2023 - June 2024</h5>
           <div className="flex gap-0.5 justify-center">
           <a target="_blank" className="cardLink flex gap-0.5" href="https://store.steampowered.com/app/2795370/SCP_Hours_to_Go/">
-          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">Link</h5>
@@ -656,7 +656,7 @@ export function HorrorGameProjectCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
             <p>A survival horror escape room game based on the SCP Foundation Wiki. A catastrophic event shuts down the facility, leaving you alone in the security room. Solve puzzles and contain loose SCPs to escape, or survive for as long as possible for a high score. </p>
           </div>
       </div>
@@ -669,7 +669,7 @@ export function FightingGameProjectCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./rhythmofknighticon.png" width={32} />
@@ -684,7 +684,7 @@ export function FightingGameProjectCard(){
           <h5 className="text-sm tracking-tighter text-center font-semibold">March 2021 - May 2021</h5>
           <div className="flex gap-0.5 justify-center">
           <a target="_blank" className="cardLink flex gap-0.5" href="https://themangoeffect.itch.io/rhythm-of-the-knight">
-          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">Link</h5>
@@ -692,7 +692,7 @@ export function FightingGameProjectCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
             <p>A rhythm-based retro-style fighting game. Use a sword and shield and fly around the map, fighting your nemesis on the rhythm. When the rhythm bar hits green, attack! Online 1v1 is also available, just write a code in the room ID for the game room. </p>
           </div>
       </div>
@@ -705,7 +705,7 @@ export function PrototypeGameCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./prototypeimg.png" width={32} />
@@ -719,7 +719,7 @@ export function PrototypeGameCard(){
           <h5 className="text-sm tracking-tighter text-center font-semibold">June 2021 - July 2021</h5>
           <div className="flex gap-0.5 justify-center">
           <a target="_blank" className="cardLink flex gap-0.5" href="https://themangoeffect.itch.io/pr0707yp3">
-          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">Link</h5>
@@ -727,7 +727,7 @@ export function PrototypeGameCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
             <p>Play as PR0707YP3, a robot in need of a power source. Collect power along your journey as you shoot aliens and drones. Save your ammo, and don't run out of power.</p>
           </div>
       </div>
@@ -740,7 +740,7 @@ export function SpiritBoxGameCard(){
     <motion.div initial={{ y: 10, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{ default: { type: "spring" },
-    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
+    opacity: { ease: "linear" }, duration: 0.15 }} className="flex justify-center backdrop-blur-lg m-0 mt-4 md:m-4 p-4 shadow-lg rounded-xl h-100 md:h-96">
     <article className="w-4xl">
     <div className="flex items-start justify-center gap-2">
       <img src="./spiritbox.png" width={32} />
@@ -755,7 +755,7 @@ export function SpiritBoxGameCard(){
           <h5 className="text-sm tracking-tighter text-center font-semibold">April 2021 - August 2021</h5>
           <div className="flex gap-0.5 justify-center">
           <a target="_blank" className="cardLink flex gap-0.5" href="https://themangoeffect.itch.io/protect-the-spirit-box">
-          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 -960 960 960" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
             <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"></path>
           </svg>
           <h5 className="text-sm tracking-tighter">Link</h5>
@@ -763,7 +763,7 @@ export function SpiritBoxGameCard(){
           </div>
         </div>
       <div className="block h-full rounded-lg">
-          <div className="p-3 text-xs md:text-sm font-medium text-gray-900">
+          <div className="p-3 text-xs/5 font-medium text-gray-900 dark:text-gray-100">
             <p>Welcome, spirit! You will be shortly teleported to the island. Your mission is to protect the valuable spirit box from waves of monsters. Weapons will be provided. Survive as many waves as you can. A SteamVR build is also available.</p>
           </div>
       </div>
@@ -773,7 +773,7 @@ export function SpiritBoxGameCard(){
 }
 export function E3ProjectCard( ){
   return (
-    <div className="flex justify-center p-5 h-100 md:h-90">
+    <div className="flex justify-left p-5">
       <article className="max-w-4xl">
           <div className="md:pl-5 md:pb-2">
             <h3 className="text-xl md:text-2xl font-semibold tracking-tighter">Software Engineer Intern</h3>
@@ -781,10 +781,13 @@ export function E3ProjectCard( ){
             <h5 className="text-sm md:text-base tracking-tighter ">July 2022 - September 2022</h5>
           </div>
         <div className="block h-full rounded-lg md:pl-5">
-            <div className="p-3 text-xs md:text-base font-medium text-gray-900">
-              <li className="p-2">Created a daily survey web application using JavaScript and PHP, garnering 50 daily users</li>
-              <li className="p-2">Implemented a robust account system using PHP and SQL with a MySQL database, allowing users to track their responses over time with visualized data trends from phpChart, enhancing user engagement</li>
-              <li className="p-2">Increased accessibility by integrating a language toggle feature with JSON and JavaScript, enabling seamless language switching, and storing user language preferences for a personalized experience</li>
+            <div className="p-3 flex flex-col text-xs md:text-sm font-medium text-gray-900 dark:text-gray-100 gap-y-2">
+              <li>Developed a daily survey web application using JavaScript and PHP, achieving a user base of 50 daily participants</li>
+              <li>Implemented a robust account system using PHP and MySQL, allowing users to track their responses over time with visualized data trends from phpChart, enhancing user engagement by 40%</li>
+              <li>Enhanced accessibility for 30% of users by implementing a language toggle feature with JSON and JavaScript, enabling seamless language switching, and ensuring a personalized experience through stored preferences</li>
+              <li>
+              Improved backend response speed by 25% through MySQL indexing and memory optimization in session handling
+              </li>
             </div>
         </div>
       </article>
