@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import LabelItem from "./label-item";
-import { TravelAmuletProjectCard, GameRecommendCard, PhysicsProjectCard, HorrorGameProjectCard, FightingGameProjectCard, ScienceProjectCard, MaterialProjectCard, MendPathProjectCard, PrototypeGameCard, SpiritBoxGameCard, HelpSignalProjectCard, CerebrixProjectCard, ChamaProjectCard, PairGridProjectCard, PatSafeProjectCard, GuardianAngelProjectCard, BlazeGuardProjectCard } from "./project-cards";
+import { TravelAmuletProjectCard, GameRecommendCard, PhysicsProjectCard, HorrorGameProjectCard, FightingGameProjectCard, ScienceProjectCard, MaterialProjectCard, MendPathProjectCard, PrototypeGameCard, SpiritBoxGameCard, HelpSignalProjectCard, CerebrixProjectCard, ChamaProjectCard, PairGridProjectCard, PatSafeProjectCard, GuardianAngelProjectCard, BlazeGuardProjectCard, COFAProjectCard } from "./project-cards";
 import { motion } from "motion/react";
 const areaProjects = [
     (<div className="grid sm:grid-cols-2 max-w-7xl gap-1 mb-16">
@@ -9,6 +9,7 @@ const areaProjects = [
     </div>),
     (<div className="grid sm:grid-cols-2 max-w-7xl gap-1 mb-16">
         <PairGridProjectCard />
+        <COFAProjectCard />
         <GuardianAngelProjectCard />
         <TravelAmuletProjectCard />
         <MendPathProjectCard />
