@@ -1,7 +1,7 @@
 "use client"
 import Card from './components/card';
 import Footer from './components/footer';
-import {PhysicsProjectCard, HorrorGameProjectCard, ScienceProjectCard, FightingGameProjectCard, E3ProjectCard, TravelAmuletProjectCard} from './components/project-cards';
+import {PhysicsProjectCard, HorrorGameProjectCard, ScienceProjectCard, FightingGameProjectCard, AuriStorProjectCard, E3ProjectCard, TravelAmuletProjectCard, EAProjectCard} from './components/project-cards';
 import Links from './components/bottom-text';
 import { Suspense, useEffect, useState } from 'react';
 import { ScaleLoader } from 'react-spinners';
@@ -33,6 +33,8 @@ export default function Page() {
       <div className='flex flex-col justify-center items-center p-5 mb-52 mt-20'>
         <LabelItem label={"Work Experience"} />
         <div className='max-w-3xl'>
+          <EAProjectCard />
+          <AuriStorProjectCard />
           <E3ProjectCard />
         </div>
       </div>

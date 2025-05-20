@@ -936,23 +936,76 @@ export function SpiritBoxGameCard(){
     </motion.div>
   )
 }
+export function EAProjectCard( ){
+  return (
+    <div className="flex justify-left p-5">
+      <article className="max-w-4xl">
+          <div>
+            <h3 className="text-xl md:text-2xl font-semibold tracking-tighter">Software Engineer Intern</h3>
+            <div className="flex items-center justify-start gap-2">
+              <img src="./ea.svg" width={32} />
+              <h5 className="text-md md:text-lg tracking-tighter">Electronic Arts (EA)</h5>
+            </div>
+            <h5 className="text-sm md:text-base tracking-tighter ">June 2025 - September 2025</h5>
+          </div>
+        <div className="block h-full rounded-lg md:pl-5">
+            <div className="p-3 flex flex-col text-xs md:text-sm font-medium text-gray-900 dark:text-gray-100 gap-y-2">
+              <li>Incoming Summer 2025</li>
+            </div>
+        </div>
+      </article>
+    </div>
+  ) 
+}
+export function AuriStorProjectCard( ){
+  return (
+    <div className="flex justify-left p-5">
+      <article className="max-w-4xl">
+          <div>
+            <h3 className="text-xl md:text-2xl font-semibold tracking-tighter">Software Engineer Intern</h3>
+            <div className="flex items-center justify-start gap-2">
+              <img src="./auristor.jpg" width={32} className="rounded-lg" />
+              <h5 className="text-md md:text-lg tracking-tighter">AuriStor, Inc.</h5>
+            </div>
+            <h5 className="text-sm md:text-base tracking-tighter ">March 2025 - May 2025</h5>
+          </div>
+          <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/typescript-3178C6?logo=typescript&style=for-the-badge&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/prometheus-E6522C?logo=prometheus&style=for-the-badge&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/grafana-F46800?logo=grafana&style=for-the-badge&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/linux-FCC624?logo=linux&style=for-the-badge&logoColor=white" />
+          </div>
+        <div className="block h-full rounded-lg md:pl-5">
+            <div className="p-3 flex flex-col text-xs md:text-sm font-medium text-gray-900 dark:text-gray-100 gap-y-2">
+              <li>Built a Go-based Prometheus exporter (systemd service) exposing 150+ metrics and Grafana dashboards with alerting and Slack integration, reducing mean time to detecting incidents by 40%</li>
+              <li>Automated AuriStor File System cell creation via Ansible, cutting setup time by 75%, and connected the dashboard to cells for volume and file operations using Kerberos authentication</li>
+              <li>Dockerized builds and automated deployment with Jenkins CI/CD, enabling weekly releases at 99.9% uptime</li>
+            </div>
+        </div>
+      </article>
+    </div>
+  )
+}
 export function E3ProjectCard( ){
   return (
     <div className="flex justify-left p-5">
       <article className="max-w-4xl">
-          <div className="md:pl-5 md:pb-2">
+          <div>
             <h3 className="text-xl md:text-2xl font-semibold tracking-tighter">Software Engineer Intern</h3>
             <h5 className="text-md md:text-lg tracking-tighter">E3 Biogenetics</h5>
             <h5 className="text-sm md:text-base tracking-tighter ">July 2022 - September 2022</h5>
           </div>
+          <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/php-777BB4?style=for-the-badge&logo=php&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/javascript-yellow?logo=javascript&style=for-the-badge&logoColor=white" />
+          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/mysql-4479A1?logo=mysql&style=for-the-badge&logoColor=white" />
+          </div>
         <div className="block h-full rounded-lg md:pl-5">
             <div className="p-3 flex flex-col text-xs md:text-sm font-medium text-gray-900 dark:text-gray-100 gap-y-2">
-              <li>Developed a daily survey web application using JavaScript and PHP, achieving a user base of 50 daily participants</li>
-              <li>Implemented a robust account system using PHP and MySQL, allowing users to track their responses over time with visualized data trends from phpChart, enhancing user engagement by 40%</li>
+              <li>Developed a survey web application using JavaScript and PHP for a user base of 50 daily participants</li>
+              <li>Implemented phpChart-powered response trend visualizations and a JSON/JavaScript language toggle to support multiple languages, boosting user engagement by 40% and improving accessibility by 30%</li>
               <li>Enhanced accessibility for 30% of users by implementing a language toggle feature with JSON and JavaScript, enabling seamless language switching, and ensuring a personalized experience through stored preferences</li>
-              <li>
-              Improved backend response speed by 25% through MySQL indexing and memory optimization in session handling
-              </li>
             </div>
         </div>
       </article>
