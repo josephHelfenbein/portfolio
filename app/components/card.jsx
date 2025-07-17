@@ -12,13 +12,20 @@ export default function Card( ){
                     width={250}
                     height={250}
                     src={picture}
-                    className="size-32 md:size-48 mt-8 md:m-6 object-cover border-3 border-black"
+                    className="size-32 mt-8 md:m-6 object-cover border-3 border-black"
                   />
-                  <h2 className="text-2xl md:text-4xl font-semibold tracking-tighter text-black dark:text-white">Hi 👋, I'm Joseph J Helfenbein</h2>
+                  <div className="flex flex-col items-center">
+                    <h2 className="text-2xl md:text-4xl mb-4 font-semibold tracking-tighter text-black dark:text-white">Hi 👋, I'm Joseph J Helfenbein</h2>
+                    <p className="mt-2 text-xs mr-2 font-medium text-gray-900 dark:text-gray-50 text-center">
+                      🎓 Computer Science & Physics Student @ CCNY <br />
+                      🎮 Graphics Programming & Full-Stack Developer
+                    </p>
+                  </div>
                 </div>
-                <p className="mt-5 text-sm md:text-base mr-2 font-medium text-gray-900 dark:text-gray-50">
-                 I'm a Computer Science and Physics student at The City College of New York, passionate about full-stack development and graphics programming. I specialize in modern web technologies, robust backend systems, and advanced graphics programming techniques to create applications that are both functional and visually compelling. Motivated by curiosity and innovation, I strive to create solutions that make a lasting impact. I'm always eager to learn, grow, and take on new challenges—feel free to reach out!
-                </p>            
+                <hr className="my-6 border-gray-300 dark:border-gray-700" />
+                <p className="mt-5 text-xs md:text-sm font-medium text-gray-900 dark:text-gray-50">
+                 I'm a Computer Science & Physics student at CCNY specializing in real-time rendering and simulation, building high-performance graphics pipelines and interactive environments with APIs like Vulkan, CUDA, and OpenGL, while also developing scalable, cloud-native fullstack applications using serverless architectures and modern frameworks (Go, Java Spring, Next.js/React, Nuxt/Vue).
+                </p>
               </div>
             </article>
           </div>

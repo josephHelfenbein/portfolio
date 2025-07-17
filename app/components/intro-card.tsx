@@ -8,7 +8,7 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 export default function IntroCard(){
   return (
     <div className="flex justify-center">
-      <div className="md:flex md:justify-center p-10 md:items-center">
+      <div className="md:flex md:justify-center p-10 md:items-center backdrop-blur-lg shadow-lg rounded-xl">
         <div>
           <Card />
           <Footer />

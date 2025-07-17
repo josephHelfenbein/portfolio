@@ -30,9 +30,9 @@ export default function Page() {
       
       <IntroCard />
       
-      <div className='flex flex-col justify-center items-center p-5 mb-52 mt-20'>
+      <div className='flex flex-col justify-center items-center p-5 mb-24 mt-12'>
         <LabelItem label={"Work Experience"} />
-        <div className='max-w-3xl'>
+        <div className='max-w-5xl backdrop-blur-lg p-4 shadow-lg rounded-xl'>
           <EAProjectCard />
           <AuriStorProjectCard />
           <E3ProjectCard />
@@ -40,7 +40,7 @@ export default function Page() {
       </div>
       
       <div className='flex justify-center'>
-        <div className='max-w-5xl mb-52'>
+        <div className='xl:max-w-7xl max-w-5xl mb-52'>
           <GridComponent />
         </div>
       </div>

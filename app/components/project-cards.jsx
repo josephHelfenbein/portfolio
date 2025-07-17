@@ -14,7 +14,7 @@ function HackathonCard({imageSrc, projectName, languages, hackathon, githubLink,
       <div>
         <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
           {languages.map((language, index) => (
-            <img key={index} className="h-5 sm:h-6" src={language} />
+            <img key={index} className="h-5" src={language} />
           ))}
         </div>
         <h5 className="text-sm tracking-tighter font-semibold text-center">{hackathon.name}</h5>
@@ -38,14 +38,19 @@ function HackathonCard({imageSrc, projectName, languages, hackathon, githubLink,
             </>
           }
           {hackathon.devpost && <span className="text-sm tracking-tighter">|</span> &&
+          <>
+            <span className="text-sm tracking-tighter">|</span>
             <a target="_blank" className="cardLink flex gap-0.5" href={hackathon.devpost}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z"></path>
               </svg>
               <h5 className="text-sm tracking-tighter">Devpost</h5>
             </a>
+          </>
           }
           {hackathon.dorahacks && <span className="text-sm tracking-tighter">|</span> &&
+          <>
+            <span className="text-sm tracking-tighter">|</span>
             <a target="_blank" className="cardLink flex gap-0.5" href={hackathon.dorahacks}>
               <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" d="M13.507 10.316l.012.023c.353 0 .615-.394.674-.893-.29.097-.575.199-.858.3-.035.06-.07.12-.11.173-.13.14.104.396.282.396zm16.748.33c-.741-3-6.543-3.746-13.487-1.96-.248.186-.531.27-.75.305-.577.085-.784.123-.84.496-.055.373.93.557 1.593.073.446-.324.767-1.027 1.163-1.076.514-.061.607 1.289.313 1.954-.295.665-1.287 1.094-1.66.758-.128-.122-.11-.19-.128-.475-.018-.286-.674-.233-.674.201.02.303.006.61-.044.91-.184.954-1.893 1.106-2.336 1.056-.44-.05-.98-.397-.717-.613.603-.475.227-1.586-.645-2.038-.274.11-.545.224-.814.341a.461.461 0 00.32.274.923.923 0 01.044 1.753c-1.14.63-1.913-.537-1.98-.793-.055-.21-.137-.292-.341-.315-5.29 2.689-8.665 6.198-8.03 8.805.823 3.354 7.986 3.894 15.995 1.222 8.01-2.671 13.843-7.522 13.018-10.879z" fill="url(#prefix__paint0_linear_12_232)"/>
@@ -57,6 +62,7 @@ function HackathonCard({imageSrc, projectName, languages, hackathon, githubLink,
               </svg>
               <h5 className="text-sm tracking-tighter">DoraHacks</h5>
             </a>
+          </>
           }
         </div>
       </div>
@@ -82,9 +88,9 @@ export function PhysicsProjectCard(){
     </div>
     <div>
       <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/javascript-yellow?logo=javascript&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/webgl-red?logo=webgl&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/javascript-yellow?logo=javascript&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/webgl-red?logo=webgl&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
           </div>
           <h5 className="text-sm tracking-tighter text-center font-semibold">June 2024 - July 2024</h5>
           <div className="flex gap-0.5 justify-center">
@@ -103,7 +109,7 @@ export function PhysicsProjectCard(){
           </a> 
           </div>
         </div>
-      <div className="block h-full rounded-lg">q
+      <div className="block h-full rounded-lg">
           <div className="p-3 text-xs/5 md:text-sm font-medium text-gray-900 dark:text-gray-100">
             <p>A rigid body physics engine with simulated cubes and spheres. It has real-time raytraced shadows and a Blinn-Phong shader using WebGL.</p>
           </div>
@@ -125,8 +131,8 @@ export function MaterialProjectCard(){
     </div>
     <div>
       <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/c++-00599C?logo=cplusplus&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/opengl-5586A4?logo=opengl&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/c++-00599C?logo=cplusplus&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/opengl-5586A4?logo=opengl&style=for-the-badge&logoColor=white" />
           </div>
           <h5 className="text-sm tracking-tighter text-center font-semibold">September 2024 - November 2024</h5>
           <div className="flex gap-0.5 justify-center">
@@ -161,9 +167,9 @@ export function GustGridProjectCard(){
     </div>
     <div>
       <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/c++-00599C?logo=cplusplus&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/opengl-5586A4?logo=opengl&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/cuda-76B900?logo=nvidia&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/c++-00599C?logo=cplusplus&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/opengl-5586A4?logo=opengl&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/cuda-76B900?logo=nvidia&style=for-the-badge&logoColor=white" />
           </div>
           <h5 className="text-sm tracking-tighter text-center font-semibold">June 2025</h5>
           <div className="flex gap-0.5 justify-center">
@@ -300,15 +306,15 @@ export function PairGridProjectCard(){
       
       <div>
       <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxt&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/shadcn%E2%80%93vue-000000?style=for-the-badge&logo=shadcn/ui&logoColor=4FC08D" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/clerk-6C47FF?logo=clerk&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/hasura-1EB4D4?logo=hasura&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/graphql-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/pusher-300D4F?style=for-the-badge&logo=pusher&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxt&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/shadcn%E2%80%93vue-000000?style=for-the-badge&logo=shadcn/ui&logoColor=4FC08D" />
+          <img className="h-5" src="https://img.shields.io/badge/clerk-6C47FF?logo=clerk&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/hasura-1EB4D4?logo=hasura&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/graphql-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/pusher-300D4F?style=for-the-badge&logo=pusher&logoColor=white" />
 
           
           </div>
@@ -353,17 +359,17 @@ export function RecapGridProjectCard(){
       
       <div>
       <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxt&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/java-5382A1.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iMzUwcHgiIGhlaWdodD0iMzUwcHgiIHZpZXdCb3g9IjAgMCAyNTYgMzQ2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik04Mi41NTM5NDkxLDI2Ny40NzI1MjQgQzgyLjU1Mzk0OTEsMjY3LjQ3MjUyNCA2OS4zNTU1MiwyNzUuMTQ3ODY5IDkxLjk0NjgyMTgsMjc3Ljc0NTEwNSBDMTE5LjMxNTU0OSwyODAuODY3Mzc1IDEzMy4zMDMzODksMjgwLjQxOTYwNyAxNjMuNDYzOTEzLDI3NC43MTEyNzMgQzE2My40NjM5MTMsMjc0LjcxMTI3MyAxNzEuMzkzMzk2LDI3OS42ODMyNTggMTgyLjQ2NzQ5MSwyODMuOTg5NjQ0IEMxMTQuODU1NTY0LDMxMi45NjY5ODIgMjkuNDQ4Mzc4MiwyODIuMzExMjE1IDgyLjU1Mzk0OTEsMjY3LjQ3MjUyNCIvPjxwYXRoIGQ9Ik03NC4yOTIxMzA5LDIyOS42NTg5OTYgQzc0LjI5MjEzMDksMjI5LjY1ODk5NiA1OS40ODg4MTQ1LDI0MC42MTY3MjcgODIuMDk2ODcyNywyNDIuOTU1MTcxIEMxMTEuMzMzMDA0LDI0NS45NzEzMTYgMTM0LjQyMTQxMSwyNDYuMjE4MDA3IDE3NC4zNzMyMzYsMjM4LjUyNDk3NSBDMTc0LjM3MzIzNiwyMzguNTI0OTc1IDE3OS44OTkxMTMsMjQ0LjEyNzE4NSAxODguNTg4MjE4LDI0Ny4xOTA4MDcgQzEwNi44NDEzNjcsMjcxLjA5NDY5MSAxNS43OTAwOCwyNDkuMDc1ODk4IDc0LjI5MjEzMDksMjI5LjY1ODk5NiIvPjxwYXRoIGQ9Ik0xNDMuOTQxODE4LDE2NS41MTQ3MDUgQzE2MC42MDEzNjcsMTg0LjY5NTE1NiAxMzkuNTY0Njg0LDIwMS45NTUxNDIgMTM5LjU2NDY4NCwyMDEuOTU1MTQyIEMxMzkuNTY0Njg0LDIwMS45NTUxNDIgMTgxLjg2NjEyNCwxODAuMTE3ODc2IDE2Mi40Mzg5ODIsMTUyLjc3MjQyMiBDMTQ0LjI5NDYzMywxMjcuMjcxMDk4IDEzMC4zODAzMzUsMTE0LjYwMDQ5NSAyMDUuNzA2NzA1LDcwLjkxMzg2MTggQzIwNS43MDY3MDUsNzAuOTEzODYxOCA4Ny40NjkxNDkxLDEwMC40NDQxNiAxNDMuOTQxODE4LDE2NS41MTQ3MDUiLz48cGF0aCBkPSJNMjMzLjM2NDAxNSwyOTUuNDQxNjg3IEMyMzMuMzY0MDE1LDI5NS40NDE2ODcgMjQzLjEzMTExMywzMDMuNDg5Mzk2IDIyMi42MDczNiwzMDkuNzE1MzE2IEMxODMuNTgwODU4LDMyMS41Mzc4NjIgNjAuMTc0ODk0NSwzMjUuMTA3ODk4IDI1Ljg5MzIzNjQsMzEwLjE4NjM1NiBDMTMuNTY5ODYxOCwzMDQuODI1MjUxIDM2LjY3OTY4LDI5Ny4zODU0MjUgNDMuOTQ5MTQ5MSwyOTUuODI0MjkxIEM1MS41MzA0NzI3LDI5NC4xODAzMDUgNTUuODYyOTIzNiwyOTQuNDg2NTc1IDU1Ljg2MjkyMzYsMjk0LjQ4NjU3NSBDNDIuMTU4MDgsMjg0LjgzMjExNiAtMzIuNzE5NTkyNywzMTMuNDQzNjA3IDE3LjgyODc3MDksMzIxLjYzNzQ2OSBDMTU1LjY4MTUxMywzNDMuOTkzMjUxIDI2OS4xMjExNjQsMzExLjU3MDYxOCAyMzMuMzY0MDE1LDI5NS40NDE2ODciLz48cGF0aCBkPSJNODguOTAwODg3MywxOTAuNDc5ODI1IEM4OC45MDA4ODczLDE5MC40Nzk4MjUgMjYuMTI4NzU2NCwyMDUuMzg5MjY1IDY2LjY3MTcwOTEsMjEwLjgwMzQzMyBDODMuNzkwMTk2NCwyMTMuMDk1MzMxIDExNy45MTU0NjIsMjEyLjU3NjgxNSAxNDkuNzAyMjg0LDIwOS45MTM0ODQgQzE3NS42ODAyMzMsMjA3LjcyMjEyNCAyMDEuNzY1MjM2LDIwMy4wNjI5MjQgMjAxLjc2NTIzNiwyMDMuMDYyOTI0IEMyMDEuNzY1MjM2LDIwMy4wNjI5MjQgMTkyLjYwNTA5MSwyMDYuOTg1Nzc1IDE4NS45Nzc5NDksMjExLjUxMDkyNCBDMTIyLjIzMzk0OSwyMjguMjc1NjY1IC0wLjkwNzYzNjM2NCwyMjAuNDc2NTA5IDM0LjU0MzI0MzYsMjAzLjMyODIzMyBDNjQuNTI0MTAxOCwxODguODM1ODQgODguOTAwODg3MywxOTAuNDc5ODI1IDg4LjkwMDg4NzMsMTkwLjQ3OTgyNSIvPjxwYXRoIGQ9Ik0yMDEuNTA2NDQ0LDI1My40MjIzMTMgQzI2Ni4zMDUxNjQsMjE5Ljc1MDQgMjM2LjM0NDc4NSwxODcuMzkyIDIxNS40MzI4NDQsMTkxLjc1MTQ0NyBDMjEwLjMwNzI1OCwxOTIuODE4MjY5IDIwOC4wMjE4NzYsMTkzLjc0MjY2MiAyMDguMDIxODc2LDE5My43NDI2NjIgQzIwOC4wMjE4NzYsMTkzLjc0MjY2MiAyMDkuOTI0NjU1LDE5MC43NjE4OTEgMjEzLjU1ODkyNCwxODkuNDcxNjUxIEMyNTQuOTI5NDU1LDE3NC45MjcxMjcgMjg2Ljc0NjA2NSwyMzIuMzY4ODczIDIwMC4yMDQxMDIsMjU1LjExOTM2IEMyMDAuMjA0MTAyLDI1NS4xMjAyOTEgMjAxLjIwNjY5MSwyNTQuMjIzODI1IDIwMS41MDY0NDQsMjUzLjQyMjMxMyIvPjxwYXRoIGQ9Ik0xNjIuNDM4OTgyLDAuMzcxNDMyNzI3IEMxNjIuNDM4OTgyLDAuMzcxNDMyNzI3IDE5OC4zMjU1MjcsMzYuMjcwMDggMTI4LjQwMjE1Myw5MS40NzIwNTgyIEM3Mi4zMzA3MDU1LDEzNS43NTM1NDIgMTE1LjYxNjExNiwxNjEuMDAxNjU4IDEyOC4zNzg4OCwxODkuODQ4NjY5IEM5NS42NDkwNDczLDE2MC4zMTgzNzEgNzEuNjI5NzMwOSwxMzQuMzIyNzM1IDg3Ljc0Mzc2NzMsMTEwLjEyODQwNyBDMTExLjM5NTM3NSw3NC42MTMyOTQ1IDE3Ni45MTgzNDIsNTcuMzk0MjY5MSAxNjIuNDM4OTgyLDAuMzcxNDMyNzI3Ii8+PHBhdGggZD0iTTk1LjI2ODMwNTUsMzQ0LjY2NTM2NyBDMTU3LjQ2Njk5NiwzNDguNjQ2ODY1IDI1Mi45ODAxMzEsMzQyLjQ1NjMyIDI1NS4yNDIyNCwzMTMuMDI1NjI5IEMyNTUuMjQyMjQsMzEzLjAyNTYyOSAyNTAuODkzOTY0LDMyNC4xODI1NzUgMjAzLjgzODM3MSwzMzMuMDQyOTY3IEMxNTAuNzUwNDg3LDM0My4wMzM0ODQgODUuMjc0MDY1NSwzNDEuODY3MDU1IDQ2LjQzOTMzMDksMzM1LjQ2NDI2MiBDNDYuNDQwMjYxOCwzMzUuNDYzMzMxIDU0LjM4OTI5NDUsMzQyLjA0MzkyNyA5NS4yNjgzMDU1LDM0NC42NjUzNjciLz48L3N2Zz4=&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/shadcn%E2%80%93vue-000000?style=for-the-badge&logo=shadcn/ui&logoColor=4FC08D" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/clerk-6C47FF?logo=clerk&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/spring%20boot-6DB33F?logo=spring&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/google%20cloud%20run-4285F4?style=for-the-badge&logo=google%20cloud&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/google%20cloud%20tasks-4285F4?style=for-the-badge&logo=google%20cloud&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/google%20cloud%20storage-4285F4?logo=google%20cloud%20storage&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxt&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/java-5382A1.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iMzUwcHgiIGhlaWdodD0iMzUwcHgiIHZpZXdCb3g9IjAgMCAyNTYgMzQ2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik04Mi41NTM5NDkxLDI2Ny40NzI1MjQgQzgyLjU1Mzk0OTEsMjY3LjQ3MjUyNCA2OS4zNTU1MiwyNzUuMTQ3ODY5IDkxLjk0NjgyMTgsMjc3Ljc0NTEwNSBDMTE5LjMxNTU0OSwyODAuODY3Mzc1IDEzMy4zMDMzODksMjgwLjQxOTYwNyAxNjMuNDYzOTEzLDI3NC43MTEyNzMgQzE2My40NjM5MTMsMjc0LjcxMTI3MyAxNzEuMzkzMzk2LDI3OS42ODMyNTggMTgyLjQ2NzQ5MSwyODMuOTg5NjQ0IEMxMTQuODU1NTY0LDMxMi45NjY5ODIgMjkuNDQ4Mzc4MiwyODIuMzExMjE1IDgyLjU1Mzk0OTEsMjY3LjQ3MjUyNCIvPjxwYXRoIGQ9Ik03NC4yOTIxMzA5LDIyOS42NTg5OTYgQzc0LjI5MjEzMDksMjI5LjY1ODk5NiA1OS40ODg4MTQ1LDI0MC42MTY3MjcgODIuMDk2ODcyNywyNDIuOTU1MTcxIEMxMTEuMzMzMDA0LDI0NS45NzEzMTYgMTM0LjQyMTQxMSwyNDYuMjE4MDA3IDE3NC4zNzMyMzYsMjM4LjUyNDk3NSBDMTc0LjM3MzIzNiwyMzguNTI0OTc1IDE3OS44OTkxMTMsMjQ0LjEyNzE4NSAxODguNTg4MjE4LDI0Ny4xOTA4MDcgQzEwNi44NDEzNjcsMjcxLjA5NDY5MSAxNS43OTAwOCwyNDkuMDc1ODk4IDc0LjI5MjEzMDksMjI5LjY1ODk5NiIvPjxwYXRoIGQ9Ik0xNDMuOTQxODE4LDE2NS41MTQ3MDUgQzE2MC42MDEzNjcsMTg0LjY5NTE1NiAxMzkuNTY0Njg0LDIwMS45NTUxNDIgMTM5LjU2NDY4NCwyMDEuOTU1MTQyIEMxMzkuNTY0Njg0LDIwMS45NTUxNDIgMTgxLjg2NjEyNCwxODAuMTE3ODc2IDE2Mi40Mzg5ODIsMTUyLjc3MjQyMiBDMTQ0LjI5NDYzMywxMjcuMjcxMDk4IDEzMC4zODAzMzUsMTE0LjYwMDQ5NSAyMDUuNzA2NzA1LDcwLjkxMzg2MTggQzIwNS43MDY3MDUsNzAuOTEzODYxOCA4Ny40NjkxNDkxLDEwMC40NDQxNiAxNDMuOTQxODE4LDE2NS41MTQ3MDUiLz48cGF0aCBkPSJNMjMzLjM2NDAxNSwyOTUuNDQxNjg3IEMyMzMuMzY0MDE1LDI5NS40NDE2ODcgMjQzLjEzMTExMywzMDMuNDg5Mzk2IDIyMi42MDczNiwzMDkuNzE1MzE2IEMxODMuNTgwODU4LDMyMS41Mzc4NjIgNjAuMTc0ODk0NSwzMjUuMTA3ODk4IDI1Ljg5MzIzNjQsMzEwLjE4NjM1NiBDMTMuNTY5ODYxOCwzMDQuODI1MjUxIDM2LjY3OTY4LDI5Ny4zODU0MjUgNDMuOTQ5MTQ5MSwyOTUuODI0MjkxIEM1MS41MzA0NzI3LDI5NC4xODAzMDUgNTUuODYyOTIzNiwyOTQuNDg2NTc1IDU1Ljg2MjkyMzYsMjk0LjQ4NjU3NSBDNDIuMTU4MDgsMjg0LjgzMjExNiAtMzIuNzE5NTkyNywzMTMuNDQzNjA3IDE3LjgyODc3MDksMzIxLjYzNzQ2OSBDMTU1LjY4MTUxMywzNDMuOTkzMjUxIDI2OS4xMjExNjQsMzExLjU3MDYxOCAyMzMuMzY0MDE1LDI5NS40NDE2ODciLz48cGF0aCBkPSJNODguOTAwODg3MywxOTAuNDc5ODI1IEM4OC45MDA4ODczLDE5MC40Nzk4MjUgMjYuMTI4NzU2NCwyMDUuMzg5MjY1IDY2LjY3MTcwOTEsMjEwLjgwMzQzMyBDODMuNzkwMTk2NCwyMTMuMDk1MzMxIDExNy45MTU0NjIsMjEyLjU3NjgxNSAxNDkuNzAyMjg0LDIwOS45MTM0ODQgQzE3NS42ODAyMzMsMjA3LjcyMjEyNCAyMDEuNzY1MjM2LDIwMy4wNjI5MjQgMjAxLjc2NTIzNiwyMDMuMDYyOTI0IEMyMDEuNzY1MjM2LDIwMy4wNjI5MjQgMTkyLjYwNTA5MSwyMDYuOTg1Nzc1IDE4NS45Nzc5NDksMjExLjUxMDkyNCBDMTIyLjIzMzk0OSwyMjguMjc1NjY1IC0wLjkwNzYzNjM2NCwyMjAuNDc2NTA5IDM0LjU0MzI0MzYsMjAzLjMyODIzMyBDNjQuNTI0MTAxOCwxODguODM1ODQgODguOTAwODg3MywxOTAuNDc5ODI1IDg4LjkwMDg4NzMsMTkwLjQ3OTgyNSIvPjxwYXRoIGQ9Ik0yMDEuNTA2NDQ0LDI1My40MjIzMTMgQzI2Ni4zMDUxNjQsMjE5Ljc1MDQgMjM2LjM0NDc4NSwxODcuMzkyIDIxNS40MzI4NDQsMTkxLjc1MTQ0NyBDMjEwLjMwNzI1OCwxOTIuODE4MjY5IDIwOC4wMjE4NzYsMTkzLjc0MjY2MiAyMDguMDIxODc2LDE5My43NDI2NjIgQzIwOC4wMjE4NzYsMTkzLjc0MjY2MiAyMDkuOTI0NjU1LDE5MC43NjE4OTEgMjEzLjU1ODkyNCwxODkuNDcxNjUxIEMyNTQuOTI5NDU1LDE3NC45MjcxMjcgMjg2Ljc0NjA2NSwyMzIuMzY4ODczIDIwMC4yMDQxMDIsMjU1LjExOTM2IEMyMDAuMjA0MTAyLDI1NS4xMjAyOTEgMjAxLjIwNjY5MSwyNTQuMjIzODI1IDIwMS41MDY0NDQsMjUzLjQyMjMxMyIvPjxwYXRoIGQ9Ik0xNjIuNDM4OTgyLDAuMzcxNDMyNzI3IEMxNjIuNDM4OTgyLDAuMzcxNDMyNzI3IDE5OC4zMjU1MjcsMzYuMjcwMDggMTI4LjQwMjE1Myw5MS40NzIwNTgyIEM3Mi4zMzA3MDU1LDEzNS43NTM1NDIgMTE1LjYxNjExNiwxNjEuMDAxNjU4IDEyOC4zNzg4OCwxODkuODQ4NjY5IEM5NS42NDkwNDczLDE2MC4zMTgzNzEgNzEuNjI5NzMwOSwxMzQuMzIyNzM1IDg3Ljc0Mzc2NzMsMTEwLjEyODQwNyBDMTExLjM5NTM3NSw3NC42MTMyOTQ1IDE3Ni45MTgzNDIsNTcuMzk0MjY5MSAxNjIuNDM4OTgyLDAuMzcxNDMyNzI3Ii8+PHBhdGggZD0iTTk1LjI2ODMwNTUsMzQ0LjY2NTM2NyBDMTU3LjQ2Njk5NiwzNDguNjQ2ODY1IDI1Mi45ODAxMzEsMzQyLjQ1NjMyIDI1NS4yNDIyNCwzMTMuMDI1NjI5IEMyNTUuMjQyMjQsMzEzLjAyNTYyOSAyNTAuODkzOTY0LDMyNC4xODI1NzUgMjAzLjgzODM3MSwzMzMuMDQyOTY3IEMxNTAuNzUwNDg3LDM0My4wMzM0ODQgODUuMjc0MDY1NSwzNDEuODY3MDU1IDQ2LjQzOTMzMDksMzM1LjQ2NDI2MiBDNDYuNDQwMjYxOCwzMzUuNDYzMzMxIDU0LjM4OTI5NDUsMzQyLjA0MzkyNyA5NS4yNjgzMDU1LDM0NC42NjUzNjciLz48L3N2Zz4=&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/shadcn%E2%80%93vue-000000?style=for-the-badge&logo=shadcn/ui&logoColor=4FC08D" />
+          <img className="h-5" src="https://img.shields.io/badge/clerk-6C47FF?logo=clerk&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/spring%20boot-6DB33F?logo=spring&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/google%20cloud%20run-4285F4?style=for-the-badge&logo=google%20cloud&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/google%20cloud%20tasks-4285F4?style=for-the-badge&logo=google%20cloud&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/google%20cloud%20storage-4285F4?logo=google%20cloud%20storage&style=for-the-badge&logoColor=white" />
 
           
           </div>
@@ -452,17 +458,17 @@ export function TravelAmuletProjectCard(){
       <div className="flex items-start justify-between gap-5">
           <div>
           <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-            <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
-            <img className="h-5 sm:h-6" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-            <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
-            <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Three.js-black?logo=three.js&style=for-the-badge&logoColor=white" />
-            <img className="h-5 sm:h-6" src="https://img.shields.io/badge/Flask-4590A1?logo=flask&style=for-the-badge&logoColor=white" />
-            <img className="h-5 sm:h-6" src="https://img.shields.io/badge/openai%20api-black?logo=openai&style=for-the-badge&logoColor=white" />
-            <img className="h-5 sm:h-6" src="https://img.shields.io/badge/google%20maps%20api-4285F4?logo=google%20maps&style=for-the-badge&logoColor=white" />
-            <img className="h-5 sm:h-6" src="https://img.shields.io/badge/amadeus%20api-1b69bc.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iNjkuMjY3NjI0IiBoZWlnaHQ9Ijg0LjgxODM3NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNjkuMjY3NjI0IDg0LjgxODM3NSI+PHBhdGggZD0iTSA1MS4xMjgzNzUsNjUuODUyMTI1IEMgNDcuMjQwNzUsNjcuMzg0MjUgMzcuODE1LDcwLjQ0Njc1IDMwLjg2NjI1LDcwLjQ0Njc1IGMgLTcuNTQwMTI1LDAgLTEzLjE5Mzg3NSwtMi41OTEyNSAtMTMuMTkzODc1LC0xMC44MzgzNzUgMCwtNy4xODUgMy44ODUyNSwtMTEuMzA3NjI1IDE0LjI1NTM3NSwtMTEuNjYxNjI1IGwgMTkuMjAwNjI1LC0wLjcwNjUgeiBNIDQwLjI5LDAgQyAyNC4wMzMyNSwwIDExLjMxMDU1LDQuMDA2Mzc1IDYuMzYyMyw2LjQ4MSBsIDMuODg4MTg4LDEzLjY2NDUgYyAwLDAgMTIuNDg4NzYyLC00LjQ3NiAyNC43Mzc3NjIsLTQuNDc2IDEwLjQ4NDg3NSwwIDE1LjkwMjg3NSwyLjk0Mzc1IDE1LjkwMjg3NSwxMy4zMSB2IDUuODkxNjI1IEggMzQuOTg4MjUgQyA4LjAxMjIxMjUsMzQuODcxMTI1IDAsNDcuMjQwMjUgMCw2MC45MDU3NSBjIDAsMTguMTM5Njc1IDE0LjEzNzc1LDIzLjkxMjYyNSAyNi45NzgsMjMuOTEyNjI1IDE0Ljk2MDUsMCAyMy42NzkyNSwtNi4yNDI2NzUgMjQuNzM4MjUsLTYuMjQyNjc1IDAuODI1NzUsMCAzLjg4ODI1LDMuMjk2ODc1IDE3LjU1MTM3NSwzLjI5Njg3NSB2IC01Ny43MjIyIEMgNjkuMjY3NjI1LDYuODM1IDU4LjU0OTM3NSwwIDQwLjI5LDAgWiIgc3R5bGU9ImZpbGw6I2ZmZmZmZjtzdHJva2Utd2lkdGg6MC4xMjUiIC8+PC9zdmc+Cg==&style=for-the-badge&logoColor=white" />
-            <img className="h-5 sm:h-6" src="https://img.shields.io/badge/tidb%20serverless-000000.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDQwIDUwIj4KPHBhdGggZD0iTTIxLjI4NzcgMC4zMDA3ODFMMC4yOTM5NDUgMTIuNjY5NFYzNy40MDI1TDIxLjI4NzcgNDkuNzcxMUw0Mi4yNzczIDM3LjQwMjVWMTIuNjY5NEwyMS4yODc3IDAuMzAwNzgxWiIgZmlsbD0iI0RDMTUwQiIgLz4KPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE0LjI4NzYgMzcuNDAyOFYyMC45MTU1TDcuMjkxMDIgMjUuMDM4NFYxNi43OTI2TDIxLjI4ODIgOC41NDY4OEwyOC4yODQ4IDEyLjY2OThMMjEuMjg4MiAxNi43OTI2VjQxLjUyNTdMMTQuMjg3NiAzNy40MDI4WiIgLz4KPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTI4LjI4NDIgMzcuNDAzMVYyMC45MTU5TDM1LjI4MDcgMTYuNzkzVjMzLjI4MDNMMjguMjg0MiAzNy40MDMxWiIgLz4KPC9zdmc+&style=for-the-badge" />
+            <img className="h-5" src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
+            <img className="h-5" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+            <img className="h-5" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
+            <img className="h-5" src="https://img.shields.io/badge/Three.js-black?logo=three.js&style=for-the-badge&logoColor=white" />
+            <img className="h-5" src="https://img.shields.io/badge/Flask-4590A1?logo=flask&style=for-the-badge&logoColor=white" />
+            <img className="h-5" src="https://img.shields.io/badge/openai%20api-black?logo=openai&style=for-the-badge&logoColor=white" />
+            <img className="h-5" src="https://img.shields.io/badge/google%20maps%20api-4285F4?logo=google%20maps&style=for-the-badge&logoColor=white" />
+            <img className="h-5" src="https://img.shields.io/badge/amadeus%20api-1b69bc.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iNjkuMjY3NjI0IiBoZWlnaHQ9Ijg0LjgxODM3NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNjkuMjY3NjI0IDg0LjgxODM3NSI+PHBhdGggZD0iTSA1MS4xMjgzNzUsNjUuODUyMTI1IEMgNDcuMjQwNzUsNjcuMzg0MjUgMzcuODE1LDcwLjQ0Njc1IDMwLjg2NjI1LDcwLjQ0Njc1IGMgLTcuNTQwMTI1LDAgLTEzLjE5Mzg3NSwtMi41OTEyNSAtMTMuMTkzODc1LC0xMC44MzgzNzUgMCwtNy4xODUgMy44ODUyNSwtMTEuMzA3NjI1IDE0LjI1NTM3NSwtMTEuNjYxNjI1IGwgMTkuMjAwNjI1LC0wLjcwNjUgeiBNIDQwLjI5LDAgQyAyNC4wMzMyNSwwIDExLjMxMDU1LDQuMDA2Mzc1IDYuMzYyMyw2LjQ4MSBsIDMuODg4MTg4LDEzLjY2NDUgYyAwLDAgMTIuNDg4NzYyLC00LjQ3NiAyNC43Mzc3NjIsLTQuNDc2IDEwLjQ4NDg3NSwwIDE1LjkwMjg3NSwyLjk0Mzc1IDE1LjkwMjg3NSwxMy4zMSB2IDUuODkxNjI1IEggMzQuOTg4MjUgQyA4LjAxMjIxMjUsMzQuODcxMTI1IDAsNDcuMjQwMjUgMCw2MC45MDU3NSBjIDAsMTguMTM5Njc1IDE0LjEzNzc1LDIzLjkxMjYyNSAyNi45NzgsMjMuOTEyNjI1IDE0Ljk2MDUsMCAyMy42NzkyNSwtNi4yNDI2NzUgMjQuNzM4MjUsLTYuMjQyNjc1IDAuODI1NzUsMCAzLjg4ODI1LDMuMjk2ODc1IDE3LjU1MTM3NSwzLjI5Njg3NSB2IC01Ny43MjIyIEMgNjkuMjY3NjI1LDYuODM1IDU4LjU0OTM3NSwwIDQwLjI5LDAgWiIgc3R5bGU9ImZpbGw6I2ZmZmZmZjtzdHJva2Utd2lkdGg6MC4xMjUiIC8+PC9zdmc+Cg==&style=for-the-badge&logoColor=white" />
+            <img className="h-5" src="https://img.shields.io/badge/tidb%20serverless-000000.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDQwIDUwIj4KPHBhdGggZD0iTTIxLjI4NzcgMC4zMDA3ODFMMC4yOTM5NDUgMTIuNjY5NFYzNy40MDI1TDIxLjI4NzcgNDkuNzcxMUw0Mi4yNzczIDM3LjQwMjVWMTIuNjY5NEwyMS4yODc3IDAuMzAwNzgxWiIgZmlsbD0iI0RDMTUwQiIgLz4KPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE0LjI4NzYgMzcuNDAyOFYyMC45MTU1TDcuMjkxMDIgMjUuMDM4NFYxNi43OTI2TDIxLjI4ODIgOC41NDY4OEwyOC4yODQ4IDEyLjY2OThMMjEuMjg4MiAxNi43OTI2VjQxLjUyNTdMMTQuMjg3NiAzNy40MDI4WiIgLz4KPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTI4LjI4NDIgMzcuNDAzMVYyMC45MTU5TDM1LjI4MDcgMTYuNzkzVjMzLjI4MDNMMjguMjg0MiAzNy40MDMxWiIgLz4KPC9zdmc+&style=for-the-badge" />
             </div>
-            <h5 className="text-sm tracking-tighter text-center font-semibold">TiDB Hackathon 2024 submission</h5>
+            <h5 className="text-sm tracking-tighter text-center font-semibold">July 2024 - August 2024</h5>
             <div className="flex gap-0.5 justify-center">
             <a target="_blank" className="cardLink flex gap-0.5" href="https://github.com/josephHelfenbein/travel-amulet">
             <svg width="20" height="20" viewBox="0 0 30 30" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
@@ -611,10 +617,10 @@ export function ScienceProjectCard(){
     </div>
     <div>
       <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/matplotlib-212529.svg?logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODAiIGhlaWdodD0iMTgwIiBzdHJva2U9ImdyYXkiPgo8ZyBzdHJva2Utd2lkdGg9IjIiIGZpbGw9IiNGRkYiPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSI4OCIvPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSI2NiIvPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSI0NCIvPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSIyMiIvPgo8cGF0aCBkPSJtOTAsMnYxNzZtNjItMjYtMTI0LTEyNG0xMjQsMC0xMjQsMTI0bTE1MC02MkgyIi8+CjwvZz48ZyBvcGFjaXR5PSIuOCI+CjxwYXRoIGZpbGw9IiM0NEMiIGQ9Im05MCw5MGgxOGExOCwxOCAwIDAsMCAwLTV6Ii8+CjxwYXRoIGZpbGw9IiNCQzMiIGQ9Im05MCw5MCAzNC00M2E1NSw1NSAwIDAsMC0xNS04eiIvPgo8cGF0aCBmaWxsPSIjRDkzIiBkPSJtOTAsOTAtMTYtNzJhNzQsNzQgMCAwLDAtMzEsMTV6Ii8+CjxwYXRoIGZpbGw9IiNEQjMiIGQ9Im05MCw5MC01OC0yOGE2NSw2NSAwIDAsMC01LDM5eiIvPgo8cGF0aCBmaWxsPSIjM0JCIiBkPSJtOTAsOTAtMzMsMTZhMzcsMzcgMCAwLDAgMiw1eiIvPgo8cGF0aCBmaWxsPSIjM0M5IiBkPSJtOTAsOTAtMTAsNDVhNDYsNDYgMCAwLDAgMTgsMHoiLz4KPHBhdGggZmlsbD0iI0Q3MyIgZD0ibTkwLDkwIDQ2LDU4YTc0LDc0IDAgMCwwIDEyLTEyeiIvPgo8L2c+PC9zdmc+&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/matplotlib-212529.svg?logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODAiIGhlaWdodD0iMTgwIiBzdHJva2U9ImdyYXkiPgo8ZyBzdHJva2Utd2lkdGg9IjIiIGZpbGw9IiNGRkYiPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSI4OCIvPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSI2NiIvPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSI0NCIvPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSIyMiIvPgo8cGF0aCBkPSJtOTAsMnYxNzZtNjItMjYtMTI0LTEyNG0xMjQsMC0xMjQsMTI0bTE1MC02MkgyIi8+CjwvZz48ZyBvcGFjaXR5PSIuOCI+CjxwYXRoIGZpbGw9IiM0NEMiIGQ9Im05MCw5MGgxOGExOCwxOCAwIDAsMCAwLTV6Ii8+CjxwYXRoIGZpbGw9IiNCQzMiIGQ9Im05MCw5MCAzNC00M2E1NSw1NSAwIDAsMC0xNS04eiIvPgo8cGF0aCBmaWxsPSIjRDkzIiBkPSJtOTAsOTAtMTYtNzJhNzQsNzQgMCAwLDAtMzEsMTV6Ii8+CjxwYXRoIGZpbGw9IiNEQjMiIGQ9Im05MCw5MC01OC0yOGE2NSw2NSAwIDAsMC01LDM5eiIvPgo8cGF0aCBmaWxsPSIjM0JCIiBkPSJtOTAsOTAtMzMsMTZhMzcsMzcgMCAwLDAgMiw1eiIvPgo8cGF0aCBmaWxsPSIjM0M5IiBkPSJtOTAsOTAtMTAsNDVhNDYsNDYgMCAwLDAgMTgsMHoiLz4KPHBhdGggZmlsbD0iI0Q3MyIgZD0ibTkwLDkwIDQ2LDU4YTc0LDc0IDAgMCwwIDEyLTEyeiIvPgo8L2c+PC9zdmc+&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
           </div>
           <h5 className="text-sm tracking-tighter text-center font-semibold">September 2022 - April 2023</h5>
           <div className="flex gap-0.5 justify-center">
@@ -649,9 +655,9 @@ export function HorrorGameProjectCard(){
     </div>
     <div>
       <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-      <img className="h-5 sm:h-6" src="https://img.shields.io/badge/c++-00599C?logo=cplusplus&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/unreal%20engine-black?logo=unreal%20engine&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/steamworks%20api-1b2838?style=for-the-badge&logo=steam&logoColor=white" />
+      <img className="h-5" src="https://img.shields.io/badge/c++-00599C?logo=cplusplus&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/unreal%20engine-black?logo=unreal%20engine&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/steamworks%20api-1b2838?style=for-the-badge&logo=steam&logoColor=white" />
           </div>
           <h5 className="text-sm tracking-tighter font-semibold text-center">March 2023 - June 2024</h5>
           <div className="flex gap-0.5 justify-center">
@@ -685,9 +691,9 @@ export function FightingGameProjectCard(){
     </div>
     <div>
       <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/c%23-68217A.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyOCAxMjgiPgo8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTE3LjUgMzMuNWwuMy0uMmMtLjYtMS4xLTEuNS0yLjEtMi40LTIuNmwtNDguMy0yNy44Yy0uOC0uNS0xLjktLjctMy4xLS43LTEuMiAwLTIuMy4zLTMuMS43bC00OCAyNy45Yy0xLjcgMS0yLjkgMy41LTIuOSA1LjR2NTUuN2MwIDEuMS4yIDIuMy45IDMuNGwtLjIuMWMuNS44IDEuMiAxLjUgMS45IDEuOWw0OC4yIDI3LjljLjguNSAxLjkuNyAzLjEuNyAxLjIgMCAyLjMtLjMgMy4xLS43bDQ4LTI3LjljMS43LTEgMi45LTMuNSAyLjktNS40di01NS44Yy4xLS44IDAtMS43LS40LTIuNnptLTUzLjUgNzBjLTIxLjggMC0zOS41LTE3LjctMzkuNS0zOS41czE3LjctMzkuNSAzOS41LTM5LjVjMTQuNyAwIDI3LjUgOC4xIDM0LjMgMjBsLTEzIDcuNWMtNC4yLTcuNS0xMi4yLTEyLjUtMjEuMy0xMi41LTEzLjUgMC0yNC41IDExLTI0LjUgMjQuNXMxMSAyNC41IDI0LjUgMjQuNWM5LjEgMCAxNy4xLTUgMjEuMy0xMi40bDEyLjkgNy42Yy02LjggMTEuOC0xOS42IDE5LjgtMzQuMiAxOS44em01MS00MS41aC0zLjJsLS45IDRoNC4xdjVoLTVsLTEuMiA2aC00LjlsMS4yLTZoLTMuOGwtMS4yIDZoLTQuOGwxLjItNmgtMi41di01aDMuNWwuOS00aC00LjR2LTVoNS4zbDEuMi02aDQuOWwtMS4yIDZoMy44bDEuMi02aDQuOGwtMS4yIDZoMi4ydjV6TTEwMi4zIDY2aDMuOGwuOS00aC0zLjh6Ii8+Cjwvc3ZnPg==&style=for-the-badge" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/unity%20engine-black?logo=unity&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/photon%20engine-004480.svg?logo=data:image/svg%2bxml;base64,PHN2ZyBoZWlnaHQ9IjgwIiB3aWR0aD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjE0LjQyIDYuNjggNzYuMjcgNzYuMjciPgogIDxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Ik0zNi45NCw1OS4yNmMuMTguMi4zOC40LjU3LjU5bC42LjU4LTEwLjc0LDEzYy0uNjEtLjU0LTEuMjEtMS4xLTEuNzktMS42OFMyNC40NCw3MC42MSwyMy45MSw3MGwxMy0xMC43NFpNNDEuNDMsNjNsLTgsMTQuODdhMzcsMzcsMCwwLDEtNC4wNy0yLjcyTDQwLjA1LDYyYy40NS4zMy45MS42MywxLjM4LjkyWm0tNy03Yy4yOC40Ni41OS45Mi45MiwxLjM3TDIyLjI2LDY4YTM3LjMyLDM3LjMyLDAsMCwxLTIuNzItNC4wNmwxNC44OC04Wm0xMC43Niw4LjgzTDQwLjI0LDgwLjkyYTM4LjI5LDM4LjI5LDAsMCwxLTQuNTEtMS44N2w3LjkyLTE0LjkxcS43Ni4zNSwxLjUzLjYzWk0zMi42LDUyLjE4cS4yOC43OC42MywxLjUzTDE4LjMyLDYxLjY0YTM2LjE2LDM2LjE2LDAsMCwxLTEuODctNC41MkwzMi42LDUyLjE4Wk00OS4yMiw2NS44MmwtMS42OSwxNi44YTM5LjE3LDM5LjE3LDAsMCwxLTQuOC0xTDQ3LjYsNjUuNWMuNTMuMTMsMS4wNy4yMywxLjYyLjMyWk0zMS41NSw0OC4xNWMuMDguNTQuMTksMS4wOC4zMiwxLjYyTDE1LjcsNTQuNjNhMzcuNTcsMzcuNTcsMCwwLDEtLjk1LTQuNzlsMTYuOC0xLjY5Wk0zMS4zLDQ0YzAsLjU1LDAsMS4xMSwwLDEuNjZMMTQuNSw0Ny4yOWEzOCwzOCwwLDAsMSwwLTQuODlMMzEuMyw0NFpNNTMuMzgsNjYuMDYsNTUsODIuODdhMzkuODksMzkuODksMCwwLDEtNC44OSwwbDEuNjItMTYuODFhMTUuMTQsMTUuMTQsMCwwLDAsMS42NSwwWm00LjEzLS41Niw0Ljg3LDE2LjE3YTM5LjE3LDM5LjE3LDAsMCwxLTQuOCwxbC0xLjY5LTE2LjhjLjU0LS4wOSwxLjA5LS4xOSwxLjYyLS4zMlpNMzEuODcsMzkuODVjLS4xMy41NC0uMjQsMS4wOC0uMzIsMS42M2wtMTYuOC0xLjdBMzcuNTcsMzcuNTcsMCwwLDEsMTUuNywzNWwxNi4xNyw0Ljg2Wk02MS40Niw2NC4xNGw3LjkyLDE0LjkxYTM5LjQ2LDM5LjQ2LDAsMCwxLTQuNTIsMS44N0w1OS45Myw2NC43N3EuNzYtLjI4LDEuNTMtLjYzWm0tMjguMi0yOC4zYy0uMjMuNS0uNDUsMS0uNjQsMS41M2wtMTYuMTMtNWEzNy44NiwzNy44NiwwLDAsMSwxLjg5LTQuNTJsMTQuODgsOFpNNjUuMDUsNjIsNzUuNzQsNzUuMTFhNDAsNDAsMCwwLDEtNC4wNywyLjcyTDYzLjY4LDYzYy40Ny0uMjkuOTItLjU5LDEuMzctLjkyWk0zNS4zNSwzMi4zYy0uMzMuNDUtLjY0LjktLjkyLDEuMzdsLTE0Ljg3LThhMzkuMzcsMzkuMzcsMCwwLDEsMi43Mi00LjA2TDM1LjM1LDMyLjNaTTgxLjIsNzBjLS41NC42MS0xLjA5LDEuMi0xLjY3LDEuNzhzLTEuMTgsMS4xNC0xLjc5LDEuNjhMNjcsNjAuNDNsLjYtLjU4LjU3LS41OUw4MS4yLDcwWk0yNy4zNywxNi4xN2wxMC43NCwxMy0uNi41OGMtLjE5LjE5LS4zOS4zOS0uNTcuNTlsLTEzLTEwLjc0Yy41My0uNiwxLjA5LTEuMiwxLjY3LTEuNzhzMS4xOC0xLjE0LDEuNzktMS42N1ptNTguMiw0Ny43NkEzNy4zMiwzNy4zMiwwLDAsMSw4Mi44NSw2OEw2OS43Nyw1Ny4zMWMuMzMtLjQ1LjY0LS45MS45Mi0xLjM3bDE0Ljg4LDhaTTMzLjQ0LDExLjhsOCwxNC44N2MtLjQ3LjI5LS45My42LTEuMzguOTJMMjkuMzcsMTQuNTJhMzcsMzcsMCwwLDEsNC4wNy0yLjcyWk04OC42Niw1Ny4xMmEzNi4xNiwzNi4xNiwwLDAsMS0xLjg3LDQuNTJMNzEuODgsNTMuNzFxLjM0LS43NS42My0xLjUzbDE2LjE1LDQuOTRaTTQwLjI4LDguNjksNDUuMiwyNC44NXEtLjc4LjI4LTEuNTMuNjNMMzUuNzYsMTAuNTZhMzkuNDYsMzkuNDYsMCwwLDEsNC41Mi0xLjg3Wk05MC4zNiw0OS44NGEzNy41NywzNy41NywwLDAsMS0xLDQuNzlMNzMuMjQsNDkuNzdjLjEzLS41NC4yNC0xLjA4LjMyLTEuNjJsMTYuOCwxLjY5Wk00Ny41Myw3LDQ5LjIyLDIzLjhjLS41NS4wOS0xLjA5LjItMS42Mi4zMkw0Mi43Myw4QTM5LjE0LDM5LjE0LDAsMCwxLDQ3LjUzLDdaTTkwLjYxLDQyLjM3YTM2LjEyLDM2LjEyLDAsMCwxLDAsNC44OGwtMTYuOC0xLjYxYzAtLjU1LDAtMS4xLDAtMS42NmwxNi44LTEuNjFaTTU1LDYuNzUsNTMuMzgsMjMuNTZxLS44MywwLTEuNjUsMEw1MC4xMSw2Ljc1YTM5Ljg5LDM5Ljg5LDAsMCwxLDQuODksMFpNODkuNDEsMzVhMzcuNTcsMzcuNTcsMCwwLDEsMSw0Ljc5bC0xNi44LDEuN2MtLjA4LS41NS0uMTktMS4wOS0uMzItMS42M0w4OS40MSwzNVptLTI3LTI3TDU3LjUxLDI0LjEyYy0uNTMtLjEyLTEuMDgtLjIzLTEuNjItLjMyTDU3LjU4LDdhMzkuMTQsMzkuMTQsMCwwLDEsNC44Ljk0Wm03LDIuNjJMNjEuNDYsMjUuNDljLS41MS0uMjQtMS0uNDUtMS41My0uNjRMNjQuODYsOC43YTM5LjQ2LDM5LjQ2LDAsMCwxLDQuNTIsMS44N1pNODYuNzgsMjhhMzcuNzQsMzcuNzQsMCwwLDEsMS44Nyw0LjUybC0xNi4xNCw1Yy0uMTktLjUxLS40MS0xLS42NC0xLjUzTDg2Ljc4LDI4Wk03NS43MSwxNC41LDY1LDI3LjU4Yy0uNDUtLjMyLS45MS0uNjMtMS4zOC0uOTJsOC0xNC44OGEzNywzNywwLDAsMSw0LjA3LDIuNzJabTcuMSw3LjA4YTM4LjIsMzguMiwwLDAsMSwyLjcyLDQuMDVsLTE0Ljg2LDhjLS4yOS0uNDctLjU5LS45My0uOTItMS4zOGwxMy4wNi0xMC43Wm0tNS4wNy01LjQxYy42MS41MywxLjIsMS4wOSwxLjc5LDEuNjdTODAuNjYsMTksODEuMiwxOS42MmwtMTMsMTAuNzVxLS4yOC0uMzItLjU3LS42bC0uNi0uNTgsMTAuNzQtMTNaIi8+Cjwvc3ZnPg==&style=for-the-badge" />
+          <img className="h-5" src="https://img.shields.io/badge/c%23-68217A.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyOCAxMjgiPgo8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTE3LjUgMzMuNWwuMy0uMmMtLjYtMS4xLTEuNS0yLjEtMi40LTIuNmwtNDguMy0yNy44Yy0uOC0uNS0xLjktLjctMy4xLS43LTEuMiAwLTIuMy4zLTMuMS43bC00OCAyNy45Yy0xLjcgMS0yLjkgMy41LTIuOSA1LjR2NTUuN2MwIDEuMS4yIDIuMy45IDMuNGwtLjIuMWMuNS44IDEuMiAxLjUgMS45IDEuOWw0OC4yIDI3LjljLjguNSAxLjkuNyAzLjEuNyAxLjIgMCAyLjMtLjMgMy4xLS43bDQ4LTI3LjljMS43LTEgMi45LTMuNSAyLjktNS40di01NS44Yy4xLS44IDAtMS43LS40LTIuNnptLTUzLjUgNzBjLTIxLjggMC0zOS41LTE3LjctMzkuNS0zOS41czE3LjctMzkuNSAzOS41LTM5LjVjMTQuNyAwIDI3LjUgOC4xIDM0LjMgMjBsLTEzIDcuNWMtNC4yLTcuNS0xMi4yLTEyLjUtMjEuMy0xMi41LTEzLjUgMC0yNC41IDExLTI0LjUgMjQuNXMxMSAyNC41IDI0LjUgMjQuNWM5LjEgMCAxNy4xLTUgMjEuMy0xMi40bDEyLjkgNy42Yy02LjggMTEuOC0xOS42IDE5LjgtMzQuMiAxOS44em01MS00MS41aC0zLjJsLS45IDRoNC4xdjVoLTVsLTEuMiA2aC00LjlsMS4yLTZoLTMuOGwtMS4yIDZoLTQuOGwxLjItNmgtMi41di01aDMuNWwuOS00aC00LjR2LTVoNS4zbDEuMi02aDQuOWwtMS4yIDZoMy44bDEuMi02aDQuOGwtMS4yIDZoMi4ydjV6TTEwMi4zIDY2aDMuOGwuOS00aC0zLjh6Ii8+Cjwvc3ZnPg==&style=for-the-badge" />
+          <img className="h-5" src="https://img.shields.io/badge/unity%20engine-black?logo=unity&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/photon%20engine-004480.svg?logo=data:image/svg%2bxml;base64,PHN2ZyBoZWlnaHQ9IjgwIiB3aWR0aD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjE0LjQyIDYuNjggNzYuMjcgNzYuMjciPgogIDxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Ik0zNi45NCw1OS4yNmMuMTguMi4zOC40LjU3LjU5bC42LjU4LTEwLjc0LDEzYy0uNjEtLjU0LTEuMjEtMS4xLTEuNzktMS42OFMyNC40NCw3MC42MSwyMy45MSw3MGwxMy0xMC43NFpNNDEuNDMsNjNsLTgsMTQuODdhMzcsMzcsMCwwLDEtNC4wNy0yLjcyTDQwLjA1LDYyYy40NS4zMy45MS42MywxLjM4LjkyWm0tNy03Yy4yOC40Ni41OS45Mi45MiwxLjM3TDIyLjI2LDY4YTM3LjMyLDM3LjMyLDAsMCwxLTIuNzItNC4wNmwxNC44OC04Wm0xMC43Niw4LjgzTDQwLjI0LDgwLjkyYTM4LjI5LDM4LjI5LDAsMCwxLTQuNTEtMS44N2w3LjkyLTE0LjkxcS43Ni4zNSwxLjUzLjYzWk0zMi42LDUyLjE4cS4yOC43OC42MywxLjUzTDE4LjMyLDYxLjY0YTM2LjE2LDM2LjE2LDAsMCwxLTEuODctNC41MkwzMi42LDUyLjE4Wk00OS4yMiw2NS44MmwtMS42OSwxNi44YTM5LjE3LDM5LjE3LDAsMCwxLTQuOC0xTDQ3LjYsNjUuNWMuNTMuMTMsMS4wNy4yMywxLjYyLjMyWk0zMS41NSw0OC4xNWMuMDguNTQuMTksMS4wOC4zMiwxLjYyTDE1LjcsNTQuNjNhMzcuNTcsMzcuNTcsMCwwLDEtLjk1LTQuNzlsMTYuOC0xLjY5Wk0zMS4zLDQ0YzAsLjU1LDAsMS4xMSwwLDEuNjZMMTQuNSw0Ny4yOWEzOCwzOCwwLDAsMSwwLTQuODlMMzEuMyw0NFpNNTMuMzgsNjYuMDYsNTUsODIuODdhMzkuODksMzkuODksMCwwLDEtNC44OSwwbDEuNjItMTYuODFhMTUuMTQsMTUuMTQsMCwwLDAsMS42NSwwWm00LjEzLS41Niw0Ljg3LDE2LjE3YTM5LjE3LDM5LjE3LDAsMCwxLTQuOCwxbC0xLjY5LTE2LjhjLjU0LS4wOSwxLjA5LS4xOSwxLjYyLS4zMlpNMzEuODcsMzkuODVjLS4xMy41NC0uMjQsMS4wOC0uMzIsMS42M2wtMTYuOC0xLjdBMzcuNTcsMzcuNTcsMCwwLDEsMTUuNywzNWwxNi4xNyw0Ljg2Wk02MS40Niw2NC4xNGw3LjkyLDE0LjkxYTM5LjQ2LDM5LjQ2LDAsMCwxLTQuNTIsMS44N0w1OS45Myw2NC43N3EuNzYtLjI4LDEuNTMtLjYzWm0tMjguMi0yOC4zYy0uMjMuNS0uNDUsMS0uNjQsMS41M2wtMTYuMTMtNWEzNy44NiwzNy44NiwwLDAsMSwxLjg5LTQuNTJsMTQuODgsOFpNNjUuMDUsNjIsNzUuNzQsNzUuMTFhNDAsNDAsMCwwLDEtNC4wNywyLjcyTDYzLjY4LDYzYy40Ny0uMjkuOTItLjU5LDEuMzctLjkyWk0zNS4zNSwzMi4zYy0uMzMuNDUtLjY0LjktLjkyLDEuMzdsLTE0Ljg3LThhMzkuMzcsMzkuMzcsMCwwLDEsMi43Mi00LjA2TDM1LjM1LDMyLjNaTTgxLjIsNzBjLS41NC42MS0xLjA5LDEuMi0xLjY3LDEuNzhzLTEuMTgsMS4xNC0xLjc5LDEuNjhMNjcsNjAuNDNsLjYtLjU4LjU3LS41OUw4MS4yLDcwWk0yNy4zNywxNi4xN2wxMC43NCwxMy0uNi41OGMtLjE5LjE5LS4zOS4zOS0uNTcuNTlsLTEzLTEwLjc0Yy41My0uNiwxLjA5LTEuMiwxLjY3LTEuNzhzMS4xOC0xLjE0LDEuNzktMS42N1ptNTguMiw0Ny43NkEzNy4zMiwzNy4zMiwwLDAsMSw4Mi44NSw2OEw2OS43Nyw1Ny4zMWMuMzMtLjQ1LjY0LS45MS45Mi0xLjM3bDE0Ljg4LDhaTTMzLjQ0LDExLjhsOCwxNC44N2MtLjQ3LjI5LS45My42LTEuMzguOTJMMjkuMzcsMTQuNTJhMzcsMzcsMCwwLDEsNC4wNy0yLjcyWk04OC42Niw1Ny4xMmEzNi4xNiwzNi4xNiwwLDAsMS0xLjg3LDQuNTJMNzEuODgsNTMuNzFxLjM0LS43NS42My0xLjUzbDE2LjE1LDQuOTRaTTQwLjI4LDguNjksNDUuMiwyNC44NXEtLjc4LjI4LTEuNTMuNjNMMzUuNzYsMTAuNTZhMzkuNDYsMzkuNDYsMCwwLDEsNC41Mi0xLjg3Wk05MC4zNiw0OS44NGEzNy41NywzNy41NywwLDAsMS0xLDQuNzlMNzMuMjQsNDkuNzdjLjEzLS41NC4yNC0xLjA4LjMyLTEuNjJsMTYuOCwxLjY5Wk00Ny41Myw3LDQ5LjIyLDIzLjhjLS41NS4wOS0xLjA5LjItMS42Mi4zMkw0Mi43Myw4QTM5LjE0LDM5LjE0LDAsMCwxLDQ3LjUzLDdaTTkwLjYxLDQyLjM3YTM2LjEyLDM2LjEyLDAsMCwxLDAsNC44OGwtMTYuOC0xLjYxYzAtLjU1LDAtMS4xLDAtMS42NmwxNi44LTEuNjFaTTU1LDYuNzUsNTMuMzgsMjMuNTZxLS44MywwLTEuNjUsMEw1MC4xMSw2Ljc1YTM5Ljg5LDM5Ljg5LDAsMCwxLDQuODksMFpNODkuNDEsMzVhMzcuNTcsMzcuNTcsMCwwLDEsMSw0Ljc5bC0xNi44LDEuN2MtLjA4LS41NS0uMTktMS4wOS0uMzItMS42M0w4OS40MSwzNVptLTI3LTI3TDU3LjUxLDI0LjEyYy0uNTMtLjEyLTEuMDgtLjIzLTEuNjItLjMyTDU3LjU4LDdhMzkuMTQsMzkuMTQsMCwwLDEsNC44Ljk0Wm03LDIuNjJMNjEuNDYsMjUuNDljLS41MS0uMjQtMS0uNDUtMS41My0uNjRMNjQuODYsOC43YTM5LjQ2LDM5LjQ2LDAsMCwxLDQuNTIsMS44N1pNODYuNzgsMjhhMzcuNzQsMzcuNzQsMCwwLDEsMS44Nyw0LjUybC0xNi4xNCw1Yy0uMTktLjUxLS40MS0xLS42NC0xLjUzTDg2Ljc4LDI4Wk03NS43MSwxNC41LDY1LDI3LjU4Yy0uNDUtLjMyLS45MS0uNjMtMS4zOC0uOTJsOC0xNC44OGEzNywzNywwLDAsMSw0LjA3LDIuNzJabTcuMSw3LjA4YTM4LjIsMzguMiwwLDAsMSwyLjcyLDQuMDVsLTE0Ljg2LDhjLS4yOS0uNDctLjU5LS45My0uOTItMS4zOGwxMy4wNi0xMC43Wm0tNS4wNy01LjQxYy42MS41MywxLjIsMS4wOSwxLjc5LDEuNjdTODAuNjYsMTksODEuMiwxOS42MmwtMTMsMTAuNzVxLS4yOC0uMzItLjU3LS42bC0uNi0uNTgsMTAuNzQtMTNaIi8+Cjwvc3ZnPg==&style=for-the-badge" />
           </div>
           <h5 className="text-sm tracking-tighter text-center font-semibold">March 2021 - May 2021</h5>
           <div className="flex gap-0.5 justify-center">
@@ -721,8 +727,8 @@ export function PrototypeGameCard(){
     </div>
     <div>
       <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/c%23-68217A.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyOCAxMjgiPgo8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTE3LjUgMzMuNWwuMy0uMmMtLjYtMS4xLTEuNS0yLjEtMi40LTIuNmwtNDguMy0yNy44Yy0uOC0uNS0xLjktLjctMy4xLS43LTEuMiAwLTIuMy4zLTMuMS43bC00OCAyNy45Yy0xLjcgMS0yLjkgMy41LTIuOSA1LjR2NTUuN2MwIDEuMS4yIDIuMy45IDMuNGwtLjIuMWMuNS44IDEuMiAxLjUgMS45IDEuOWw0OC4yIDI3LjljLjguNSAxLjkuNyAzLjEuNyAxLjIgMCAyLjMtLjMgMy4xLS43bDQ4LTI3LjljMS43LTEgMi45LTMuNSAyLjktNS40di01NS44Yy4xLS44IDAtMS43LS40LTIuNnptLTUzLjUgNzBjLTIxLjggMC0zOS41LTE3LjctMzkuNS0zOS41czE3LjctMzkuNSAzOS41LTM5LjVjMTQuNyAwIDI3LjUgOC4xIDM0LjMgMjBsLTEzIDcuNWMtNC4yLTcuNS0xMi4yLTEyLjUtMjEuMy0xMi41LTEzLjUgMC0yNC41IDExLTI0LjUgMjQuNXMxMSAyNC41IDI0LjUgMjQuNWM5LjEgMCAxNy4xLTUgMjEuMy0xMi40bDEyLjkgNy42Yy02LjggMTEuOC0xOS42IDE5LjgtMzQuMiAxOS44em01MS00MS41aC0zLjJsLS45IDRoNC4xdjVoLTVsLTEuMiA2aC00LjlsMS4yLTZoLTMuOGwtMS4yIDZoLTQuOGwxLjItNmgtMi41di01aDMuNWwuOS00aC00LjR2LTVoNS4zbDEuMi02aDQuOWwtMS4yIDZoMy44bDEuMi02aDQuOGwtMS4yIDZoMi4ydjV6TTEwMi4zIDY2aDMuOGwuOS00aC0zLjh6Ii8+Cjwvc3ZnPg==&style=for-the-badge" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/unity%20engine-black?logo=unity&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/c%23-68217A.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyOCAxMjgiPgo8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTE3LjUgMzMuNWwuMy0uMmMtLjYtMS4xLTEuNS0yLjEtMi40LTIuNmwtNDguMy0yNy44Yy0uOC0uNS0xLjktLjctMy4xLS43LTEuMiAwLTIuMy4zLTMuMS43bC00OCAyNy45Yy0xLjcgMS0yLjkgMy41LTIuOSA1LjR2NTUuN2MwIDEuMS4yIDIuMy45IDMuNGwtLjIuMWMuNS44IDEuMiAxLjUgMS45IDEuOWw0OC4yIDI3LjljLjguNSAxLjkuNyAzLjEuNyAxLjIgMCAyLjMtLjMgMy4xLS43bDQ4LTI3LjljMS43LTEgMi45LTMuNSAyLjktNS40di01NS44Yy4xLS44IDAtMS43LS40LTIuNnptLTUzLjUgNzBjLTIxLjggMC0zOS41LTE3LjctMzkuNS0zOS41czE3LjctMzkuNSAzOS41LTM5LjVjMTQuNyAwIDI3LjUgOC4xIDM0LjMgMjBsLTEzIDcuNWMtNC4yLTcuNS0xMi4yLTEyLjUtMjEuMy0xMi41LTEzLjUgMC0yNC41IDExLTI0LjUgMjQuNXMxMSAyNC41IDI0LjUgMjQuNWM5LjEgMCAxNy4xLTUgMjEuMy0xMi40bDEyLjkgNy42Yy02LjggMTEuOC0xOS42IDE5LjgtMzQuMiAxOS44em01MS00MS41aC0zLjJsLS45IDRoNC4xdjVoLTVsLTEuMiA2aC00LjlsMS4yLTZoLTMuOGwtMS4yIDZoLTQuOGwxLjItNmgtMi41di01aDMuNWwuOS00aC00LjR2LTVoNS4zbDEuMi02aDQuOWwtMS4yIDZoMy44bDEuMi02aDQuOGwtMS4yIDZoMi4ydjV6TTEwMi4zIDY2aDMuOGwuOS00aC0zLjh6Ii8+Cjwvc3ZnPg==&style=for-the-badge" />
+          <img className="h-5" src="https://img.shields.io/badge/unity%20engine-black?logo=unity&style=for-the-badge&logoColor=white" />
           </div>
           <h5 className="text-sm tracking-tighter text-center font-semibold">June 2021 - July 2021</h5>
           <div className="flex gap-0.5 justify-center">
@@ -756,9 +762,9 @@ export function SpiritBoxGameCard(){
     </div>
     <div>
       <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/c%23-68217A.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyOCAxMjgiPgo8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTE3LjUgMzMuNWwuMy0uMmMtLjYtMS4xLTEuNS0yLjEtMi40LTIuNmwtNDguMy0yNy44Yy0uOC0uNS0xLjktLjctMy4xLS43LTEuMiAwLTIuMy4zLTMuMS43bC00OCAyNy45Yy0xLjcgMS0yLjkgMy41LTIuOSA1LjR2NTUuN2MwIDEuMS4yIDIuMy45IDMuNGwtLjIuMWMuNS44IDEuMiAxLjUgMS45IDEuOWw0OC4yIDI3LjljLjguNSAxLjkuNyAzLjEuNyAxLjIgMCAyLjMtLjMgMy4xLS43bDQ4LTI3LjljMS43LTEgMi45LTMuNSAyLjktNS40di01NS44Yy4xLS44IDAtMS43LS40LTIuNnptLTUzLjUgNzBjLTIxLjggMC0zOS41LTE3LjctMzkuNS0zOS41czE3LjctMzkuNSAzOS41LTM5LjVjMTQuNyAwIDI3LjUgOC4xIDM0LjMgMjBsLTEzIDcuNWMtNC4yLTcuNS0xMi4yLTEyLjUtMjEuMy0xMi41LTEzLjUgMC0yNC41IDExLTI0LjUgMjQuNXMxMSAyNC41IDI0LjUgMjQuNWM5LjEgMCAxNy4xLTUgMjEuMy0xMi40bDEyLjkgNy42Yy02LjggMTEuOC0xOS42IDE5LjgtMzQuMiAxOS44em01MS00MS41aC0zLjJsLS45IDRoNC4xdjVoLTVsLTEuMiA2aC00LjlsMS4yLTZoLTMuOGwtMS4yIDZoLTQuOGwxLjItNmgtMi41di01aDMuNWwuOS00aC00LjR2LTVoNS4zbDEuMi02aDQuOWwtMS4yIDZoMy44bDEuMi02aDQuOGwtMS4yIDZoMi4ydjV6TTEwMi4zIDY2aDMuOGwuOS00aC0zLjh6Ii8+Cjwvc3ZnPg==&style=for-the-badge" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/unity%20engine-black?logo=unity&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/steamvr-1b2838?style=for-the-badge&logo=steam&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/c%23-68217A.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyOCAxMjgiPgo8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTE3LjUgMzMuNWwuMy0uMmMtLjYtMS4xLTEuNS0yLjEtMi40LTIuNmwtNDguMy0yNy44Yy0uOC0uNS0xLjktLjctMy4xLS43LTEuMiAwLTIuMy4zLTMuMS43bC00OCAyNy45Yy0xLjcgMS0yLjkgMy41LTIuOSA1LjR2NTUuN2MwIDEuMS4yIDIuMy45IDMuNGwtLjIuMWMuNS44IDEuMiAxLjUgMS45IDEuOWw0OC4yIDI3LjljLjguNSAxLjkuNyAzLjEuNyAxLjIgMCAyLjMtLjMgMy4xLS43bDQ4LTI3LjljMS43LTEgMi45LTMuNSAyLjktNS40di01NS44Yy4xLS44IDAtMS43LS40LTIuNnptLTUzLjUgNzBjLTIxLjggMC0zOS41LTE3LjctMzkuNS0zOS41czE3LjctMzkuNSAzOS41LTM5LjVjMTQuNyAwIDI3LjUgOC4xIDM0LjMgMjBsLTEzIDcuNWMtNC4yLTcuNS0xMi4yLTEyLjUtMjEuMy0xMi41LTEzLjUgMC0yNC41IDExLTI0LjUgMjQuNXMxMSAyNC41IDI0LjUgMjQuNWM5LjEgMCAxNy4xLTUgMjEuMy0xMi40bDEyLjkgNy42Yy02LjggMTEuOC0xOS42IDE5LjgtMzQuMiAxOS44em01MS00MS41aC0zLjJsLS45IDRoNC4xdjVoLTVsLTEuMiA2aC00LjlsMS4yLTZoLTMuOGwtMS4yIDZoLTQuOGwxLjItNmgtMi41di01aDMuNWwuOS00aC00LjR2LTVoNS4zbDEuMi02aDQuOWwtMS4yIDZoMy44bDEuMi02aDQuOGwtMS4yIDZoMi4ydjV6TTEwMi4zIDY2aDMuOGwuOS00aC0zLjh6Ii8+Cjwvc3ZnPg==&style=for-the-badge" />
+          <img className="h-5" src="https://img.shields.io/badge/unity%20engine-black?logo=unity&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/steamvr-1b2838?style=for-the-badge&logo=steam&logoColor=white" />
           </div>
           <h5 className="text-sm tracking-tighter text-center font-semibold">April 2021 - August 2021</h5>
           <div className="flex gap-0.5 justify-center">
@@ -781,19 +787,29 @@ export function SpiritBoxGameCard(){
 }
 export function EAProjectCard( ){
   return (
-    <div className="flex justify-left p-5">
-      <article className="max-w-4xl">
-          <div>
-            <h3 className="text-xl md:text-2xl font-semibold tracking-tighter">Software Engineer Intern</h3>
-            <div className="flex items-center justify-start gap-2">
-              <img src="./ea.svg" width={32} />
-              <h5 className="text-md md:text-lg tracking-tighter">Electronic Arts (EA)</h5>
+    <div className="flex justify-left p-2">
+      <article className="max-w-5xl">
+          <div className="space-y-2 pb-2">
+            <h3 className="text-lg md:text-xl font-semibold tracking-tighter">Software Engineer Intern</h3>
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex items-center justify-start gap-2">
+                <img src="./ea.svg" width={32} />
+                <h5 className="text-sm md:text-base tracking-tighter">Electronic Arts (EA)</h5>
+              </div>
+              <h5 className="text-xs md:text-sm tracking-tighter ">June 2025 - September 2025</h5>
             </div>
-            <h5 className="text-sm md:text-base tracking-tighter ">June 2025 - September 2025</h5>
+          </div>
+          <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
+          <img className="h-5" src="https://img.shields.io/badge/wails-DF0000?logo=wails&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/vue.js-4FC08D?logo=vue.js&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/typescript-3178C6?logo=typescript&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/webrtc-333333?logo=webrtc&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/bun-000000?logo=bun&style=for-the-badge&logoColor=white" />
           </div>
         <div className="block h-full rounded-lg md:pl-5">
-            <div className="p-3 flex flex-col text-xs md:text-sm font-medium text-gray-900 dark:text-gray-100 gap-y-2">
-              <li>Incoming Summer 2025</li>
+            <div className="p-3 flex flex-col text-xs font-medium text-gray-900 dark:text-gray-100 gap-y-1">
+              <li>Developing a low-latency voice chat app for Apex Legends Esports (in progress), parsing game client logs for auto-muting and channel routing, leveraging a WebRTC SFU (Selective Forwarding Unit) for scalable audio, and using a custom LAN signaling server</li>
             </div>
         </div>
       </article>
@@ -802,27 +818,29 @@ export function EAProjectCard( ){
 }
 export function AuriStorProjectCard( ){
   return (
-    <div className="flex justify-left p-5">
-      <article className="max-w-4xl">
-          <div>
-            <h3 className="text-xl md:text-2xl font-semibold tracking-tighter">Software Engineer Intern</h3>
-            <div className="flex items-center justify-start gap-2">
-              <img src="./auristor.jpg" width={32} className="rounded-lg" />
-              <h5 className="text-md md:text-lg tracking-tighter">AuriStor, Inc.</h5>
+    <div className="flex justify-left p-2">
+      <article className="max-w-5xl">
+          <div className="space-y-2 pb-2">
+            <h3 className="text-lg md:text-xl font-semibold tracking-tighter">Software Engineer Intern</h3>
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex items-center justify-start gap-2">
+                <img src="./auristor.jpg" width={32} className="rounded-lg" />
+                <h5 className="text-sm md:text-base tracking-tighter">AuriStor, Inc.</h5>
+              </div>
+              <h5 className="text-xs md:text-sm tracking-tighter ">March 2025 - May 2025</h5>
             </div>
-            <h5 className="text-sm md:text-base tracking-tighter ">March 2025 - May 2025</h5>
           </div>
           <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/typescript-3178C6?logo=typescript&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/prometheus-E6522C?logo=prometheus&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/grafana-F46800?logo=grafana&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/linux-FCC624?logo=linux&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/typescript-3178C6?logo=typescript&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/prometheus-E6522C?logo=prometheus&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/grafana-F46800?logo=grafana&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/linux-FCC624?logo=linux&style=for-the-badge&logoColor=white" />
           </div>
         <div className="block h-full rounded-lg md:pl-5">
-            <div className="p-3 flex flex-col text-xs md:text-sm font-medium text-gray-900 dark:text-gray-100 gap-y-2">
-              <li>Built a Go-based Prometheus exporter (systemd service) exposing 150+ metrics and Grafana dashboards with alerting and Slack integration, reducing mean time to detecting incidents by 40%</li>
-              <li>Automated AuriStor File System cell creation via Ansible, cutting setup time by 75%, and connected the dashboard to cells for volume and file operations using Kerberos authentication</li>
+            <div className="p-3 flex flex-col text-xs font-medium text-gray-900 dark:text-gray-100 gap-y-1">
+              <li>Built Go-based Prometheus exporter & Grafana dashboards, reducing incident detection time by 40%</li>
+              <li>Automated AuriStorFS cell creation with Ansible, slashing setup time by 75%, and integrated dashboards using Kerberos authentication for volume and file operations</li>
               <li>Dockerized builds and automated deployment with Jenkins CI/CD, enabling weekly releases at 99.9% uptime</li>
             </div>
         </div>
@@ -832,23 +850,26 @@ export function AuriStorProjectCard( ){
 }
 export function E3ProjectCard( ){
   return (
-    <div className="flex justify-left p-5">
-      <article className="max-w-4xl">
-          <div>
-            <h3 className="text-xl md:text-2xl font-semibold tracking-tighter">Software Engineer Intern</h3>
-            <h5 className="text-md md:text-lg tracking-tighter">E3 Biogenetics</h5>
-            <h5 className="text-sm md:text-base tracking-tighter ">July 2022 - September 2022</h5>
+    <div className="flex justify-left p-2">
+      <article className="max-w-5xl">
+        <div className="space-y-2 pb-2">
+            <h3 className="text-lg md:text-xl font-semibold tracking-tighter">Software Engineer Intern</h3>
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex items-center justify-start gap-2">
+                <h5 className="text-sm md:text-base tracking-tighter">E3 Biogenetics</h5>
+              </div>
+              <h5 className="text-xs md:text-sm tracking-tighter ">July 2022 - September 2022</h5>
+            </div>
           </div>
           <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/php-777BB4?style=for-the-badge&logo=php&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/javascript-yellow?logo=javascript&style=for-the-badge&logoColor=white" />
-          <img className="h-5 sm:h-6" src="https://img.shields.io/badge/mysql-4479A1?logo=mysql&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/php-777BB4?style=for-the-badge&logo=php&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/javascript-yellow?logo=javascript&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/mysql-4479A1?logo=mysql&style=for-the-badge&logoColor=white" />
           </div>
         <div className="block h-full rounded-lg md:pl-5">
-            <div className="p-3 flex flex-col text-xs md:text-sm font-medium text-gray-900 dark:text-gray-100 gap-y-2">
-              <li>Developed a survey web application using JavaScript and PHP for a user base of 50 daily participants</li>
-              <li>Implemented phpChart-powered response trend visualizations and a JSON/JavaScript language toggle to support multiple languages, boosting user engagement by 40% and improving accessibility by 30%</li>
-              <li>Enhanced accessibility for 30% of users by implementing a language toggle feature with JSON and JavaScript, enabling seamless language switching, and ensuring a personalized experience through stored preferences</li>
+            <div className="p-3 flex flex-col text-xs font-medium text-gray-900 dark:text-gray-100 gap-y-1">
+              <li>Built a JavaScript/PHP survey web app for 50 daily users with phpChart trend graphs and a JSON/JavaScript language toggle, boosting engagement 40% and accessibility 30%</li>
+              <li>Optimized MySQL indexing and session handling, speeding up backend responses by 25%</li>
             </div>
         </div>
       </article>

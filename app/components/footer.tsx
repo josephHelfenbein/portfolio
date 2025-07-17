@@ -82,7 +82,7 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-blue-800"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://drive.google.com/file/d/1gQRb_3wOZPEAzrfCFxtvaGHNd3C8Oaoo/view?usp=sharing"
+            href="https://drive.google.com/file/d/1bl6MF5ACDhjCWSFnBBn61yhX5udMXAgY/view?usp=sharing"
           >
             <FileIcon />
             <p className="ml-1 h-7">Resume</p>
