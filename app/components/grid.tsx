@@ -11,17 +11,7 @@ const areaProjects = [
     (<div className="grid sm:grid-cols-2 max-w-7xl gap-1 mb-16">
         <RecapGridProjectCard />
         <PairGridProjectCard />
-        <COFAProjectCard />
-        <FocuraProjectCard />
-        <GuardianAngelProjectCard />
         <TravelAmuletProjectCard />
-        <MendPathProjectCard />
-        <CerebrixProjectCard />
-        <ChamaProjectCard />
-        <BlazeGuardProjectCard />
-        <PatSafeProjectCard />
-        <HelpSignalProjectCard />
-        <GameRecommendCard />
     </div>),
     (<div className="grid sm:grid-cols-2 max-w-7xl gap-1 mb-16">
         <HorrorGameProjectCard />
@@ -31,6 +21,18 @@ const areaProjects = [
     </div>),
     (<div className="grid sm:grid-cols-2 max-w-7xl gap-1 mb-16">
         <ScienceProjectCard />
+    </div>),
+    (<div className="grid sm:grid-cols-2 max-w-7xl gap-1 mb-16">
+        <COFAProjectCard />
+        <FocuraProjectCard />
+        <GuardianAngelProjectCard />
+        <MendPathProjectCard />
+        <CerebrixProjectCard />
+        <ChamaProjectCard />
+        <BlazeGuardProjectCard />
+        <PatSafeProjectCard />
+        <HelpSignalProjectCard />
+        <GameRecommendCard />
     </div>)
 ];
 export default function GridComponent(){
@@ -67,6 +69,10 @@ export default function GridComponent(){
             </div>
             <div className="flex justify-center ml-5 mr-5">
                 {areaProjects[area]}
+            </div>
+            <LabelItem label="Hackathon Projects" />
+            <div className="flex justify-center ml-5 mr-5">
+                {areaProjects[4]}
             </div>
            
         </div>
