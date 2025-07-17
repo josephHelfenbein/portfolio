@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 function HackathonCard({imageSrc, projectName, languages, hackathon, githubLink, liveLink, description}){
   return (
@@ -76,6 +76,14 @@ function HackathonCard({imageSrc, projectName, languages, hackathon, githubLink,
   );
 }
 function ProjectCard({imageSrc, projectName, languages, githubLink, liveLink, description, previewImg, previewVideo}){
+  const videoRef = useRef(null);
+  useEffect(() => {
+    const video = videoRef.current;
+    if(video){
+      video.muted = true;
+      try{ video.play(); } catch (error) { console.warn('Autoplay failed:', error); }
+    }
+  }, []);
   return (
     <motion.div initial={{ y: 10, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
@@ -119,7 +127,7 @@ function ProjectCard({imageSrc, projectName, languages, githubLink, liveLink, de
           <img src={previewImg} alt={`${projectName} preview`} className="w-full h-auto rounded-lg" />
         )}
         {previewVideo && (
-          <video controls className="w-full h-auto rounded-lg" muted={true} loop="loop" autoPlay="autoplay">
+          <video ref={videoRef} controls className="w-full h-auto rounded-lg" loop playsInline muted autoPlay>
             <source src={previewVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
