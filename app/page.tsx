@@ -30,7 +30,7 @@ export default function Page() {
       
       <IntroCard />
       
-      <div className='flex flex-col justify-center items-center p-5 mb-24 mt-12'>
+      <div className='flex flex-col justify-center items-center mb-24 mt-12'>
         <LabelItem label={"Work Experience"} />
         <div className='max-w-5xl backdrop-blur-lg p-4 shadow-lg rounded-xl'>
           <EAProjectCard />
