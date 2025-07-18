@@ -150,7 +150,7 @@ export function PhysicsProjectCard(){
       githubLink="https://github.com/josephHelfenbein/physics-sandbox"
       liveLink="https://josephhelfenbein.github.io/physics-sandbox/"
       description="A rigid body physics engine with simulated cubes and spheres. It has real-time raytraced shadows and a Blinn-Phong shader using WebGL."
-      previewImg="./physicssandbox-screenshot.png"
+      previewVideo="./physicssandbox-clip.mp4"
     />
   );
 }
