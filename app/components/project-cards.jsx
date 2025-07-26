@@ -75,7 +75,7 @@ function HackathonCard({imageSrc, projectName, languages, hackathon, githubLink,
     </motion.div>
   );
 }
-function ProjectCard({imageSrc, projectName, languages, githubLink, liveLink, description, previewImg, previewVideo}){
+function ProjectCard({imageSrc, projectName, date, languages, githubLink, liveLink, description, previewImg, previewVideo}){
   const videoRef = useRef(null);
   useEffect(() => {
     const video = videoRef.current;
@@ -100,6 +100,7 @@ function ProjectCard({imageSrc, projectName, languages, githubLink, liveLink, de
             <img key={index} className="h-5" src={language} />
           ))}
         </div>
+        <h4 className="text-sm tracking-tighter text-center font-semibold text-gray-500 dark:text-gray-400 mb-2">{date}</h4>
         <div className="flex gap-0.5 justify-center">
           {githubLink && <a target="_blank" className="cardLink flex gap-0.5" href={githubLink}>
             <svg width="20" height="20" viewBox="0 0 30 30" fill="black" className="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
@@ -142,6 +143,7 @@ export function PhysicsProjectCard(){
     <ProjectCard
       imageSrc="./physicssandbox.png"
       projectName="Physics Sandbox"
+      date="June 2024 - July 2024"
       languages={[
         "https://img.shields.io/badge/javascript-yellow?logo=javascript&style=for-the-badge&logoColor=white",
         "https://img.shields.io/badge/webgl-red?logo=webgl&style=for-the-badge&logoColor=white",
@@ -159,6 +161,7 @@ export function MaterialProjectCard(){
     <ProjectCard
       imageSrc="./materialviewer-logo.svg"
       projectName="Material Viewer"
+      date="September 2024 - November 2024"
       languages={[
         "https://img.shields.io/badge/c++-00599C?logo=cplusplus&style=for-the-badge&logoColor=white",
         "https://img.shields.io/badge/opengl-5586A4?logo=opengl&style=for-the-badge&logoColor=white"
@@ -174,6 +177,7 @@ export function GustGridProjectCard(){
     <ProjectCard
       imageSrc="./gustgrid-logo.svg"
       projectName="GustGrid"
+      date="June 2025"
       languages={[
         "https://img.shields.io/badge/c++-00599C?logo=cplusplus&style=for-the-badge&logoColor=white",
         "https://img.shields.io/badge/opengl-5586A4?logo=opengl&style=for-the-badge&logoColor=white",
