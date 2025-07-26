@@ -24,7 +24,7 @@ export default function Card( ){
                 </div>
                 <hr className="my-6 border-gray-300 dark:border-gray-700" />
                 <p className="mt-5 text-xs md:text-sm font-medium text-gray-900 dark:text-gray-50">
-                 I'm a Computer Science & Physics student at CCNY specializing in real-time rendering and simulation, building high-performance graphics pipelines and interactive environments with APIs like Vulkan, CUDA, and OpenGL, while also developing scalable, cloud-native fullstack applications using serverless architectures and modern frameworks (Go, Java Spring, Next.js/React, Nuxt/Vue).
+                 I'm a Computer Science & Physics student at CCNY specializing in real-time rendering and simulation, building high-performance graphics pipelines and interactive environments with APIs like Vulkan, CUDA, and OpenGL, while also developing scalable, cloud-native fullstack applications using serverless architectures and modern backend (Go, Java Spring) and frontend (React.js/Next.js, Vue.js/Nuxt.js) frameworks.
                 </p>
               </div>
             </article>
