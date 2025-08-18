@@ -189,6 +189,22 @@ export function GustGridProjectCard(){
     />
   );
 }
+export function GustGridVulkanProjectCard(){
+  return (
+    <ProjectCard
+      imageSrc="./gustgrid-vulkan.svg"
+      projectName="GustGrid-Vulkan"
+      date="June 2025 - August 2025"
+      languages={[
+        "https://img.shields.io/badge/c++-00599C?logo=cplusplus&style=for-the-badge&logoColor=white",
+        "https://img.shields.io/badge/vulkan-A41E22?logo=vulkan&style=for-the-badge&logoColor=white",
+      ]}
+      githubLink="https://github.com/josephHelfenbein/gustgrid-vulkan"
+      description="A real-time visualization tool of PC airflow and thermal dynamics re-engineered with C++ and Vulkan. This Vulkan port replaces the original OpenGL renderer and translates all CUDA kernels into Vulkan compute shaders, running cross-platform on macOS (via MoltenVK), Linux, and Windows across NVIDIA, AMD, Intel, and Apple Silicon GPUs."
+      previewVideo="./gustgrid-vulkan-clip.mp4"
+    />
+  );
+}
 export function GameRecommendCard(){
   return (
     <HackathonCard
