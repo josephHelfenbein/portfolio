@@ -241,7 +241,7 @@ export function ZenAgentCard(){
         "https://img.shields.io/badge/webrtc-333333?logo=webrtc&style=for-the-badge&logoColor=white",
         "https://img.shields.io/badge/opencv-5C3EE8?logo=opencv&style=for-the-badge&logoColor=white",
         "https://img.shields.io/badge/mediapipe-0097A7?logo=mediapipe&style=for-the-badge&logoColor=white",
-        "https://img.shields.io/badge/scikit-learn-F7931E?logo=scikit-learn&style=for-the-badge&logoColor=white"
+        "https://img.shields.io/badge/sklearn-F7931E?logo=scikit-learn&style=for-the-badge&logoColor=white"
       ]}
       hackathon={{
         name: "CTP Hacks 2025 submission",
