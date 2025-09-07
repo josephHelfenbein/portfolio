@@ -228,6 +228,31 @@ export function GameRecommendCard(){
     />
   );
 }
+export function ZenAgentCard(){
+  return (
+    <HackathonCard
+      imageSrc="./zenagent.png"
+      projectName="Zen Agent"
+      languages={[
+        "https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white",
+        "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+        "https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white",
+        "https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white",
+        "https://img.shields.io/badge/webrtc-333333?logo=webrtc&style=for-the-badge&logoColor=white",
+        "https://img.shields.io/badge/opencv-5C3EE8?logo=opencv&style=for-the-badge&logoColor=white",
+        "https://img.shields.io/badge/mediapipe-0097A7?logo=mediapipe&style=for-the-badge&logoColor=white",
+        "https://img.shields.io/badge/scikit-learn-F7931E?logo=scikit-learn&style=for-the-badge&logoColor=white"
+      ]}
+      hackathon={{
+        name: "CTP Hacks 2025 submission",
+        award: "Best AI/ML Hack 🎉",
+        devpost: "https://devpost.com/software/zen-agent"
+      }}
+      githubLink="https://github.com/josephHelfenbein/zen-agent"
+      description="Zen Agent is an AI-powered agent that detects stress and mindfulness from facial cues and provides real-time emotional support. It leverages a trained machine-learning model to visually analyze facial indicators and deliver tailored stress-reduction assistance."
+    />
+  );
+}
 export function MendPathProjectCard(){
   return (
     <HackathonCard
@@ -814,16 +839,20 @@ export function EAProjectCard( ){
             </div>
           </div>
           <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-          <img className="h-5" src="https://img.shields.io/badge/wails-DF0000?logo=wails&style=for-the-badge&logoColor=white" />
           <img className="h-5" src="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
           <img className="h-5" src="https://img.shields.io/badge/vue.js-4FC08D?logo=vue.js&style=for-the-badge&logoColor=white" />
           <img className="h-5" src="https://img.shields.io/badge/typescript-3178C6?logo=typescript&style=for-the-badge&logoColor=white" />
           <img className="h-5" src="https://img.shields.io/badge/webrtc-333333?logo=webrtc&style=for-the-badge&logoColor=white" />
           <img className="h-5" src="https://img.shields.io/badge/bun-000000?logo=bun&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/c++-00599C?logo=cplusplus&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/terraform-844FBA?logo=terraform&style=for-the-badge&logoColor=white" />
           </div>
         <div className="block h-full rounded-lg md:pl-5">
             <div className="p-3 flex flex-col text-xs font-medium text-gray-900 dark:text-gray-100 gap-y-1">
-              <li>Developing a low-latency voice chat app for Apex Legends Esports (in progress), parsing game client logs for auto-muting and channel routing, leveraging a WebRTC SFU (Selective Forwarding Unit) for scalable audio, and using a custom LAN signaling server</li>
+              <li>Developed a LAN voice platform in TypeScript/Go with sub-50 ms latency for Apex Legends esports</li>
+              <li>Engineered a C++/DirectX overlay process hooked into the Windows compositor, delivering real-time user display and text announcements through a WebSocket connection</li>
+              <li>Built a WebSocket that ingests game server events to automate moderation, reducing admin tasks by 87%</li>
+              <li>Provisioned interruption-free AWS EC2 test environments with Terraform to validate bugs, ensuring smooth gameplay for tournaments ranging from 120-player regional finals to 480-player ALGS Open events</li>
             </div>
         </div>
       </article>
@@ -853,9 +882,9 @@ export function AuriStorProjectCard( ){
           </div>
         <div className="block h-full rounded-lg md:pl-5">
             <div className="p-3 flex flex-col text-xs font-medium text-gray-900 dark:text-gray-100 gap-y-1">
-              <li>Built Go-based Prometheus exporter & Grafana dashboards, reducing incident detection time by 40%</li>
-              <li>Automated AuriStorFS cell creation with Ansible, slashing setup time by 75%, and integrated dashboards using Kerberos authentication for volume and file operations</li>
-              <li>Dockerized builds and automated deployment with Jenkins CI/CD, enabling weekly releases at 99.9% uptime</li>
+              <li>Automated virtual filesystem provisioning with infrastructure-as-code tools (Ansible), cutting setup time 75%, and implemented secure authentication for volume/file controls (Kerberos)</li>
+              <li>Built Go-based Prometheus exporter & Grafana dashboards, cutting incident detection time by 40%</li>
+              <li>Dockerized builds and Jenkins CI/CD to automate weekly releases, reducing deployment time by 70%</li>
             </div>
         </div>
       </article>
