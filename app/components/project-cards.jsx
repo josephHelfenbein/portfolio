@@ -582,13 +582,34 @@ export function COFAProjectCard(){
         "https://img.shields.io/badge/twilio-F22F46?logo=twilio&style=for-the-badge&logoColor=white"
       ]}
       hackathon={{
-        name: "HackKnight 2025 submission",
+        name: "HackKnight Spring 2025 submission",
         award: "First Place 🎉",
         devpost: "https://devpost.com/software/cofa"
       }}
       liveLink="https://hackknight2025.vercel.app"
       githubLink="https://github.com/josephHelfenbein/cofa"
       description="CUNY One Fraud Agent is an AI-powered fraud detection system that monitors credit card transactions in real-time. When a suspicious transaction is detected, an AI agent calls the user. The agent can list suspicious charges and respond to user commands, allowing them to approve transactions, freeze their card, or request a live representative."
+    />
+  )
+}
+export function RezonProjectCard(){
+  return (
+    <HackathonCard
+      projectName="Rezon"
+      imageSrc="./rezon.png"
+      languages={[
+        "https://img.shields.io/badge/electron-47848F?logo=electron&style=for-the-badge&logoColor=white",
+        "https://img.shields.io/badge/fastapi-009688?logo=fastapi&style=for-the-badge&logoColor=white",
+        "https://img.shields.io/badge/ollama-000000?style=for-the-badge&logo=ollama&logoColor=white",
+        "https://img.shields.io/badge/duckduckgo-DE5833?logo=duckduckgo&style=for-the-badge&logoColor=white",
+      ]}
+      hackathon={{
+        name: "HackKnight Fall 2025 submission",
+        award: "Second Place 🎉",
+        devpost: "https://devpost.com/software/a-byjn09"
+      }}
+      githubLink="https://github.com/josephHelfenbein/rezon"
+      description="Rezon is a real-time trading assistant that interprets your on-screen actions and responds with adaptive insights powered by a local Qwen2 model. It turns your trading behavior into meaningful feedback, helping you stay aware of emotional or impulsive decisions and refine your overall strategy."
     />
   )
 }
