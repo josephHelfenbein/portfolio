@@ -557,7 +557,7 @@ export function ChamaProjectCard(){
         "https://img.shields.io/badge/lancedb-FF3621?logo=databricks&style=for-the-badge&logoColor=white"
       ]}
       hackathon={{
-        name: "HackPrinceton 2024 submission",
+        name: "HackPrinceton Fall 2024 submission",
         award: "Winner for Best Use of Onchainkit 🎉",
         dorahacks: "https://dorahacks.io/buidl/19463/"
       }}
@@ -662,6 +662,32 @@ export function FocuraProjectCard(){
       githubLink="https://github.com/josephHelfenbein/focura"
       liveLink="https://justgo.study/"
       description="A camera-powered posture and focus assistant that calibrates your optimal sitting position, monitors for slouching or phone distractions using a LangGraph workflow, and delivers real-time nudges to keep you upright and on task."
+    />
+  )
+}
+export function AuraProjectCard(){
+  return (
+    <HackathonCard
+      projectName="Aura"
+      imageSrc="./aura.svg"
+      languages={[
+        "https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white",
+        "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+        "https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white",
+        "https://img.shields.io/badge/webrtc-333333?logo=webrtc&style=for-the-badge&logoColor=white",
+        "https://img.shields.io/badge/mediapipe-0097A7?logo=mediapipe&style=for-the-badge&logoColor=white",
+        "https://img.shields.io/badge/gemini%20api-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white",
+        "https://img.shields.io/badge/three.js-000000?style=for-the-badge&logo=three.js&logoColor=white",
+        "https://img.shields.io/badge/fastapi-009688?logo=fastapi&style=for-the-badge&logoColor=white",
+        "https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white",
+        "https://img.shields.io/badge/raspberry%20pi-A22846?style=for-the-badge&logo=raspberry-pi&logoColor=white"
+      ]}
+      hackathon={{
+        name: "HackPrinceton Fall 2025 submission",
+        devpost: "https://devpost.com/software/aura-adaptive-unified-realtime-agent"
+      }}
+      githubLink="https://github.com/Yannaner/Aura"
+      description="AURA is a real-time wearable system that prevents injuries by using haptic feedback and adaptive motion intelligence to correct your form before small errors accumulate into long-term damage."
     />
   )
 }
