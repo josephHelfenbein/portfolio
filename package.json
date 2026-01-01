@@ -26,6 +26,7 @@
     "cross-spawn": "7.0.5",
     "framer-motion": "^11.11.10",
     "geist": "1.2.2",
+    "glob": "10.5.0",
     "headlessui": "^0.0.0",
     "lightningcss-linux-x64-gnu": "^1.27.0",
     "lucide-react": "^0.469.0",

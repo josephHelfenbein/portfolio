@@ -17,8 +17,7 @@ export default function Card( ){
                   <div className="flex flex-col items-center">
                     <h2 className="text-2xl md:text-4xl mb-4 font-semibold tracking-tighter text-black dark:text-white">Hi 👋, I'm Joseph J Helfenbein</h2>
                     <p className="mt-2 text-xs mr-2 font-medium text-gray-900 dark:text-gray-50 text-center">
-                      🎓 Computer Science & Physics Student @ CCNY <br />
-                      🎮 Graphics Programming & Full-Stack Developer
+                      🎓 Computer Science & Physics Student @ CCNY
                     </p>
                   </div>
                 </div>
