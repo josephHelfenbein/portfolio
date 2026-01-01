@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import picture from '/public/1708555168208.jpg';
+import picture from '../../public/1708555168208.jpg';
 export default function Card( ){
     return (
       <div>
