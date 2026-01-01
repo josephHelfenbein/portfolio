@@ -24,7 +24,8 @@ export default function Card( ){
                 </div>
                 <hr className="my-6 border-gray-300 dark:border-gray-700" />
                 <p className="mt-5 text-xs md:text-sm font-medium text-gray-900 dark:text-gray-50">
-                 I'm a Computer Science & Physics student at CCNY specializing in real-time rendering and simulation, building high-performance graphics pipelines and interactive environments with APIs like Vulkan, CUDA, and OpenGL, while also developing scalable, cloud-native fullstack applications using serverless architectures and modern backend (Go, Java Spring) and frontend (React.js/Next.js, Vue.js/Nuxt.js) frameworks.
+                 Computer Science & Physics student working on graphics and systems programming in C++ and Vulkan. 
+Building rendering engines from scratch with custom memory allocators, collision systems, and real-time simulation. Also working on CUDA kernel optimization and distributed systems. Previously built real-time esports infrastructure at EA. Interested in performance optimization and how hardware architecture influences software design.
                 </p>
               </div>
             </article>

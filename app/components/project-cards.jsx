@@ -896,10 +896,9 @@ export function EAProjectCard( ){
           </div>
         <div className="block h-full rounded-lg md:pl-5">
             <div className="p-3 flex flex-col text-xs font-medium text-gray-900 dark:text-gray-100 gap-y-1">
-              <li>Developed a LAN voice platform in TypeScript/Go with sub-50 ms latency for Apex Legends esports</li>
-              <li>Engineered a C++/DirectX overlay process hooked into the Windows compositor, delivering real-time user display and text announcements through a WebSocket connection</li>
-              <li>Built a WebSocket that ingests game server events to automate moderation, reducing admin tasks by 87%</li>
-              <li>Provisioned interruption-free AWS EC2 test environments with Terraform to validate bugs, ensuring smooth gameplay for tournaments ranging from 120-player regional finals to 480-player ALGS Open events</li>
+              <li>Built Node.js voice platform for 400+ concurrent Apex Legends tournament users with sub-50ms latency using WebRTC/SFU media routing, WebSocket signaling, and multi-tier state management</li>
+              <li>Engineered C++/DirectX overlay hooked into Windows compositor to display real-time voice indicators and announcements with &lt;1ms frame overhead and WebSocket synchronization</li>
+              <li>Automated tournament moderation via game events for real-time muting and channel routing</li>
             </div>
         </div>
       </article>
@@ -925,41 +924,12 @@ export function AuriStorProjectCard( ){
           <img className="h-5" src="https://img.shields.io/badge/typescript-3178C6?logo=typescript&style=for-the-badge&logoColor=white" />
           <img className="h-5" src="https://img.shields.io/badge/prometheus-E6522C?logo=prometheus&style=for-the-badge&logoColor=white" />
           <img className="h-5" src="https://img.shields.io/badge/grafana-F46800?logo=grafana&style=for-the-badge&logoColor=white" />
-          <img className="h-5" src="https://img.shields.io/badge/linux-FCC624?logo=linux&style=for-the-badge&logoColor=white" />
+          <img className="h-5" src="https://img.shields.io/badge/ansible-EE0000?logo=ansible&style=for-the-badge&logoColor=white" />
           </div>
         <div className="block h-full rounded-lg md:pl-5">
             <div className="p-3 flex flex-col text-xs font-medium text-gray-900 dark:text-gray-100 gap-y-1">
-              <li>Automated virtual filesystem provisioning with infrastructure-as-code tools (Ansible), cutting setup time 75%, and implemented secure authentication for volume/file controls (Kerberos)</li>
-              <li>Built Go-based Prometheus exporter & Grafana dashboards, cutting incident detection time by 40%</li>
-              <li>Dockerized builds and Jenkins CI/CD to automate weekly releases, reducing deployment time by 70%</li>
-            </div>
-        </div>
-      </article>
-    </div>
-  )
-}
-export function E3ProjectCard( ){
-  return (
-    <div className="flex justify-left p-2">
-      <article className="max-w-5xl">
-        <div className="space-y-2 pb-2">
-            <h3 className="text-lg md:text-xl font-semibold tracking-tighter">Software Engineer Intern</h3>
-            <div className="flex items-center justify-between gap-2">
-              <div className="flex items-center justify-start gap-2">
-                <h5 className="text-sm md:text-base tracking-tighter">E3 Biogenetics</h5>
-              </div>
-              <h5 className="text-xs md:text-sm tracking-tighter ">July 2022 - September 2022</h5>
-            </div>
-          </div>
-          <div className="flex flex-wrap items-start justify-start gap-1 pt-2 pb-3">
-          <img className="h-5" src="https://img.shields.io/badge/php-777BB4?style=for-the-badge&logo=php&logoColor=white" />
-          <img className="h-5" src="https://img.shields.io/badge/javascript-yellow?logo=javascript&style=for-the-badge&logoColor=white" />
-          <img className="h-5" src="https://img.shields.io/badge/mysql-4479A1?logo=mysql&style=for-the-badge&logoColor=white" />
-          </div>
-        <div className="block h-full rounded-lg md:pl-5">
-            <div className="p-3 flex flex-col text-xs font-medium text-gray-900 dark:text-gray-100 gap-y-1">
-              <li>Built a JavaScript/PHP survey web app for 50 daily users with phpChart trend graphs and a JSON/JavaScript language toggle, boosting engagement 40% and accessibility 30%</li>
-              <li>Optimized MySQL indexing and session handling, speeding up backend responses by 25%</li>
+              <li>Automated AuriStorFS distributed filesystem cluster provisioning with Ansible (75% faster than manual setup) and built Go Prometheus exporter for filesystem observability metrics</li>
+              <li>Implemented Kerberos-authenticated API endpoints with ACL permission controls for volume/file operations</li>
             </div>
         </div>
       </article>

@@ -1,7 +1,7 @@
 "use client"
 import Card from './components/card';
 import Footer from './components/footer';
-import {PhysicsProjectCard, HorrorGameProjectCard, ScienceProjectCard, FightingGameProjectCard, AuriStorProjectCard, E3ProjectCard, TravelAmuletProjectCard, EAProjectCard} from './components/project-cards';
+import {AuriStorProjectCard, EAProjectCard} from './components/project-cards';
 import Links from './components/bottom-text';
 import { Suspense, useEffect, useState } from 'react';
 import { ScaleLoader } from 'react-spinners';
@@ -35,7 +35,6 @@ export default function Page() {
         <div className='max-w-5xl backdrop-blur-lg p-4 shadow-lg rounded-xl'>
           <EAProjectCard />
           <AuriStorProjectCard />
-          <E3ProjectCard />
         </div>
       </div>
       

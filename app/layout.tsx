@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     default: 'Joseph Helfenbein Portfolio',
     template: '%s | Joseph Helfenbein Portfolio',
   },
-  description: "I'm a Computer Science & Physics student at CCNY specializing in real-time rendering and simulation, building high-performance graphics pipelines and interactive environments with APIs like Vulkan, CUDA, and OpenGL, while also developing scalable, cloud-native fullstack applications using serverless architectures and modern frameworks (Go, Java Spring, Next.js/React, Nuxt/Vue).",
+  description: "I'm a Computer Science & Physics student working on graphics and systems programming in C++ and Vulkan. Building rendering engines from scratch with custom memory allocators, collision systems, and real-time simulation. Also working on CUDA kernel optimization and distributed systems. Previously built real-time esports infrastructure at EA. Interested in performance optimization and how hardware architecture influences software design.",
   openGraph: {
     title: 'Joseph Helfenbein Portfolio',
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         alt: 'Joseph Helfenbein Portfolio',
       },
     ],
-    description: "I'm a Computer Science & Physics student at CCNY specializing in real-time rendering and simulation, building high-performance graphics pipelines and interactive environments, while also developing scalable, cloud-native fullstack applications using serverless architectures and modern frameworks.",
+    description: "I'm a Computer Science & Physics student working on graphics and systems programming in C++ and Vulkan. Building rendering engines from scratch with custom memory allocators, collision systems, and real-time simulation. Also working on CUDA kernel optimization and distributed systems. Previously built real-time esports infrastructure at EA. Interested in performance optimization and how hardware architecture influences software design.",
     url: baseUrl,
     siteName: 'Joseph Helfenbein Portfolio',
     locale: 'en_US',
